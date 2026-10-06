@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uplike7.github.io/espresso-deal-alerts/sitemap.xml
