@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Espresso Deal Alerts — Live Espresso Machine &amp; Grinder Deals</title>
-<meta name="description" content="Live price tracking on 125 espresso machines, grinders and coffee gear from top specialty retailers. Price drops, 30-day lows, updated every 4 hours.">
+<meta name="description" content="Live price tracking on 117 espresso machines, grinders and coffee gear from top specialty retailers. Price drops, 30-day lows, updated every 4 hours.">
 <meta property="og:title" content="Espresso Deal Alerts">
 <meta property="og:description" content="Live espresso machine &amp; coffee gear deals, tracked every 4 hours.">
 <meta property="og:type" content="website">
@@ -78,6 +78,7 @@
   .trust b { color:var(--ink); font-weight:600; }
   .section-head { max-width:1180px; margin:3.4rem auto 1.25rem; padding:0 1.4rem; display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap; }
   .section-head h2 { font-size:1.75rem; }
+  .section-head h2::before { content:""; display:inline-block; width:26px; height:3px; background:var(--accent); border-radius:2px; margin-right:.75rem; vertical-align:middle; }
   .section-head p { color:var(--muted); font-size:.95rem; }
   .grid {
     max-width:1180px; margin:auto; padding:0 1.4rem;
@@ -85,19 +86,19 @@
   }
   .card {
     background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden;
-    display:flex; flex-direction:column; backdrop-filter:blur(10px);
+    display:flex; flex-direction:column; height:100%; backdrop-filter:blur(10px);
     transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
   }
   .card:hover { transform:translateY(-5px); box-shadow:0 22px 50px rgba(0,0,0,.45); border-color:rgba(232,169,78,.38); }
-  .imgwrap { position:relative; aspect-ratio:4/3; background:linear-gradient(160deg,#2a211a,#1a1410); }
-  .imgwrap img { width:100%; height:100%; object-fit:cover; display:block; }
+  .imgwrap { position:relative; height:215px; background:#f5f1ea; border-bottom:1px solid var(--line); }
+  .imgwrap img { width:100%; height:100%; object-fit:contain; padding:.85rem; display:block; }
   .noimg { display:flex; align-items:center; justify-content:center; height:100%; font-size:2.6rem; opacity:.5; }
   .badge {
-    position:absolute; top:.8rem; left:.8rem; font-size:.68rem; font-weight:800; letter-spacing:.06em;
-    padding:.32rem .66rem; border-radius:99px; text-transform:uppercase;
+    position:absolute; top:.75rem; left:.75rem; font-size:.66rem; font-weight:800; letter-spacing:.06em;
+    padding:.32rem .66rem; border-radius:99px; text-transform:uppercase; z-index:2;
   }
-  .badge.drop { background:rgba(111,214,140,.16); color:var(--drop); border:1px solid rgba(111,214,140,.4); }
-  .badge.low { background:rgba(232,169,78,.16); color:var(--accent); border:1px solid rgba(232,169,78,.4); }
+  .badge.drop { background:#1d7a41; color:#fff; }
+  .badge.low { background:#241505; color:var(--accent); border:1px solid rgba(232,169,78,.5); }
   .body { padding:1.05rem 1.15rem 1.25rem; display:flex; flex-direction:column; gap:.55rem; flex:1; }
   .brand { color:var(--muted); font-size:.73rem; font-weight:600; letter-spacing:.11em; text-transform:uppercase; }
   .card h3 { font-size:1.02rem; line-height:1.35; font-weight:600; }
@@ -138,7 +139,7 @@
 <header class="hero">
   <div class="eyebrow"><span class="dot"></span> Live prices · updated every 4 hours</div>
   <h1>Never overpay for your <em>espresso setup</em> again.</h1>
-  <p class="lede">We track 125 espresso machines, grinders and coffee gear across the top specialty retailers — so the moment a price drops, you know. No fake urgency, no expired coupons. Just real prices, checked six times a day.</p>
+  <p class="lede">We track 117 espresso machines, grinders and coffee gear across the top specialty retailers — so the moment a price drops, you know. No fake urgency, no expired coupons. Just real prices, checked six times a day.</p>
   <div class="hero-actions">
     <a class="btn-glow" href="#deals">Browse today's deals</a>
     <a class="btn-ghost" href="https://t.me/espresso_deal_alerts" target="_blank">Get alerts on Telegram</a>
@@ -146,10 +147,10 @@
 </header>
 
 <section class="stats">
-  <div class="stat"><b>125</b><span>products tracked live</span></div>
+  <div class="stat"><b>117</b><span>products tracked live</span></div>
   <div class="stat"><b>5</b><span>specialty retailers</span></div>
   <div class="stat"><b>6× daily</b><span>automatic price checks</span></div>
-  <div class="stat"><b>$359K+</b><span>gear under watch</span></div>
+  <div class="stat"><b>$292K+</b><span>gear under watch</span></div>
 </section>
 <div class="trust">
   <span><b>Whole Latte Love</b> · <b>Seattle Coffee Gear</b> · <b>Clive Coffee</b> · <b>Chris' Coffee</b> · <b>iDrinkCoffee</b></span>
@@ -159,53 +160,47 @@
 </div>
 
 <div class="section-head" id="deals">
-  <h2>⚡ Latest price drops</h2>
-  <p>Verified against our own price history — these actually dropped.</p>
-</div>
-<div class="grid"><p class="empty">Fresh price drops land here within hours of retailers changing prices — see the full tracker below.</p></div>
-
-<div class="section-head">
-  <h2>📉 30-day lows</h2>
-  <p>The cheapest these have been in the last month.</p>
+  <h2>Today's best deals</h2>
+  <p>Hand-picked from our live tracker — the strongest prices across every budget.</p>
 </div>
 <div class="grid">
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/white-01_6001463c-9e1c-4528-a3fb-50380cf856f2.png?v=1785876678" alt="Caye Smart X Super Automatic Espresso Machine - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/2425/8607/files/anfim-espresso-grinders-29440060129344.webp?v=1709757528" alt="Local Portland Pickup Open Box Anfim Pratica (8309)" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Caye Smart X Super Automatic Espresso Machine - White</h3>
-          <div class="pricerow"><span class="price">$25,995.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <p class="brand">Clive Coffee</p>
+          <h3>Local Portland Pickup Open Box Anfim Pratica (8309)</h3>
+          <div class="pricerow"><span class="price">$999.00</span></div>
+          <a class="cta" href="https://www.clivecoffee.com/products/open-box-anfim-pratica-8309" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/silver-01.png?v=1785876623" alt="Caye Smart X Super Automatic Espresso Machine - Silver" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0079/0665/6292/files/ALLGROUND-SENSE-Artic-black_07a4c2a7-d3d8-4186-a068-2c8a9fbdee91.jpg?v=1736364903" alt="Fiorenzato All Ground Sense (Open Box - Black)" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Caye Smart X Super Automatic Espresso Machine - Silver</h3>
-          <div class="pricerow"><span class="price">$25,995.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-silver" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <p class="brand">Chris&#x27; Coffee</p>
+          <h3>Fiorenzato All Ground Sense (Open Box - Black)</h3>
+          <div class="pricerow"><span class="price">$995.00</span></div>
+          <a class="cta" href="https://www.chriscoffee.com/products/fiorenzato-all-ground-sense-grinder-black-open-box" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/darkgrey-01.png?v=1785876565" alt="Caye Smart X Super Automatic Espresso Machine - Dark Grey" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/J8-twin_pss_Di-Bl_2Esp.jpg?v=1743190285" alt="Refurbished JURA J8 Twin Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Caye Smart X Super Automatic Espresso Machine - Dark Grey</h3>
-          <div class="pricerow"><span class="price">$25,995.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-dark-grey" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <p class="brand">Whole Latte Love</p>
+          <h3>Refurbished JURA J8 Twin Espresso Machine</h3>
+          <div class="pricerow"><span class="price">$2,999.00</span></div>
+          <a class="cta" href="https://www.wholelattelove.com/products/refurbished-jura-j8-twin-espresso-machine" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoREDoppiaCommercialEspressoMachinenew_0d8f6d79-5b87-4f9e-a6ec-2e6d67b8cef6.jpg?v=1790710433" alt="Rocket Espresso RE Doppia Commercial Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0079/0665/6292/files/R58.jpg?v=1788076433" alt="Rocket Espresso R58 Cinquantotto (Open Box)" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">Seattle Coffee Gear</p>
-          <h3>Rocket Espresso RE Doppia Commercial Espresso Machine</h3>
-          <div class="pricerow"><span class="price">$13,000.00</span></div>
-          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-re-doppia-ds-commercial-espresso-machine-2-group" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <p class="brand">Chris&#x27; Coffee</p>
+          <h3>Rocket Espresso R58 Cinquantotto (Open Box)</h3>
+          <div class="pricerow"><span class="price">$2,995.00</span></div>
+          <a class="cta" href="https://www.chriscoffee.com/products/rocket-r58-cinquantotto-sale" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
@@ -230,90 +225,30 @@
       </article>
 
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoBicoccaSplugaBundle.jpg?v=1790219868" alt="Rocket Espresso Bicocca Spluga Bundle" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/white-01_6001463c-9e1c-4528-a3fb-50380cf856f2.png?v=1785876678" alt="Caye Smart X Super Automatic Espresso Machine - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">Seattle Coffee Gear</p>
-          <h3>Rocket Espresso Bicocca Spluga Bundle</h3>
-          <div class="pricerow"><span class="price">$6,568.80</span></div>
-          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-bicocca-spluga-bundle" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Caye Smart X Super Automatic Espresso Machine - White</h3>
+          <div class="pricerow"><span class="price">$25,995.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/Kony-Sg-sito-14.png?v=1790264872" alt="Mazzer Kony G (Grind By Weight) Grinder - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoREDoppiaCommercialEspressoMachinenew_0d8f6d79-5b87-4f9e-a6ec-2e6d67b8cef6.jpg?v=1790710433" alt="Rocket Espresso RE Doppia Commercial Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Mazzer Kony G (Grind By Weight) Grinder - White</h3>
-          <div class="pricerow"><span class="price">$5,495.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/mazzer-kony-g-grind-by-weight-grinder-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <p class="brand">Seattle Coffee Gear</p>
+          <h3>Rocket Espresso RE Doppia Commercial Espresso Machine</h3>
+          <div class="pricerow"><span class="price">$13,000.00</span></div>
+          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-re-doppia-ds-commercial-espresso-machine-2-group" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article></div>
 
 <div class="section-head">
-  <h2>📦 The full tracker</h2>
-  <p>Every machine and grinder we watch, sorted by biggest saving.</p>
+  <h2>More at 30-day lows</h2>
+  <p>The cheapest these have been in the last month.</p>
 </div>
 <div class="grid">
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/white-01_6001463c-9e1c-4528-a3fb-50380cf856f2.png?v=1785876678" alt="Caye Smart X Super Automatic Espresso Machine - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Caye Smart X Super Automatic Espresso Machine - White</h3>
-          <div class="pricerow"><span class="price">$25,995.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/silver-01.png?v=1785876623" alt="Caye Smart X Super Automatic Espresso Machine - Silver" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Caye Smart X Super Automatic Espresso Machine - Silver</h3>
-          <div class="pricerow"><span class="price">$25,995.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-silver" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/darkgrey-01.png?v=1785876565" alt="Caye Smart X Super Automatic Espresso Machine - Dark Grey" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Caye Smart X Super Automatic Espresso Machine - Dark Grey</h3>
-          <div class="pricerow"><span class="price">$25,995.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-dark-grey" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoREDoppiaCommercialEspressoMachinenew_0d8f6d79-5b87-4f9e-a6ec-2e6d67b8cef6.jpg?v=1790710433" alt="Rocket Espresso RE Doppia Commercial Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">Seattle Coffee Gear</p>
-          <h3>Rocket Espresso RE Doppia Commercial Espresso Machine</h3>
-          <div class="pricerow"><span class="price">$13,000.00</span></div>
-          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-re-doppia-ds-commercial-espresso-machine-2-group" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/2_c37cc4a4-5ac6-4e5b-b2ba-379402779000.jpg?v=1790707380" alt="Sanremo X-ONE Grinder - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Sanremo X-ONE Grinder - White</h3>
-          <div class="pricerow"><span class="price">$9,990.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/sanremo-x-one-grinder-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0079/0665/6292/products/e1-prima-black-main.jpg?v=1647642688" alt="Victoria Arduino E1 Prima" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">Chris&#x27; Coffee</p>
-          <h3>Victoria Arduino E1 Prima</h3>
-          <div class="pricerow"><span class="price">$6,990.00</span></div>
-          <a class="cta" href="https://www.chriscoffee.com/products/victoria-arduino-e1-prima-1-group-black" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
       <article class="card">
         <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoBicoccaSplugaBundle.jpg?v=1790219868" alt="Rocket Espresso Bicocca Spluga Bundle" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
@@ -331,16 +266,6 @@
           <h3>Mazzer Kony G (Grind By Weight) Grinder - White</h3>
           <div class="pricerow"><span class="price">$5,495.00</span></div>
           <a class="cta" href="https://www.idrinkcoffee.com/products/mazzer-kony-g-grind-by-weight-grinder-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/generated_1790264933439_9445176b.png?v=1790265029" alt="Mazzer Kony G (Grind By Weight) Grinder - Black" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
-        <div class="body">
-          <p class="brand">iDrinkCoffee</p>
-          <h3>Mazzer Kony G (Grind By Weight) Grinder - Black</h3>
-          <div class="pricerow"><span class="price">$5,495.00</span></div>
-          <a class="cta" href="https://www.idrinkcoffee.com/products/mazzer-kony-g-grind-by-weight-grinder-black" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
@@ -385,12 +310,127 @@
       </article>
 
       <article class="card">
-        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/2425/8607/files/ecm-estetika-espresso-machine.png?v=1790183233" alt="ECM Estetika Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0078/9502/3675/products/Z10_pss_Al-Wh_CBCof_Original_30843.jpg?v=1690811315" alt="JURA Z10 Super-Automatic Espresso Machine - Gen 1" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
         <div class="body">
-          <p class="brand">Clive Coffee</p>
+          <p class="brand">Whole Latte Love</p>
+          <h3>JURA Z10 Super-Automatic Espresso Machine - Gen 1</h3>
+          <div class="pricerow"><span class="price">$4,299.00</span></div>
+          <a class="cta" href="https://www.wholelattelove.com/products/jura-z10-super-automatic-espresso-machine-gen-1" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoMozzafiatoFASTR-SplugaBundle-Black.jpg?v=1790180076" alt="Rocket Espresso Mozzafiato Fast R Spluga Bundle" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Seattle Coffee Gear</p>
+          <h3>Rocket Espresso Mozzafiato Fast R Spluga Bundle</h3>
+          <div class="pricerow"><span class="price">$4,186.00</span></div>
+          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-mozzafiato-fast-r-spluga-bundle" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article></div>
+
+<div class="section-head">
+  <h2>The full tracker</h2>
+  <p>Every machine and grinder we watch, sorted by biggest saving.</p>
+</div>
+<div class="grid">
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/white-01_6001463c-9e1c-4528-a3fb-50380cf856f2.png?v=1785876678" alt="Caye Smart X Super Automatic Espresso Machine - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Caye Smart X Super Automatic Espresso Machine - White</h3>
+          <div class="pricerow"><span class="price">$25,995.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoREDoppiaCommercialEspressoMachinenew_0d8f6d79-5b87-4f9e-a6ec-2e6d67b8cef6.jpg?v=1790710433" alt="Rocket Espresso RE Doppia Commercial Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Seattle Coffee Gear</p>
+          <h3>Rocket Espresso RE Doppia Commercial Espresso Machine</h3>
+          <div class="pricerow"><span class="price">$13,000.00</span></div>
+          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-re-doppia-ds-commercial-espresso-machine-2-group" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/2_c37cc4a4-5ac6-4e5b-b2ba-379402779000.jpg?v=1790707380" alt="Sanremo X-ONE Grinder - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Sanremo X-ONE Grinder - White</h3>
+          <div class="pricerow"><span class="price">$9,990.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/sanremo-x-one-grinder-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0079/0665/6292/products/e1-prima-black-main.jpg?v=1647642688" alt="Victoria Arduino E1 Prima" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Chris&#x27; Coffee</p>
+          <h3>Victoria Arduino E1 Prima</h3>
+          <div class="pricerow"><span class="price">$6,990.00</span></div>
+          <a class="cta" href="https://www.chriscoffee.com/products/victoria-arduino-e1-prima-1-group-black" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoBicoccaSplugaBundle.jpg?v=1790219868" alt="Rocket Espresso Bicocca Spluga Bundle" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Seattle Coffee Gear</p>
+          <h3>Rocket Espresso Bicocca Spluga Bundle</h3>
+          <div class="pricerow"><span class="price">$6,568.80</span></div>
+          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-bicocca-spluga-bundle" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/Kony-Sg-sito-14.png?v=1790264872" alt="Mazzer Kony G (Grind By Weight) Grinder - White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Mazzer Kony G (Grind By Weight) Grinder - White</h3>
+          <div class="pricerow"><span class="price">$5,495.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/mazzer-kony-g-grind-by-weight-grinder-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/00_packshot_6904380d-a1d3-4447-a831-0d5adbe073ab.png?v=1789244072" alt="Jura Z10 NAB 15792 - Aluminum White" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Jura Z10 NAB 15792 - Aluminum White</h3>
+          <div class="pricerow"><span class="price">$5,295.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/jura-z10-aluminum-white" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/00_packshot_cc458052-d6d2-42ff-834e-eca6f9e16d21.png?v=1789244119" alt="Jura Z10 NAB 15702 - Aluminum Black" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Jura Z10 NAB 15702 - Aluminum Black</h3>
+          <div class="pricerow"><span class="price">$5,295.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/jura-z10-aluminum-black" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/1201/3604/files/00_packshot_8074dc02-d04e-4bae-a3e4-9026aeaba977.png?v=1789244235" alt="Jura J10 Twin Espresso Machine - Diamond Onyx" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">iDrinkCoffee</p>
+          <h3>Jura J10 Twin Espresso Machine - Diamond Onyx</h3>
+          <div class="pricerow"><span class="price">$4,995.00</span></div>
+          <a class="cta" href="https://www.idrinkcoffee.com/products/jura-j10-twin-espresso-machine-diamond-onyx" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/productphoto_72001_C_R_2000px_311c477c-84ea-4bc3-9940-2ac49efe7fec.jpg?v=1788186581" alt="ECM Estetika Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Whole Latte Love</p>
           <h3>ECM Estetika Espresso Machine</h3>
           <div class="pricerow"><span class="price">$4,849.00</span></div>
-          <a class="cta" href="https://www.clivecoffee.com/products/ecm-estetika-dual-boiler-espresso-machine" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+          <a class="cta" href="https://www.wholelattelove.com/products/ecm-estetika-espresso-machine" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article>
 
@@ -731,6 +771,46 @@
           <h3>Rocket Espresso Appartamento 2.0 Specialita Bundle</h3>
           <div class="pricerow"><span class="price">$2,529.08</span></div>
           <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-appartamento-2-0-specialita-bundle" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RocketEspressoMozzafiatoFASTVEspressoMachine-7_453e63fe-6c44-45e2-b5ad-a161f03c49b9.jpg?v=1769646732" alt="Rocket Espresso Mozzafiato FAST V Espresso Machine - Black - Open Box" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Seattle Coffee Gear</p>
+          <h3>Rocket Espresso Mozzafiato FAST V Espresso Machine - Black - Open Box</h3>
+          <div class="pricerow"><span class="price">$2,420.97</span></div>
+          <a class="cta" href="https://www.seattlecoffeegear.com/products/rocket-espresso-mozzafiato-fast-v-espresso-machine-black-open-box" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new.jpg?v=1790716945" alt="Ascaso Steel Duo Plus Espresso Machine" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Seattle Coffee Gear</p>
+          <h3>Ascaso Steel Duo Plus Espresso Machine</h3>
+          <div class="pricerow"><span class="price">$2,415.00</span></div>
+          <a class="cta" href="https://www.seattlecoffeegear.com/products/ascaso-steel-duo-plus-v2-5-espresso-machine" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/productphoto_72679_F.jpg?v=1784317018" alt="Eureka Oro Zeus All Purpose Coffee Grinder" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Whole Latte Love</p>
+          <h3>Eureka Oro Zeus All Purpose Coffee Grinder</h3>
+          <div class="pricerow"><span class="price">$2,399.00</span></div>
+          <a class="cta" href="https://www.wholelattelove.com/products/eureka-oro-zeus-all-purpose-coffee-grinder" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="imgwrap"><img src="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/ECMMechanikaMaxII-Front.jpg?v=1788542523" alt="ECM Mechanika Max II" loading="lazy"><span class="badge low">30-DAY LOW</span></div>
+        <div class="body">
+          <p class="brand">Whole Latte Love</p>
+          <h3>ECM Mechanika Max II</h3>
+          <div class="pricerow"><span class="price">$2,249.00</span></div>
+          <a class="cta" href="https://www.wholelattelove.com/products/ecm-mechanika-max-ii" rel="nofollow sponsored" target="_blank">View Deal <span>&rarr;</span></a>
         </div>
       </article></div>
 
