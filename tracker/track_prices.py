@@ -57,6 +57,8 @@ def main():
         history = json.load(open(args.history))
     except Exception:
         history = {}
+    # Prune history to the current catalog so removed products disappear everywhere.
+    history = {u: e for u, e in history.items() if u in set(urls)}
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     ok, fail, drops = 0, [], []
