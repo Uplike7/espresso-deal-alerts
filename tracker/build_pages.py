@@ -49,10 +49,13 @@ def main():
     args = ap.parse_args()
     import os
     os.makedirs(args.out, exist_ok=True)
+    for stale in os.listdir(args.out):
+        if stale.endswith(".html"):
+            os.remove(os.path.join(args.out, stale))
     products = json.load(open(args.products))
     n = 0
     for p in products:
-        slug = slugify(p["title"])[:80]
+        slug = p.get("slug") or slugify(p["title"])[:80]
         amazon = p["amazon_search"] + (f"&tag={args.amazon_tag}" if args.amazon_tag else "")
         ebay = p["ebay_search"] + (f"&campid={args.ebay_campid}" if args.ebay_campid else "")
         price = money(p["price"], p["currency"]); lowest = money(p["lowest_tracked"], p["currency"])
@@ -73,7 +76,7 @@ def main():
         open(os.path.join(args.out, slug + ".html"), "w").write(page)
         n += 1
     items = "\n".join(
-        f'<li><a href="{slugify(p["title"])[:80]}.html">{html.escape(p["title"])}</a> — '
+        f'<li><a href="{p.get("slug") or slugify(p["title"])[:80]}.html">{html.escape(p["title"])}</a> — '
         f'{money(p["price"], p["currency"])} at {p["retailer"]}</li>' for p in products)
     index = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
              "<title>All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts</title>"
