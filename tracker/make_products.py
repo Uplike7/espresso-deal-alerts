@@ -30,6 +30,14 @@ def main():
             'history_points': len(e['snapshots']),
         })
     products.sort(key=lambda p: -(((p['compare_at'] or p['price']) - p['price'])))
+    # Collision-safe slugs: when 2+ retailers carry the same model, suffix each
+    # page's slug with its retailer so every product gets its own page.
+    base_count = {}
+    for p in products:
+        base_count[p['slug']] = base_count.get(p['slug'], 0) + 1
+    for p in products:
+        if base_count[p['slug']] > 1:
+            p['slug'] = f"{p['slug']}-{slugify(p['retailer'])}"
     json.dump(products, open('products.json', 'w'), indent=1)
 
     # Refresh sitemap.xml at repo root: keep existing non-deals URLs, add all deal pages.
