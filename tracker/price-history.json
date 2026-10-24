@@ -13,6 +13,12 @@
     "price": 1050.0,
     "compare_at": 1251.22,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 1050.0,
+    "compare_at": 1251.22,
+    "available": true
    }
   ],
   "current": 1050.0
@@ -28,6 +34,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2650.0,
+    "compare_at": 3195.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2650.0,
     "compare_at": 3195.0,
     "available": true
@@ -49,6 +61,12 @@
     "price": 3495.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 3495.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 3495.0
@@ -64,6 +82,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2095.0,
+    "compare_at": 2495.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2095.0,
     "compare_at": 2495.0,
     "available": true
@@ -85,6 +109,12 @@
     "price": 2600.0,
     "compare_at": 2999.95,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2600.0,
+    "compare_at": 2999.95,
+    "available": false
    }
   ],
   "current": 2600.0
@@ -100,6 +130,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3895.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3895.0,
     "compare_at": null,
     "available": true
@@ -121,6 +157,12 @@
     "price": 2095.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2095.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 2095.0
@@ -136,6 +178,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3199.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3199.0,
     "compare_at": null,
     "available": true
@@ -157,6 +205,12 @@
     "price": 2895.0,
     "compare_at": 3500.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2895.0,
+    "compare_at": 3500.0,
+    "available": true
    }
   ],
   "current": 2895.0
@@ -172,6 +226,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 6990.0,
+    "compare_at": 5990.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 6990.0,
     "compare_at": 5990.0,
     "available": true
@@ -193,6 +253,12 @@
     "price": 200.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 200.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 200.0
@@ -208,6 +274,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 529.95,
+    "compare_at": 529.95,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 529.95,
     "compare_at": 529.95,
     "available": true
@@ -229,6 +301,12 @@
     "price": 549.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 549.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 549.0
@@ -244,6 +322,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3495.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3495.0,
     "compare_at": null,
     "available": true
@@ -265,6 +349,12 @@
     "price": 999.0,
     "compare_at": 1199.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 999.0,
+    "compare_at": 1199.0,
+    "available": true
    }
   ],
   "current": 999.0
@@ -280,6 +370,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 522.0,
+    "compare_at": 549.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 522.0,
     "compare_at": 549.0,
     "available": true
@@ -301,6 +397,12 @@
     "price": 25995.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 25995.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 25995.0
@@ -316,6 +418,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 259.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 259.0,
     "compare_at": null,
     "available": true
@@ -337,6 +445,12 @@
     "price": 259.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 259.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 259.0
@@ -352,6 +466,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2995.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2995.0,
     "compare_at": null,
     "available": true
@@ -373,6 +493,12 @@
     "price": 2995.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2995.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 2995.0
@@ -388,6 +514,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 4995.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 4995.0,
     "compare_at": null,
     "available": true
@@ -409,6 +541,12 @@
     "price": 5295.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 5295.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 5295.0
@@ -424,6 +562,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 5295.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 5295.0,
     "compare_at": null,
     "available": true
@@ -445,6 +589,12 @@
     "price": 2799.2,
     "compare_at": 3499.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2799.2,
+    "compare_at": 3499.0,
+    "available": true
    }
   ],
   "current": 2799.2
@@ -460,6 +610,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3895.0,
+    "compare_at": 4999.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3895.0,
     "compare_at": 4999.0,
     "available": true
@@ -481,6 +637,12 @@
     "price": 5495.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 5495.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 5495.0
@@ -496,6 +658,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3945.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3945.0,
     "compare_at": null,
     "available": true
@@ -517,6 +685,12 @@
     "price": 9990.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 9990.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 9990.0
@@ -532,6 +706,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2415.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2415.0,
     "compare_at": null,
     "available": true
@@ -553,6 +733,12 @@
     "price": 2095.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2095.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 2095.0
@@ -568,6 +754,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 315.97,
+    "compare_at": 359.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 315.97,
     "compare_at": 359.0,
     "available": false
@@ -589,6 +781,12 @@
     "price": 599.95,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 599.95,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 599.95
@@ -604,6 +802,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2529.08,
+    "compare_at": 2749.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2529.08,
     "compare_at": 2749.0,
     "available": true
@@ -625,6 +829,12 @@
     "price": 2985.4,
     "compare_at": 3245.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2985.4,
+    "compare_at": 3245.0,
+    "available": true
    }
   ],
   "current": 2985.4
@@ -640,6 +850,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 6568.8,
+    "compare_at": 7140.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 6568.8,
     "compare_at": 7140.0,
     "available": true
@@ -661,6 +877,12 @@
     "price": 2860.97,
     "compare_at": 3250.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2860.97,
+    "compare_at": 3250.0,
+    "available": true
    }
   ],
   "current": 2860.97
@@ -676,6 +898,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 4232.0,
+    "compare_at": 4600.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 4232.0,
     "compare_at": 4600.0,
     "available": true
@@ -697,6 +925,12 @@
     "price": 3523.6,
     "compare_at": 3830.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 3523.6,
+    "compare_at": 3830.0,
+    "available": true
    }
   ],
   "current": 3523.6
@@ -712,6 +946,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2860.97,
+    "compare_at": 3250.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2860.97,
     "compare_at": 3250.0,
     "available": true
@@ -733,6 +973,12 @@
     "price": 4232.0,
     "compare_at": 4600.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 4232.0,
+    "compare_at": 4600.0,
+    "available": true
    }
   ],
   "current": 4232.0
@@ -748,6 +994,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3523.6,
+    "compare_at": 3830.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3523.6,
     "compare_at": 3830.0,
     "available": true
@@ -769,6 +1021,12 @@
     "price": 2420.97,
     "compare_at": 2750.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2420.97,
+    "compare_at": 2750.0,
+    "available": true
    }
   ],
   "current": 2420.97
@@ -784,6 +1042,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3423.97,
+    "compare_at": null,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3423.97,
     "compare_at": null,
     "available": false
@@ -805,6 +1069,12 @@
     "price": 13000.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 13000.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 13000.0
@@ -820,6 +1090,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2699.0,
+    "compare_at": 2699.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2699.0,
     "compare_at": 2699.0,
     "available": false
@@ -841,6 +1117,12 @@
     "price": 3499.0,
     "compare_at": 3499.0,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 3499.0,
+    "compare_at": 3499.0,
+    "available": false
    }
   ],
   "current": 3499.0
@@ -856,6 +1138,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 4849.0,
+    "compare_at": 4849.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 4849.0,
     "compare_at": 4849.0,
     "available": false
@@ -877,6 +1165,12 @@
     "price": 1299.0,
     "compare_at": 1299.0,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 1299.0,
+    "compare_at": 1299.0,
+    "available": false
    }
   ],
   "current": 1299.0
@@ -892,6 +1186,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2249.0,
+    "compare_at": 2849.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2249.0,
     "compare_at": 2849.0,
     "available": false
@@ -913,6 +1213,12 @@
     "price": 2399.0,
     "compare_at": 2399.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2399.0,
+    "compare_at": 2399.0,
+    "available": true
    }
   ],
   "current": 2399.0
@@ -928,6 +1234,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2599.0,
+    "compare_at": 2599.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2599.0,
     "compare_at": 2599.0,
     "available": false
@@ -949,6 +1261,12 @@
     "price": 3799.0,
     "compare_at": 3799.0,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 3799.0,
+    "compare_at": 3799.0,
+    "available": false
    }
   ],
   "current": 3799.0
@@ -964,6 +1282,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3499.0,
+    "compare_at": 4299.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3499.0,
     "compare_at": 4299.0,
     "available": false
@@ -985,6 +1309,12 @@
     "price": 1749.0,
     "compare_at": 1899.0,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 1749.0,
+    "compare_at": 1899.0,
+    "available": false
    }
   ],
   "current": 1749.0
@@ -1000,6 +1330,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 1599.0,
+    "compare_at": 1799.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 1599.0,
     "compare_at": 1799.0,
     "available": false
@@ -1021,6 +1357,12 @@
     "price": 2699.99,
     "compare_at": 3199.0,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2699.99,
+    "compare_at": 3199.0,
+    "available": false
    }
   ],
   "current": 2699.99
@@ -1036,6 +1378,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 3349.0,
+    "compare_at": 3699.0,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 3349.0,
     "compare_at": 3699.0,
     "available": false
@@ -1057,6 +1405,12 @@
     "price": 2799.0,
     "compare_at": 2999.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 2799.0,
+    "compare_at": 2999.0,
+    "available": true
    }
   ],
   "current": 2799.0
@@ -1072,6 +1426,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2999.0,
+    "compare_at": 3599.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2999.0,
     "compare_at": 3599.0,
     "available": true
@@ -1093,6 +1453,12 @@
     "price": 629.95,
     "compare_at": 799.95,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 629.95,
+    "compare_at": 799.95,
+    "available": true
    }
   ],
   "current": 629.95
@@ -1108,6 +1474,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2699.95,
+    "compare_at": 2999.95,
+    "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2699.95,
     "compare_at": 2999.95,
     "available": false
@@ -1129,6 +1501,12 @@
     "price": 999.0,
     "compare_at": 1199.0,
     "available": false
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 999.0,
+    "compare_at": 1199.0,
+    "available": false
    }
   ],
   "current": 999.0
@@ -1144,6 +1522,12 @@
    },
    {
     "t": "2026-10-24T02:39:53Z",
+    "price": 2600.0,
+    "compare_at": 2900.0,
+    "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
     "price": 2600.0,
     "compare_at": 2900.0,
     "available": true
@@ -1165,8 +1549,350 @@
     "price": 3890.0,
     "compare_at": 3890.0,
     "available": true
+   },
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 3890.0,
+    "compare_at": 3890.0,
+    "available": true
    }
   ],
   "current": 3890.0
+ },
+ "https://clivecoffee.com/products/acaia-lunar-scale": {
+  "title": "Acaia Lunar Scale",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 250.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 250.0
+ },
+ "https://clivecoffee.com/products/eureka-mignon-specialita-espresso-grinder": {
+  "title": "Eureka Mignon Specialita Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 549.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 549.0
+ },
+ "https://clivecoffee.com/products/profitec-go-espresso-machine": {
+  "title": "Profitec GO Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 1199.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 1199.0
+ },
+ "https://www.seattlecoffeegear.com/products/breville-barista-express-espresso-machine": {
+  "title": "Breville Barista Express Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 699.95,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 699.95
+ },
+ "https://www.seattlecoffeegear.com/products/breville-the-bambino-plus-espresso-machine": {
+  "title": "Breville Bambino Plus Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 499.95,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 499.95
+ },
+ "https://www.seattlecoffeegear.com/products/delonghi-dedica-duo-espresso-machine": {
+  "title": "DeLonghi Dedica Duo EC890 Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 249.95,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 249.95
+ },
+ "https://www.seattlecoffeegear.com/products/eureka-mignon-crono-brew-coffee-grinder": {
+  "title": "Eureka Mignon Crono Brew Coffee Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 229.0,
+    "compare_at": null,
+    "available": false
+   }
+  ],
+  "current": 229.0
+ },
+ "https://www.seattlecoffeegear.com/products/eureka-mignon-notte-espresso-grinder-black": {
+  "title": "Eureka Mignon Notte Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 299.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 299.0
+ },
+ "https://www.seattlecoffeegear.com/products/eureka-mignon-silenzio-55-espresso-grinder": {
+  "title": "Eureka Mignon Silenzio 55 Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 399.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 399.0
+ },
+ "https://www.seattlecoffeegear.com/products/eureka-mignon-zero-espresso-grinder": {
+  "title": "Eureka Mignon Zero Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 329.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 329.0
+ },
+ "https://www.wholelattelove.com/products/baratza-sette-270-conical-burr-grinder": {
+  "title": "Baratza Sette 270 Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 399.95,
+    "compare_at": 399.95,
+    "available": true
+   }
+  ],
+  "current": 399.95
+ },
+ "https://www.wholelattelove.com/products/baratza-sette-270wi-conical-burr-grinder": {
+  "title": "Baratza Sette 270Wi Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 599.95,
+    "compare_at": 599.95,
+    "available": true
+   }
+  ],
+  "current": 599.95
+ },
+ "https://www.wholelattelove.com/products/baratza-sette-30-ap-conical-burr-grinder": {
+  "title": "Baratza Sette 30 Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 299.95,
+    "compare_at": 299.95,
+    "available": true
+   }
+  ],
+  "current": 299.95
+ },
+ "https://www.wholelattelove.com/products/breville-bes500bss-bambino-plus": {
+  "title": "Breville BES500BSS Bambino Plus",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 499.95,
+    "compare_at": 499.95,
+    "available": true
+   }
+  ],
+  "current": 499.95
+ },
+ "https://www.wholelattelove.com/products/breville-bes870xl-barista-express": {
+  "title": "Breville BES870XL Barista Express",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 699.95,
+    "compare_at": 699.95,
+    "available": true
+   }
+  ],
+  "current": 699.95
+ },
+ "https://www.wholelattelove.com/products/breville-bes876bss1bna1-barista-express-impress": {
+  "title": "Breville BES876BSS1BNA1 Barista Express Impress",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 799.95,
+    "compare_at": 799.95,
+    "available": true
+   }
+  ],
+  "current": 799.95
+ },
+ "https://www.wholelattelove.com/products/breville-bes880bss-the-barista-touch": {
+  "title": "Breville BES880BSS the Barista Touch",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 999.95,
+    "compare_at": 999.95,
+    "available": true
+   }
+  ],
+  "current": 999.95
+ },
+ "https://www.wholelattelove.com/products/delonghi-la-specialista-arte-ec9155mb-espresso-machine": {
+  "title": "DeLonghi La Specialista Arte EC9155MB Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 599.95,
+    "compare_at": 699.95,
+    "available": true
+   }
+  ],
+  "current": 599.95
+ },
+ "https://www.wholelattelove.com/products/delonghi-magnifica-evo-ecam29043sb": {
+  "title": "DeLonghi Magnifica Evo ECAM29043SB",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 749.95,
+    "compare_at": 749.95,
+    "available": true
+   }
+  ],
+  "current": 749.95
+ },
+ "https://www.wholelattelove.com/products/encore-esp-pro-coffee-and-espresso-grinder": {
+  "title": "Baratza Encore\u2122 ESP Pro Coffee and Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 299.95,
+    "compare_at": 299.95,
+    "available": true
+   }
+  ],
+  "current": 299.95
+ },
+ "https://www.wholelattelove.com/products/fellow-aiden-precision-coffee-maker": {
+  "title": "Fellow Aiden Precision Coffee Maker",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 399.95,
+    "compare_at": 399.95,
+    "available": true
+   }
+  ],
+  "current": 399.95
+ },
+ "https://www.wholelattelove.com/products/fellow-ode-brew-grinder-gen-2": {
+  "title": "Fellow Ode Brew Grinder Gen 2",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 399.95,
+    "compare_at": 399.95,
+    "available": true
+   }
+  ],
+  "current": 399.95
+ },
+ "https://www.wholelattelove.com/products/gaggia-anima-super-automatic-espresso-machine": {
+  "title": "Gaggia Anima Super-Automatic Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 499.0,
+    "compare_at": 699.0,
+    "available": true
+   }
+  ],
+  "current": 499.0
+ },
+ "https://www.wholelattelove.com/products/gaggia-carezza-deluxe": {
+  "title": "Gaggia Carezza De LUXE Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 229.0,
+    "compare_at": 349.0,
+    "available": true
+   }
+  ],
+  "current": 229.0
+ },
+ "https://www.wholelattelove.com/products/gaggia-classic-e24": {
+  "title": "Gaggia Classic Pro E24 Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 499.0,
+    "compare_at": 549.0,
+    "available": true
+   }
+  ],
+  "current": 499.0
+ },
+ "https://www.wholelattelove.com/products/gaggia-classic-up-espresso-machine": {
+  "title": "Gaggia Classic Up Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 849.0,
+    "compare_at": 849.0,
+    "available": true
+   }
+  ],
+  "current": 849.0
+ },
+ "https://www.wholelattelove.com/products/gaggia-espresso-evolution": {
+  "title": "Gaggia Espresso Evolution",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 249.0,
+    "compare_at": 269.0,
+    "available": true
+   }
+  ],
+  "current": 249.0
+ },
+ "https://www.wholelattelove.com/products/profitec-go-espresso-machine": {
+  "title": "Profitec GO Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T03:04:44Z",
+    "price": 1199.0,
+    "compare_at": 1199.0,
+    "available": true
+   }
+  ],
+  "current": 1199.0
  }
 }
