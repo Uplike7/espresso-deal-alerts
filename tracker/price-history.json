@@ -1,0 +1,782 @@
+{
+ "https://www.chriscoffee.com/products/compak-i3-pro-black-open-box": {
+  "title": "Compak I3 Pro (Black) (Open Box SN: 859192)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 1050.0,
+    "compare_at": 1251.22,
+    "available": true
+   }
+  ],
+  "current": 1050.0
+ },
+ "https://www.chriscoffee.com/products/izzo-alex-duetto-iv-sale": {
+  "title": "Izzo Alex Duetto IV Plus (Open Box)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2650.0,
+    "compare_at": 3195.0,
+    "available": true
+   }
+  ],
+  "current": 2650.0
+ },
+ "https://www.chriscoffee.com/products/la-spaziale-lucca-a53-pro": {
+  "title": "LUCCA A53 Pro",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3495.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 3495.0
+ },
+ "https://www.chriscoffee.com/products/la-spaziale-s1-mini-vivaldi-ii-espresso-machine-sale": {
+  "title": "La Spaziale Mini Vivaldi II (Open Box - Black)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2095.0,
+    "compare_at": 2495.0,
+    "available": true
+   }
+  ],
+  "current": 2095.0
+ },
+ "https://www.chriscoffee.com/products/lelit-bianca-v3-sale": {
+  "title": "Lelit Bianca V3 (Open Box - White)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2600.0,
+    "compare_at": 2999.95,
+    "available": false
+   }
+  ],
+  "current": 2600.0
+ },
+ "https://www.chriscoffee.com/products/mazzer-kony-g-electronic-black": {
+  "title": "Mazzer Kony G Electronic (Black)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3895.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 3895.0
+ },
+ "https://www.chriscoffee.com/products/mazzer-super-jolly-g-black": {
+  "title": "Mazzer Super Jolly g (Black)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2095.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 2095.0
+ },
+ "https://www.chriscoffee.com/products/quick-mill-elevate-r": {
+  "title": "Quick Mill Elevate R",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3199.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 3199.0
+ },
+ "https://www.chriscoffee.com/products/rocket-r58-cinquantotto-sale": {
+  "title": "Rocket Espresso R58 Cinquantotto (Open Box)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2895.0,
+    "compare_at": 3500.0,
+    "available": true
+   }
+  ],
+  "current": 2895.0
+ },
+ "https://www.chriscoffee.com/products/victoria-arduino-e1-prima-1-group-black": {
+  "title": "Victoria Arduino E1 Prima",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 6990.0,
+    "compare_at": 5990.0,
+    "available": true
+   }
+  ],
+  "current": 6990.0
+ },
+ "https://www.clivecoffee.com/products/baratza-encore-esp-espresso-grinder": {
+  "title": "Baratza Encore ESP Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 200.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 200.0
+ },
+ "https://www.clivecoffee.com/products/baratza-vario-coffee-grinder": {
+  "title": "Baratza Vario+ Coffee Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 529.95,
+    "compare_at": 529.95,
+    "available": true
+   }
+  ],
+  "current": 529.95
+ },
+ "https://www.clivecoffee.com/products/eureka-mignon-specialita-espresso-grinder": {
+  "title": "Eureka Mignon Specialita Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 549.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 549.0
+ },
+ "https://www.clivecoffee.com/products/lucca-a53-pro-espresso-machine": {
+  "title": "LUCCA A53 Pro Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3495.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 3495.0
+ },
+ "https://www.clivecoffee.com/products/open-box-anfim-pratica-8309": {
+  "title": "*Local Portland Pickup* Open Box Anfim Pratica (8309)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 999.0,
+    "compare_at": 1199.0,
+    "available": true
+   }
+  ],
+  "current": 999.0
+ },
+ "https://www.clivecoffee.com/products/open-box-eureka-mignon-specialita-black-6193": {
+  "title": "*Portland Pickup* Open Box Eureka Mignon Specialita (6193)",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 522.0,
+    "compare_at": 549.0,
+    "available": true
+   }
+  ],
+  "current": 522.0
+ },
+ "https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-white": {
+  "title": "Caye Smart X Super Automatic Espresso Machine - White",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 25995.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 25995.0
+ },
+ "https://www.idrinkcoffee.com/products/eureka-mignon-filtro-burr-grinder-matte-black": {
+  "title": "Eureka Mignon Filtro Burr Grinder - Matte Black",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 259.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 259.0
+ },
+ "https://www.idrinkcoffee.com/products/eureka-mignon-filtro-burr-grinder-white": {
+  "title": "Eureka Mignon Filtro Burr Grinder - White",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 259.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 259.0
+ },
+ "https://www.idrinkcoffee.com/products/jura-e8-nad-midnight-silver": {
+  "title": "Jura E8 NAD 15722 - Midnight Silver",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2995.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 2995.0
+ },
+ "https://www.idrinkcoffee.com/products/jura-e8-nad-piano-black": {
+  "title": "Jura E8 NAD 15777 - Piano Black",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2995.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 2995.0
+ },
+ "https://www.idrinkcoffee.com/products/jura-j10-twin-espresso-machine-diamond-onyx": {
+  "title": "Jura J10 Twin Espresso Machine - Diamond Onyx",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 4995.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 4995.0
+ },
+ "https://www.idrinkcoffee.com/products/jura-z10-aluminum-black": {
+  "title": "Jura Z10 NAB 15702 - Aluminum Black",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 5295.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 5295.0
+ },
+ "https://www.idrinkcoffee.com/products/jura-z10-aluminum-white": {
+  "title": "Jura Z10 NAB 15792 - Aluminum White",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 5295.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 5295.0
+ },
+ "https://www.idrinkcoffee.com/products/mahlkonig-e65-grind-by-time-w-sync-e65t-gbs-black-k3-open-box": {
+  "title": "Mahlkonig E65 Grind by Time w/ Sync (E65T GBS) - Black |K3| - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2799.2,
+    "compare_at": 3499.0,
+    "available": true
+   }
+  ],
+  "current": 2799.2
+ },
+ "https://www.idrinkcoffee.com/products/mahlkonig-ek43-shop-grinder-rose-k10-open-box": {
+  "title": "Mahlkonig EK43 Shop Grinder - Rose |K10| - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3895.0,
+    "compare_at": 4999.0,
+    "available": true
+   }
+  ],
+  "current": 3895.0
+ },
+ "https://www.idrinkcoffee.com/products/mazzer-kony-g-grind-by-weight-grinder-white": {
+  "title": "Mazzer Kony G (Grind By Weight) Grinder - White",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 5495.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 5495.0
+ },
+ "https://www.idrinkcoffee.com/products/mazzer-super-jolly-g-grind-by-weight-grinder-matte-black": {
+  "title": "Mazzer Super Jolly G (Grind By Weight) Grinder - Matte Black",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3945.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 3945.0
+ },
+ "https://www.idrinkcoffee.com/products/sanremo-x-one-grinder-white": {
+  "title": "Sanremo X-ONE Grinder - White",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 9990.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 9990.0
+ },
+ "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-plus-v2-5-espresso-machine": {
+  "title": "Ascaso Steel Duo Plus Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2415.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 2415.0
+ },
+ "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-v2-5-espresso-machine": {
+  "title": "Ascaso Steel Duo Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2095.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 2095.0
+ },
+ "https://www.seattlecoffeegear.com/products/flair-49-pro-manual-espresso-machine-open-box": {
+  "title": "Flair 49 Pro Manual Espresso Machine - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 315.97,
+    "compare_at": 359.0,
+    "available": false
+   }
+  ],
+  "current": 315.97
+ },
+ "https://www.seattlecoffeegear.com/products/lelit-anna-espresso-machine": {
+  "title": "LELIT Anna Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 599.95,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 599.95
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-appartamento-2-0-specialita-bundle": {
+  "title": "Rocket Espresso Appartamento 2.0 Specialita Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2529.08,
+    "compare_at": 2749.0,
+    "available": true
+   }
+  ],
+  "current": 2529.08
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-appartamento-tca-faustino-bundle": {
+  "title": "Rocket Espresso Appartamento TCA Faustino Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2985.4,
+    "compare_at": 3245.0,
+    "available": true
+   }
+  ],
+  "current": 2985.4
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-bicocca-spluga-bundle": {
+  "title": "Rocket Espresso Bicocca Spluga Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 6568.8,
+    "compare_at": 7140.0,
+    "available": true
+   }
+  ],
+  "current": 6568.8
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-giotto-fast-r-espresso-machine-black-open-box": {
+  "title": "Rocket Espresso Giotto FAST R Espresso Machine - Black - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2860.97,
+    "compare_at": 3250.0,
+    "available": true
+   }
+  ],
+  "current": 2860.97
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-giotto-fast-r-spluga-bundle": {
+  "title": "Rocket Espresso Giotto Fast R Spluga Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 4232.0,
+    "compare_at": 4600.0,
+    "available": true
+   }
+  ],
+  "current": 4232.0
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-giotto-fast-v-giannino-bundle": {
+  "title": "Rocket Espresso Giotto Fast V Giannino Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3523.6,
+    "compare_at": 3830.0,
+    "available": true
+   }
+  ],
+  "current": 3523.6
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-mozzafiato-fast-r-espresso-machine-black-open-box": {
+  "title": "Rocket Espresso Mozzafiato FAST R Espresso Machine - Black - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2860.97,
+    "compare_at": 3250.0,
+    "available": true
+   }
+  ],
+  "current": 2860.97
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-mozzafiato-fast-r-spluga-bundle": {
+  "title": "Rocket Espresso Mozzafiato Fast R Spluga Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 4232.0,
+    "compare_at": 4600.0,
+    "available": true
+   }
+  ],
+  "current": 4232.0
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-mozzafiato-fast-v-espresso-machine-and-giannino-espresso-grinder-bundle": {
+  "title": "Rocket Espresso Mozzafiato FAST V Giannino Bundle",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3523.6,
+    "compare_at": 3830.0,
+    "available": true
+   }
+  ],
+  "current": 3523.6
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-mozzafiato-fast-v-espresso-machine-black-open-box": {
+  "title": "Rocket Espresso Mozzafiato FAST V Espresso Machine - Black - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2420.97,
+    "compare_at": 2750.0,
+    "available": true
+   }
+  ],
+  "current": 2420.97
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-r58-tune-espresso-machine-black": {
+  "title": "Rocket Espresso R58 Tune Espresso Machine - Black - Open Box",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3423.97,
+    "compare_at": null,
+    "available": false
+   }
+  ],
+  "current": 3423.97
+ },
+ "https://www.seattlecoffeegear.com/products/rocket-espresso-re-doppia-ds-commercial-espresso-machine-2-group": {
+  "title": "Rocket Espresso RE Doppia Commercial Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 13000.0,
+    "compare_at": null,
+    "available": true
+   }
+  ],
+  "current": 13000.0
+ },
+ "https://www.wholelattelove.com/products/arkel-coast-espresso-machine": {
+  "title": "Arkel Coast Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2699.0,
+    "compare_at": 2699.0,
+    "available": false
+   }
+  ],
+  "current": 2699.0
+ },
+ "https://www.wholelattelove.com/products/arkel-tide-espresso-machine": {
+  "title": "Arkel Tide Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3499.0,
+    "compare_at": 3499.0,
+    "available": false
+   }
+  ],
+  "current": 3499.0
+ },
+ "https://www.wholelattelove.com/products/ecm-estetika-espresso-machine": {
+  "title": "ECM Estetika Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 4849.0,
+    "compare_at": 4849.0,
+    "available": false
+   }
+  ],
+  "current": 4849.0
+ },
+ "https://www.wholelattelove.com/products/ecm-exacto-grinder": {
+  "title": "ECM Exacto Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 1299.0,
+    "compare_at": 1299.0,
+    "available": false
+   }
+  ],
+  "current": 1299.0
+ },
+ "https://www.wholelattelove.com/products/ecm-mechanika-max-ii": {
+  "title": "ECM Mechanika Max II",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2249.0,
+    "compare_at": 2849.0,
+    "available": false
+   }
+  ],
+  "current": 2249.0
+ },
+ "https://www.wholelattelove.com/products/eureka-oro-zeus-all-purpose-coffee-grinder": {
+  "title": "Eureka Oro Zeus All Purpose Coffee Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2399.0,
+    "compare_at": 2399.0,
+    "available": true
+   }
+  ],
+  "current": 2399.0
+ },
+ "https://www.wholelattelove.com/products/jura-e8-espresso-machine-gen-4": {
+  "title": "JURA E8 Espresso Machine - Gen 4",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2599.0,
+    "compare_at": 2599.0,
+    "available": false
+   }
+  ],
+  "current": 2599.0
+ },
+ "https://www.wholelattelove.com/products/jura-j10-twin-espresso-machine": {
+  "title": "JURA J10 Twin Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3799.0,
+    "compare_at": 3799.0,
+    "available": false
+   }
+  ],
+  "current": 3799.0
+ },
+ "https://www.wholelattelove.com/products/jura-z10-super-automatic-espresso-machine-gen-1": {
+  "title": "JURA Z10 Super-Automatic Espresso Machine - Gen 1",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3499.0,
+    "compare_at": 4299.0,
+    "available": false
+   }
+  ],
+  "current": 3499.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-bezzera-luce-s-mn-pid-espresso-machine-1": {
+  "title": "Refurbished Bezzera LUCE S MN PID Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 1749.0,
+    "compare_at": 1899.0,
+    "available": false
+   }
+  ],
+  "current": 1749.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-bezzera-nini-de-pid": {
+  "title": "Refurbished Bezzera NINI DE PID",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 1599.0,
+    "compare_at": 1799.0,
+    "available": false
+   }
+  ],
+  "current": 1599.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-crem-one-profiler-dual-boiler-espresso-machine": {
+  "title": "Refurbished Crem ONE PROFILER Dual Boiler Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2699.99,
+    "compare_at": 3199.0,
+    "available": false
+   }
+  ],
+  "current": 2699.99
+ },
+ "https://www.wholelattelove.com/products/refurbished-ecm-synchronika-ii-anthracite-espresso-machine": {
+  "title": "Refurbished ECM Synchronika II Anthracite Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3349.0,
+    "compare_at": 3699.0,
+    "available": false
+   }
+  ],
+  "current": 3349.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-etzinger-etzmax-x-commercial-espresso-grinder": {
+  "title": "Refurbished Etzinger etzMAX X Commercial Espresso Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2799.0,
+    "compare_at": 2999.0,
+    "available": true
+   }
+  ],
+  "current": 2799.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-jura-j8-twin-espresso-machine": {
+  "title": "Refurbished JURA J8 Twin Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2999.0,
+    "compare_at": 3599.0,
+    "available": true
+   }
+  ],
+  "current": 2999.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-lelit-anita-espresso-machine-with-built-in-grinder": {
+  "title": "Refurbished Lelit Anita Espresso Machine with Built-In Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 629.95,
+    "compare_at": 799.95,
+    "available": true
+   }
+  ],
+  "current": 629.95
+ },
+ "https://www.wholelattelove.com/products/refurbished-lelit-bianca-v3-dual-boiler-espresso-machine-gold": {
+  "title": "Refurbished Lelit Bianca V3 Dual Boiler Espresso Machine Gold",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2699.95,
+    "compare_at": 2999.95,
+    "available": false
+   }
+  ],
+  "current": 2699.95
+ },
+ "https://www.wholelattelove.com/products/refurbished-mahlkonig-e64-ws-espresso-home-grinder": {
+  "title": "Refurbished Mahlkonig E64 WS Espresso Home Grinder",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 999.0,
+    "compare_at": 1199.0,
+    "available": false
+   }
+  ],
+  "current": 999.0
+ },
+ "https://www.wholelattelove.com/products/refurbished-rocket-espresso-porta-via-portable-espresso-machine": {
+  "title": "Refurbished Rocket Espresso Porta Via Portable Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 2600.0,
+    "compare_at": 2900.0,
+    "available": true
+   }
+  ],
+  "current": 2600.0
+ },
+ "https://www.wholelattelove.com/products/rocket-espresso-r58-tune-espresso-machine": {
+  "title": "Rocket Espresso R58 TUNE Espresso Machine",
+  "snapshots": [
+   {
+    "t": "2026-10-24T02:33:41Z",
+    "price": 3890.0,
+    "compare_at": 3890.0,
+    "available": true
+   }
+  ],
+  "current": 3890.0
+ }
+}
