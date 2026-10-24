@@ -1,0 +1,24 @@
+name: track-prices
+on:
+  schedule:
+    - cron: "17 * * * *"   # hourly, off the :00 pile-up
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch live prices
+        working-directory: tracker
+        run: python3 track_prices.py --catalog catalog-urls.txt --history price-history.json
+      - name: Commit price history
+        run: |
+          git config user.name "espresso-tracker"
+          git config user.email "tracker@users.noreply.github.com"
+          git add tracker/price-history.json
+          git diff --cached --quiet || git commit -m "price refresh $(date -u +%FT%H:%MZ)"
+          git push
