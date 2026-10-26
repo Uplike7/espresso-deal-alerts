@@ -9,6 +9,10 @@
 <meta property="og:description" content="Live espresso machine &amp; coffee gear deals — prices checked every hour.">
 <link rel="canonical" href="https://uplike7.github.io/espresso-deal-alerts/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_70991_2000px2.jpg?v=1774450536">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_70991_2000px2.jpg?v=1774450536">
+<!-- ANALYTICS-PLACEHOLDER: no analytics is installed today. Paste the GA4 or Plausible snippet here once Captain provides a measurement ID. See ANALYTICS-SETUP-NOTE.md. -->
 <meta property="og:site_name" content="Espresso Deal Alerts">
 <meta name='impact-site-verification' value='d4d1d53f-594c-4c63-bcd3-a92224c30be6'>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
@@ -185,6 +189,14 @@
     .section-head h2 { font-size:1.35rem; }
     .stat b { font-size:1.25rem; }
   }
+
+  .toolbar { max-width:1180px; margin:1.2rem auto 0; padding:0 1.4rem; display:flex; flex-wrap:wrap; gap:.6rem; align-items:center; }
+  .toolbar input, .toolbar select { background:rgba(255,255,255,.06); border:1px solid var(--line); color:var(--ink); padding:.7rem .9rem; border-radius:10px; font-size:.95rem; }
+  .toolbar input { flex:1 1 220px; }
+  .toolbar select { cursor:pointer; }
+  .toolbar select option { color:#111; }
+  .result-count { max-width:1180px; margin:.4rem auto 0; padding:0 1.4rem; color:var(--muted); font-size:.9rem; }
+  .usd-approx { color:var(--muted); font-size:.85rem; margin-left:.4rem; }
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Espresso Deal Alerts","description":"Live espresso machine and coffee gear price tracking"}
@@ -199,6 +211,10 @@
   <a class="navlink" href="buyers-guide.html">Buying Guide</a>
   <a class="navlink" href="black-friday.html">Black Friday 2026</a>
   <a class="navlink" href="gifts.html">Gift Guide</a>
+  <a class="navlink" href="machines.html">Machines</a>
+  <a class="navlink" href="grinders.html">Grinders</a>
+  <a class="navlink" href="under-1000.html">Under $1,000</a>
+  <a class="navlink" href="under-500.html">Under $500</a>
   <a class="navlink" href="about.html">About</a>
   <a class="cta-mini" href="https://t.me/espresso_deal_alerts" target="_blank">Join Our Telegram for Price Drop Alerts →</a>
 </div></nav>
@@ -230,6 +246,29 @@
   <span>💰 Affiliate disclosure: we earn a commission from qualifying purchases — <a href="about.html">how we make money</a></span>
 </div>
 
+<div class="toolbar" id="deal-filters">
+  <input type="search" id="filter-search" placeholder="Search machines, grinders, brands…" aria-label="Search deals">
+  <select id="filter-type" aria-label="Filter by type">
+    <option value="all">All types</option><option value="machine">Machines</option>
+    <option value="grinder">Grinders</option><option value="other">Other gear</option>
+  </select>
+  <select id="filter-retailer" aria-label="Filter by retailer">
+    <option value="all">All retailers</option><option>Whole Latte Love</option>
+    <option>Seattle Coffee Gear</option><option>Clive Coffee</option>
+    <option>Chris' Coffee</option><option>iDrinkCoffee</option>
+  </select>
+  <select id="filter-band" aria-label="Filter by price band">
+    <option value="all">Any price</option><option value="under500">Under $500</option>
+    <option value="under1000">Under $1,000</option><option value="mid">$1,000 – $3,000</option>
+    <option value="over3000">Over $3,000</option>
+  </select>
+  <select id="filter-sort" aria-label="Sort deals">
+    <option value="featured">Sort: Featured</option><option value="saving">Biggest saving</option>
+    <option value="low">Lowest price</option><option value="high">Highest price</option>
+  </select>
+</div>
+<p class="result-count" id="result-count"></p>
+<p class="result-count">Prices in bands and sorts use the listed price. iDrinkCoffee prices are in Canadian dollars — approximate USD equivalents appear next to CAD prices where shown.</p>
 <div class="section-head" id="deals">
   <h2>Today's best deals</h2>
   <p>Hand-picked from our live tracker — the strongest prices across every budget.</p>
@@ -940,7 +979,41 @@
         </div>
       </article></div>
 
-<section class="signup" id="alerts"><h2>Be the first to know when prices drop</h2><p>Get on the deal-alert list. The moment a tracked machine, grinder or accessory hits a real price, you hear about it. No spam — just deals, unsubscribe anytime.</p><form id="signup-form" class="signup-form"><input type="email" name="email" required placeholder="you@email.com" aria-label="Email address"><button type="submit">Alert me first</button></form><p class="signup-note" id="signup-note">We check prices every hour — you only hear from us when there's something worth buying.</p></section><script>document.getElementById("signup-form").addEventListener("submit", function (e) {  e.preventDefault();  var note = document.getElementById("signup-note");  var form = this;  fetch("https://formsubmit.co/ajax/moneymuscleup@gmail.com", {    method: "POST",    headers: {"Content-Type": "application/json", "Accept": "application/json"},    body: JSON.stringify({email: form.email.value, _subject: "New price-alert signup", _template: "table"})  }).then(function (r) {    if (r.ok) {      note.innerHTML = "<b>You're on the list.</b> Watch your inbox — and join the Telegram for instant alerts.";      form.reset();    } else { note.textContent = "Something went wrong — try again, or join the Telegram channel instead."; }  }).catch(function () {    note.textContent = "Something went wrong — try again, or join the Telegram channel instead.";  });});</script>
+<section class="signup" id="alerts"><h2>Be the first to know when prices drop</h2><p>Get on the deal-alert list. The moment a tracked machine, grinder or accessory hits a real price, you hear about it. No spam — just deals, unsubscribe anytime.</p><form id="signup-form" class="signup-form"><input type="email" name="email" required placeholder="you@email.com" aria-label="Email address"><input type="hidden" name="product" id="alert-product" value=""><button type="submit">Alert me first</button></form><p class="signup-note" id="signup-note">We check prices every hour — you only hear from us when there's something worth buying.</p></section><script>(function () {
+  // Per-product alert prefill: deal pages link here as index.html?alert=<Product name>.
+  var params = new URLSearchParams(window.location.search);
+  var alertFor = params.get("alert");
+  var note = document.getElementById("signup-note");
+  var form = document.getElementById("signup-form");
+  if (alertFor) {
+    document.getElementById("alert-product").value = alertFor;
+    note.innerHTML = "You're signing up for price-drop alerts on: <b></b>";
+    note.querySelector("b").textContent = alertFor;
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    // Recipient UNCHANGED (moneymuscleup@gmail.com). NOTE: that inbox is full,
+    // so submissions may fail — on any failure we surface the Telegram channel
+    // prominently instead of a dead-end error line. Switching recipients needs
+    // an alternate address from Captain.
+    var payload = {email: form.email.value, _subject: "New price-alert signup", _template: "table"};
+    if (form.product.value) { payload.product = form.product.value; }
+    fetch("https://formsubmit.co/ajax/moneymuscleup@gmail.com", {
+      method: "POST",
+      headers: {"Content-Type": "application/json", "Accept": "application/json"},
+      body: JSON.stringify(payload)
+    }).then(function (r) {
+      if (r.ok) {
+        note.innerHTML = "<b>You're on the list.</b> Watch your inbox — and join the Telegram for instant alerts.";
+        form.reset();
+      } else { showTelegramFallback(); }
+    }).catch(showTelegramFallback);
+    function showTelegramFallback() {
+      note.innerHTML = "That signup didn't go through — get instant alerts on Telegram instead: "
+        + '<a href="https://t.me/espresso_deal_alerts" target="_blank"><b>Join t.me/espresso_deal_alerts →</b></a>';
+    }
+  });
+})();</script>
 
 <section class="cta-banner">
   <h2>Want the deals to come to you?</h2>
@@ -953,5 +1026,85 @@
   <div><b>Retailers tracked</b><br>Whole Latte Love · Seattle Coffee Gear · Clive Coffee · Chris' Coffee · iDrinkCoffee</div>
   <div style="max-width:52ch"><b>Affiliate disclosure:</b> some links are affiliate links — we may earn a commission at no extra cost to you. As an Amazon Associate we earn from qualifying purchases. Prices pulled from retailer feeds; verify before buying. Prices checked hourly — each product page shows its own last check.</div>
 </div></footer>
+<script>(function () {
+  // Client-side search / filter / sort over the existing cards. No frameworks,
+  // no backend. Everything is read from the rendered cards — no values invented.
+  // Type is a title-keyword heuristic (grinder first, then machine, else other).
+  // Bands and sorts use the LISTED price; CAD cards are labelled as such and
+  // their approximate USD equivalents are added separately (see FX below).
+  // NOTE: no "newest check" sort — static cards carry no per-card check
+  // timestamps (all products are checked in the same hourly run). Per-model
+  // last-checked times live on the deal pages.
+  function cardData(card) {
+    var title = (card.querySelector("h3") || {}).textContent || "";
+    var brand = (card.querySelector(".brand") || {}).textContent || "";
+    var priceEl = card.querySelector(".price");
+    var wasEl = card.querySelector(".was");
+    var price = priceEl ? parseFloat(priceEl.textContent.replace(/[^0-9.]/g, "")) : NaN;
+    var was = wasEl ? parseFloat(wasEl.textContent.replace(/[^0-9.]/g, "")) : NaN;
+    var tl = title.toLowerCase();
+    var type = tl.indexOf("grinder") !== -1 ? "grinder" : (tl.indexOf("machine") !== -1 ? "machine" : "other");
+    return {title: title, brand: brand.trim(), price: price,
+            saving: (isNaN(was) || isNaN(price)) ? 0 : was - price, type: type};
+  }
+  var grids = Array.prototype.slice.call(document.querySelectorAll(".grid"));
+  var original = grids.map(function (g) { return Array.prototype.slice.call(g.querySelectorAll(".card")); });
+  var total = original.reduce(function (n, arr) { return n + arr.length; }, 0);
+  function apply() {
+    var q = (document.getElementById("filter-search").value || "").toLowerCase();
+    var type = document.getElementById("filter-type").value;
+    var retailer = document.getElementById("filter-retailer").value;
+    var band = document.getElementById("filter-band").value;
+    var sort = document.getElementById("filter-sort").value;
+    var shown = 0;
+    grids.forEach(function (grid, gi) {
+      var cards = original[gi].map(function (card) { return {card: card, d: cardData(card)}; });
+      var kept = cards.filter(function (c) {
+        if (q && (c.d.title.toLowerCase().indexOf(q) === -1 && c.d.brand.toLowerCase().indexOf(q) === -1)) return false;
+        if (type !== "all" && c.d.type !== type) return false;
+        if (retailer !== "all" && c.d.brand !== retailer) return false;
+        if (band === "under500" && !(c.d.price < 500)) return false;
+        if (band === "under1000" && !(c.d.price < 1000)) return false;
+        if (band === "mid" && !(c.d.price >= 1000 && c.d.price <= 3000)) return false;
+        if (band === "over3000" && !(c.d.price > 3000)) return false;
+        return true;
+      });
+      if (sort === "saving") kept.sort(function (a, b) { return b.d.saving - a.d.saving; });
+      if (sort === "low") kept.sort(function (a, b) { return a.d.price - b.d.price; });
+      if (sort === "high") kept.sort(function (a, b) { return b.d.price - a.d.price; });
+      grid.innerHTML = "";
+      kept.forEach(function (c) { grid.appendChild(c.card); shown += 1; });
+    });
+    document.getElementById("result-count").textContent = "Showing " + shown + " of " + total + " cards.";
+  }
+  ["filter-search", "filter-type", "filter-retailer", "filter-band", "filter-sort"].forEach(function (id) {
+    var el = document.getElementById(id);
+    el.addEventListener(id === "filter-search" ? "input" : "change", apply);
+  });
+  apply();
+
+  // CAD → USD approximate equivalents, next to CAD prices only.
+  // Rate: live from a free no-key endpoint; fallback 0.73 if unreachable.
+  // ALWAYS labelled "(approx)" — never presented as an exact conversion.
+  var FALLBACK_CAD_USD = 0.73;
+  function addUsd(rate) {
+    document.querySelectorAll(".pricerow").forEach(function (row) {
+      if (!row.querySelector(".cur")) return;
+      if (row.querySelector(".usd-approx")) return;
+      var priceEl = row.querySelector(".price");
+      if (!priceEl) return;
+      var cad = parseFloat(priceEl.textContent.replace(/[^0-9.]/g, ""));
+      if (isNaN(cad)) return;
+      var span = document.createElement("span");
+      span.className = "usd-approx";
+      span.textContent = "≈ $" + (cad * rate).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " USD (approx)";
+      priceEl.insertAdjacentElement("afterend", span);
+    });
+  }
+  fetch("https://api.exchangerate-api.com/v4/latest/CAD")
+    .then(function (r) { return r.json(); })
+    .then(function (j) { addUsd((j && j.rates && j.rates.USD) || FALLBACK_CAD_USD); })
+    .catch(function () { addUsd(FALLBACK_CAD_USD); });
+})();</script>
 </body>
 </html>

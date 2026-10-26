@@ -1,0 +1,48 @@
+# Espresso Deal Alerts
+
+> Espresso Deal Alerts is an independent price tracker for home baristas. It checks
+> espresso machine and grinder prices every hour across five specialty retailers
+> and only flags a drop when it is real against that model's own price history.
+> No fake sales, no expired coupons. Prices shown are retailer prices at last
+> check; retailer prices prevail at checkout.
+
+## What it tracks
+
+- Espresso machines, espresso grinders, and coffee gear (92 products at last build)
+- Retailers: Whole Latte Love, Seattle Coffee Gear, Clive Coffee, Chris' Coffee,
+  iDrinkCoffee (iDrinkCoffee prices are in Canadian dollars; USD equivalents on
+  the homepage are labelled approximate)
+- Prices are re-checked hourly; each per-model page shows its own last-checked
+  time, current price, compare-at price, lowest tracked price, and price history
+
+## Main pages
+
+- [Home](https://uplike7.github.io/espresso-deal-alerts/): today's best deals, lowest-tracked prices, and the full tracker with search, filters, and sorting
+- [All tracked deals](https://uplike7.github.io/espresso-deal-alerts/deals/): index of every per-model deal page
+- [Espresso machines](https://uplike7.github.io/espresso-deal-alerts/machines.html): machines hub
+- [Espresso grinders](https://uplike7.github.io/espresso-deal-alerts/grinders.html): grinders hub
+- [Gear under $1,000](https://uplike7.github.io/espresso-deal-alerts/under-1000.html): models under $1,000 by listed price
+- [Gear under $500](https://uplike7.github.io/espresso-deal-alerts/under-500.html): models under $500 by listed price
+- [Buying guide](https://uplike7.github.io/espresso-deal-alerts/buyers-guide.html): how to choose a machine or grinder
+- [Black Friday 2026](https://uplike7.github.io/espresso-deal-alerts/black-friday.html): Black Friday watch list
+- [Gift guide](https://uplike7.github.io/espresso-deal-alerts/gifts.html): gift picks
+- [About](https://uplike7.github.io/espresso-deal-alerts/about.html): how the site makes money (affiliate disclosure)
+
+## Per-model pages
+
+- One page per tracked product under /deals/, e.g.
+  https://uplike7.github.io/espresso-deal-alerts/deals/arkel-coast-espresso-machine.html
+- Each page carries Product/Offer structured data, a price-history table, related
+  models, and an "Alert me when this drops" link back to the homepage signup
+
+## Alerts
+
+- Email signup on the homepage; Telegram channel: search "espresso_deal_alerts"
+  on Telegram (no direct Telegram links are posted on Reddit, where they are
+  filtered site-wide)
+
+## Optional
+
+- Affiliate disclosure: some outbound links are affiliate links; the site may
+  earn a commission at no extra cost to the buyer. Primary retailer links carry
+  no affiliate parameter until a verified program tag exists for that retailer.
