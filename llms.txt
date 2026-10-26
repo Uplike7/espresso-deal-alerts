@@ -8,7 +8,7 @@
 
 ## What it tracks
 
-- Espresso machines, espresso grinders, and coffee gear (92 products at last build)
+- Espresso machines, espresso grinders, and coffee gear (108 products at last build)
 - Retailers: Whole Latte Love, Seattle Coffee Gear, Clive Coffee, Chris' Coffee,
   iDrinkCoffee (iDrinkCoffee prices are in Canadian dollars; USD equivalents on
   the homepage are labelled approximate)
@@ -17,7 +17,7 @@
 
 ## Main pages
 
-- [Home](https://uplike7.github.io/espresso-deal-alerts/): today's best deals, lowest-tracked prices, and the full tracker with search, filters, and sorting
+- [Home](https://uplike7.github.io/espresso-deal-alerts/): one card per tracked product sorted by biggest saving, a latest-price-drops feed, and the full tracker with search, filters, and sorting
 - [All tracked deals](https://uplike7.github.io/espresso-deal-alerts/deals/): index of every per-model deal page
 - [Espresso machines](https://uplike7.github.io/espresso-deal-alerts/machines.html): machines hub
 - [Espresso grinders](https://uplike7.github.io/espresso-deal-alerts/grinders.html): grinders hub
