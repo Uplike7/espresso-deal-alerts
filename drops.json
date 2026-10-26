@@ -1,0 +1,45 @@
+{
+ "generated_at": "2026-10-26T14:51:11.332258Z",
+ "drops": [
+  {
+   "slug": "eureka-mignon-crono-brew-coffee-grinder",
+   "title": "Eureka Mignon Crono Brew Coffee Grinder",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-crono-brew-coffee-grinder",
+   "old_price": 229.0,
+   "new_price": 199.0,
+   "currency": "USD",
+   "dropped_on": "2026-10-26"
+  },
+  {
+   "slug": "eureka-mignon-notte-espresso-grinder",
+   "title": "Eureka Mignon Notte Espresso Grinder",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-notte-espresso-grinder-black",
+   "old_price": 299.0,
+   "new_price": 279.0,
+   "currency": "USD",
+   "dropped_on": "2026-10-26"
+  },
+  {
+   "slug": "eureka-mignon-zero-espresso-grinder",
+   "title": "Eureka Mignon Zero Espresso Grinder",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-zero-espresso-grinder",
+   "old_price": 329.0,
+   "new_price": 299.0,
+   "currency": "USD",
+   "dropped_on": "2026-10-26"
+  },
+  {
+   "slug": "eureka-mignon-specialita-espresso-grinder",
+   "title": "Eureka Mignon Specialita Espresso Grinder",
+   "retailer": "Clive Coffee",
+   "retailer_url": "https://clivecoffee.com/products/eureka-mignon-specialita-espresso-grinder",
+   "old_price": 549.0,
+   "new_price": 499.0,
+   "currency": "USD",
+   "dropped_on": "2026-10-26"
+  }
+ ]
+}
