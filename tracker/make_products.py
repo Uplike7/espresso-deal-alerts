@@ -184,6 +184,12 @@ def build_drops(history, products, window_days=7, limit=12):
 
 def main():
     h = json.load(open('price-history.json'))
+    # Product photos: retailer URL -> featured image URL, fetched from the
+    # retailers' own product endpoints. Absent file = no photos, never invented.
+    try:
+        img_map = json.load(open('product-images.json'))
+    except Exception:
+        img_map = {}
     products = []
     for url, e in h.items():
         domain = url.split('/')[2].replace('www.', '')
@@ -200,6 +206,7 @@ def main():
             'first_tracked': e['snapshots'][0]['t'], 'last_checked': snap['t'],
             'lowest_tracked': min(s['price'] for s in e['snapshots']),
             'history_points': len(e['snapshots']),
+            **({'image_url': img_map[url]} if url in img_map else {}),
         })
     products.sort(key=lambda p: -(((p['compare_at'] or p['price']) - p['price'])))
     # Collision-safe slugs: when 2+ retailers carry the same model, suffix each
