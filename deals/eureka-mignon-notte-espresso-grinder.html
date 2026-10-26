@@ -46,13 +46,13 @@ img{max-width:100%;border-radius:12px}
 
 <p><strong>Current price: $279.00</strong> (was $299.00) at Seattle Coffee Gear</p>
 
-<p>Lowest price we've tracked: <strong>$279.00</strong> · Price checked hourly · Last checked 2026-10-26T14:50:03Z</p>
-<p><a class="btn-primary" href="https://www.seattlecoffeegear.com/products/eureka-mignon-notte-espresso-grinder-black" rel="sponsored nofollow">View deal at Seattle Coffee Gear →</a></p>
+<p>Lowest price we've tracked: <strong>$279.00</strong> · Last checked Oct 26, 2026, 11:25 AM EDT</p>
+<p><a class="btn-primary" href="https://www.seattlecoffeegear.com/products/eureka-mignon-notte-espresso-grinder-black" rel="sponsored nofollow" data-ga-retailer="Seattle Coffee Gear">View deal at Seattle Coffee Gear →</a></p>
 <p><a class="btn-alert" href="../index.html?alert=Eureka+Mignon+Notte+Espresso+Grinder">🔔 Alert me when this drops</a></p>
 <p class="quiet">Also check: <a href="https://www.amazon.com/s?k=Eureka+Mignon+Notte+Espresso+Grinder&tag=espressodeala-20" rel="sponsored nofollow">Amazon</a> · <a href="https://www.ebay.com/sch/i.html?_nkw=Eureka+Mignon+Notte+Espresso+Grinder&campid=5339219076" rel="sponsored nofollow">eBay</a></p>
 <h2>Is this a good price?</h2>
 <p>At $279.00 this is $20.00 below its compare-at price and at the lowest price we have tracked. Our verdicts follow the tracked data, not retailer marketing.</p>
-<h2>Price history</h2><p>Tracked since 2026-10-24 · 18 hourly checks. Each row is a period the price held at that level.</p><table class="history"><tr><th scope="col">Date(s)</th><th scope="col">Price</th><th scope="col">Compare-at</th><th scope="col">Stock</th></tr><tr><td>2026-10-26</td><td>$279.00</td><td>$299.00</td><td>In stock</td></tr><tr><td>2026-10-24 → 2026-10-26</td><td>$299.00</td><td>—</td><td>In stock</td></tr></table>
+<h2>Price history</h2><p>Tracked since 2026-10-24 · 19 hourly checks. Each row is a period the price held at that level.</p><table class="history"><tr><th scope="col">Date(s)</th><th scope="col">Price</th><th scope="col">Compare-at</th><th scope="col">Stock</th></tr><tr><td>2026-10-26</td><td>$279.00</td><td>$299.00</td><td>In stock</td></tr><tr><td>2026-10-24 → 2026-10-26</td><td>$299.00</td><td>—</td><td>In stock</td></tr></table>
 <h2>Related models</h2><ul><li><a href="rocket-espresso-bicocca-spluga-bundle.html">Rocket Espresso Bicocca Spluga Bundle</a> — $6,568.80 at Seattle Coffee Gear</li><li><a href="rocket-espresso-giotto-fast-r-espresso-machine-black-open-box.html">Rocket Espresso Giotto FAST R Espresso Machine - Black - Open Box</a> — $2,860.97 at Seattle Coffee Gear</li><li><a href="rocket-espresso-mozzafiato-fast-r-espresso-machine-black-open-box.html">Rocket Espresso Mozzafiato FAST R Espresso Machine - Black - Open Box</a> — $2,860.97 at Seattle Coffee Gear</li><li><a href="rocket-espresso-giotto-fast-r-spluga-bundle.html">Rocket Espresso Giotto Fast R Spluga Bundle</a> — $4,232.00 at Seattle Coffee Gear</li></ul>
 <h2>Questions</h2>
 <h3>What is the lowest price the Eureka Mignon Notte Espresso Grinder has been?</h3>
@@ -60,4 +60,27 @@ img{max-width:100%;border-radius:12px}
 <h3>How often does the price change?</h3>
 <p>We check this product's price every hour across specialty retailers and log every change to our price history.</p>
 <p class="disclosure">Affiliate disclosure: links on this page may earn us a commission at no extra cost to you. Prices update hourly; retailer prices prevail at checkout.</p>
-</main></body></html>
+</main><script>(function () {
+  // GA4 conversion events for outbound deal clicks on this page. Reporting
+  // only: links keep their default behavior, and a missing or blocked gtag
+  // is a silent no-op. The alert button is not a view-deal click and is
+  // intentionally untracked.
+  function track(params) {
+    try { if (typeof gtag === "function") { gtag("event", "view_deal", params); } } catch (err) {}
+  }
+  function trunc(s) { s = (s || "").trim(); return s.length > 100 ? s.slice(0, 100) : s; }
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var titleEl = document.querySelector("h1");
+    var title = titleEl ? titleEl.textContent : "";
+    if (a.classList.contains("btn-primary")) {
+      track({link_type: "retailer", retailer: trunc(a.getAttribute("data-ga-retailer") || ""), product: trunc(title)});
+    } else if (href.indexOf("amazon.com") !== -1) {
+      track({link_type: "amazon", product: trunc(title)});
+    } else if (href.indexOf("ebay.com") !== -1) {
+      track({link_type: "ebay", product: trunc(title)});
+    }
+  });
+})();</script></body></html>
