@@ -18,6 +18,13 @@ jobs:
       - name: Build product data + sitemap
         working-directory: tracker
         run: python3 make_products.py
+      - name: Send price-drop alerts
+        working-directory: tracker
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 alert_drops.py
       - name: Build per-model deal pages
         working-directory: tracker
         run: python3 build_pages.py --products products.json --out ../deals --amazon-tag espressodeala-20 --ebay-campid 5339219076
@@ -25,6 +32,6 @@ jobs:
         run: |
           git config user.name "espresso-tracker"
           git config user.email "tracker@users.noreply.github.com"
-          git add tracker/price-history.json tracker/products.json deals sitemap.xml machines.html grinders.html under-1000.html under-500.html drops.json
+          git add tracker/price-history.json tracker/products.json deals sitemap.xml machines.html grinders.html under-1000.html under-500.html drops.json tracker/alert-state.json
           git diff --cached --quiet || git commit -m "price refresh $(date -u +%FT%H:%MZ)"
           git push
