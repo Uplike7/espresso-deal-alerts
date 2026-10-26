@@ -33,6 +33,15 @@ def category(title):
         return "machine"
     return "other"
 
+GA4_SNIPPET = """<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4L0H4N4G2T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4L0H4N4G2T');
+</script>"""
+
 HUB_STYLE = """
 body{background:#faf5ec;color:#2b1d12;font-family:Inter,system-ui,sans-serif;line-height:1.6;margin:0}
 .wrap{max-width:900px;margin:0 auto;padding:2rem 1.4rem}
@@ -44,7 +53,8 @@ h1{font-family:Fraunces,Georgia,serif}
 li{margin:.55rem 0}
 li a{color:#2b1d12;text-decoration:none;font-weight:600}
 li a:hover{color:#a85e17}
-.note{color:#7a6a5c}
+:focus-visible{outline:2px solid #a85e17;outline-offset:2px}
+.note{color:#6b5b4c}
 """
 
 HUB_PAGE = """<!DOCTYPE html>
@@ -53,6 +63,14 @@ HUB_PAGE = """<!DOCTYPE html>
 <title>{heading} — Espresso Deal Alerts</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="{base}{page}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="{heading} — Espresso Deal Alerts">
+<meta property="og:description" content="{meta}">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+__GA4__
 </head><body><div class="wrap">
 <p><a href="index.html">← Espresso Deal Alerts home</a></p>
 <h1>{heading}</h1>
@@ -103,7 +121,7 @@ def hub_pages(products):
             intro=intro, note=note, items=items)
         # Inline the shared style (keeps each hub a single self-contained file).
         out[filename] = out[filename].replace(
-            "</head>", f"<style>{HUB_STYLE}</style></head>")
+            "</head>", f"<style>{HUB_STYLE}</style></head>").replace("__GA4__", GA4_SNIPPET)
     return out
 
 def build_drops(history, products, window_days=7, limit=12):

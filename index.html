@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:#faf5ec; --card:#ffffff; --ink:#2b1d12; --muted:#7a6a5c; --faint:#a89880;
+    --bg:#faf5ec; --card:#ffffff; --ink:#2b1d12; --muted:#6b5b4c;
     --accent:#a85e17; --accent-soft:#f5e7d3; --line:#e6dacb;
     --drop:#1d7a41; --sold:#a33333; --cond:#2d5f8a;
   }
@@ -58,7 +58,8 @@
   .hero-signup p { color:#d8cbb8; margin-top:.5rem; }
   .signup-form { display:flex; gap:.7rem; flex-wrap:wrap; margin-top:1.2rem; }
   .signup-form input { background:#fff; border:1px solid var(--line); color:var(--ink); padding:.85rem 1.25rem; border-radius:12px; font-size:1rem; min-width:260px; flex:1; }
-  .signup-form input:focus { outline:none; border-color:var(--accent); }
+  .signup-form input:focus { outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent); }
+  :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .signup-form button { background:var(--accent); color:#fff; border:none; padding:.85rem 1.7rem; border-radius:12px; font-weight:700; font-size:1rem; cursor:pointer; }
   .signup-form button:hover { background:#8f4d12; }
   .signup-note { font-size:.85rem; margin-top:.8rem; }

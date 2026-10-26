@@ -12,13 +12,10 @@ AFFILIATE HANDLING — READ BEFORE TOUCHING:
   affiliate tag has been verified yet (Impact brand contracts were still
   pending as of 2026-10-25). Add an entry ONLY with a tag confirmed in that
   retailer's own affiliate dashboard. Never invent one.
-- Secondary search links are UNCHANGED from the original builder: Amazon and
-  eBay params come from --amazon-tag / --ebay-campid (the hourly workflow
-  passes espressodealalerts-20 and 5339219076). Do NOT move those tags onto
-  retailer links and do NOT "fix" them here: eBay campid 5339219076 is
-  VERIFIED as the owner's; Amazon tag espressodealalerts-20 is UNVERIFIED
-  (owner's Store ID is espressodeala-20) and must be resolved in Associates
-  Central before anyone treats it as verified.
+- Secondary search links: Amazon and eBay params come from --amazon-tag /
+  --ebay-campid (the hourly workflow passes the owner's verified Store ID
+  espressodeala-20 and eBay campid 5339219076). Do NOT move those tags onto
+  retailer links: both are VERIFIED as the owner's.
 - Product photos: a photo renders ONLY if the product record carries an
   "image_url" field. No product in products.json carries one today, so pages
   currently render without a photo. Do NOT hotlink retailer/homepage images
@@ -106,7 +103,7 @@ def history_table(p, history):
             f"<p>Tracked since {snaps[0]['t'][:10]} · {len(snaps)} hourly checks. "
             f"Each row is a period the price held at that level.</p>"
             f"<table class=\"history\">"
-            f"<tr><th>Date(s)</th><th>Price</th><th>Compare-at</th><th>Stock</th></tr>"
+            f"<tr><th scope=\"col\">Date(s)</th><th scope=\"col\">Price</th><th scope=\"col\">Compare-at</th><th scope=\"col\">Stock</th></tr>"
             f"{rows}</table>")
 
 def related_models(p, products, limit=4):
@@ -134,6 +131,31 @@ def related_models(p, products, limit=4):
 # It is injected via the __DEAL_CSS__ token AFTER .format() runs, so the
 # braces in CSS never collide with format placeholders.
 # ---------------------------------------------------------------------------
+GA4_SNIPPET = """<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4L0H4N4G2T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4L0H4N4G2T');
+</script>"""
+
+INDEX_HEAD = """<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts">
+<meta property="og:description" content="Every espresso machine and grinder we track hourly, with live prices and price history.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4L0H4N4G2T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4L0H4N4G2T');
+</script>"""
+
 DEAL_CSS = """
 body{background:#faf5ec;color:#2b1d12;font-family:Inter,system-ui,sans-serif;line-height:1.6;margin:0}
 .wrap{max-width:760px;margin:0 auto;padding:2rem 1.2rem}
@@ -144,13 +166,14 @@ h1,h2,h3{font-family:Fraunces,Georgia,serif}
 .btn-primary:hover{background:#a85e17}
 .btn-alert{display:inline-block;border:1px solid #a85e17;color:#2b1d12;padding:.55rem 1.1rem;border-radius:10px;text-decoration:none;font-weight:600}
 .btn-alert:hover{border-color:#2b1d12}
-.quiet{color:#7a6a5c;font-size:.92rem}
-.quiet a{color:#7a6a5c}
+.quiet{color:#6b5b4c;font-size:.92rem}
+.quiet a{color:#6b5b4c}
 table.history{border-collapse:collapse;width:100%;margin:1rem 0}
 table.history th,table.history td{border:1px solid #e6dacb;padding:.5rem .7rem;text-align:left}
 table.history th{background:#f5e7d3}
-.disclosure{font-size:.9em;color:#7a6a5c}
+.disclosure{font-size:.9em;color:#6b5b4c}
 img{max-width:100%;border-radius:12px}
+:focus-visible{outline:2px solid #a85e17;outline-offset:2px}
 """
 
 PAGE = """<!DOCTYPE html>
@@ -159,6 +182,14 @@ PAGE = """<!DOCTYPE html>
 <title>{title} Price, Deals &amp; Price History — Espresso Deal Alerts</title>
 <meta name="description" content="Live price for the {title}: {price} at {retailer}. Tracked hourly against price history — lowest tracked {lowest}. Verified deals, no fake sales.">
 <link rel="canonical" href="https://uplike7.github.io/espresso-deal-alerts/deals/{slug}.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="{title} — Espresso Deal Alerts">
+<meta property="og:description" content="Live price for the {title}: {price} at {retailer}. Tracked hourly against price history.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+__GA4__
 <script type="application/ld+json">{schema}</script>
 <style>__DEAL_CSS__</style>
 </head><body>
@@ -237,7 +268,7 @@ def main():
                            amazon=amazon, ebay=ebay, verdict=verdict, schema=schema, photo=photo,
                            history=history_table(p, history), related=related_models(p, products),
                            alert_q=urllib.parse.quote_plus(p["title"]), stock=stock).replace(
-            "__DEAL_CSS__", DEAL_CSS)
+            "__DEAL_CSS__", DEAL_CSS).replace("__GA4__", GA4_SNIPPET)
         open(os.path.join(args.out, slug + ".html"), "w").write(page)
         n += 1
     items = "\n".join(
@@ -246,12 +277,12 @@ def main():
         f'{" — <strong>Sold out</strong>" if not p["available"] else ""}</li>' for p in products)
     index = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
              "<title>All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts</title>"
-             "<meta name=\"description\" content=\"Every espresso machine and grinder we track hourly, "
-             "with live prices and price history.\"><style>__DEAL_CSS__</style></head><body>"
+             "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" "<meta name=\"description\" content=\"Every espresso machine and grinder we track hourly, "
+             "with live prices and price history.\">__INDEX_HEAD__<style>__DEAL_CSS__</style></head><body>"
              "<main class=\"wrap\">"
              "<p class=\"back\"><a href=\"../index.html\">← Espresso Deal Alerts home</a></p>"
              f"<h1>All tracked deals ({n})</h1><ul>{items}</ul></main></body></html>").replace(
-        "__DEAL_CSS__", DEAL_CSS)
+        "__DEAL_CSS__", DEAL_CSS).replace("__INDEX_HEAD__", INDEX_HEAD)
     open(os.path.join(args.out, "index.html"), "w").write(index)
     print(f"built {n} product pages + index in {args.out}/")
 
