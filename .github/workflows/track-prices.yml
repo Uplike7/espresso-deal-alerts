@@ -20,7 +20,7 @@ jobs:
         run: python3 make_products.py
       - name: Build per-model deal pages
         working-directory: tracker
-        run: python3 build_pages.py --products products.json --out ../deals --ebay-campid 5339219076
+        run: python3 build_pages.py --products products.json --out ../deals --amazon-tag espressodeala-20 --ebay-campid 5339219076
       - name: Commit updates
         run: |
           git config user.name "espresso-tracker"
