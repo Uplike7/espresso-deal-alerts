@@ -33,10 +33,19 @@ def category(title):
         return "machine"
     return "other"
 
-HUB_STYLE = ("body{background:#0e0b08;color:#f7f0e6;font-family:Inter,system-ui,sans-serif;"
-             "line-height:1.6;margin:0}main{max-width:900px;margin:0 auto;padding:2rem 1.2rem}"
-             "a{color:#e8a94e}h1{font-family:Fraunces,Georgia,serif}li{margin:.5rem 0}"
-             ".note{color:#b9a894}")
+HUB_STYLE = """
+body{background:#faf5ec;color:#2b1d12;font-family:Inter,system-ui,sans-serif;line-height:1.6;margin:0}
+.wrap{max-width:900px;margin:0 auto;padding:2rem 1.4rem}
+a{color:#a85e17}
+h1{font-family:Fraunces,Georgia,serif}
+.hubnav{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.6rem}
+.hubnav a{background:#fff;border:1px solid #e6dacb;color:#2b1d12;text-decoration:none;font-weight:600;font-size:.88rem;padding:.45rem 1rem;border-radius:99px}
+.hubnav a:hover{border-color:#a85e17;color:#a85e17}
+li{margin:.55rem 0}
+li a{color:#2b1d12;text-decoration:none;font-weight:600}
+li a:hover{color:#a85e17}
+.note{color:#7a6a5c}
+"""
 
 HUB_PAGE = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
@@ -44,14 +53,18 @@ HUB_PAGE = """<!DOCTYPE html>
 <title>{heading} — Espresso Deal Alerts</title>
 <meta name="description" content="{meta}">
 <link rel="canonical" href="{base}{page}">
-</head><body><main>
+</head><body><div class="wrap">
 <p><a href="index.html">← Espresso Deal Alerts home</a></p>
 <h1>{heading}</h1>
+<nav class="hubnav">
+<a href="index.html">Home</a><a href="machines.html">Machines</a><a href="grinders.html">Grinders</a>
+<a href="under-1000.html">Under $1,000</a><a href="under-500.html">Under $500</a>
+</nav>
 <p>{intro}</p>
 <p class="note">{note}</p>
 <ul>{items}</ul>
 <p class="note">Prices update hourly; retailer prices prevail at checkout. Affiliate disclosure: links on this page may earn us a commission at no extra cost to you.</p>
-</main></body></html>"""
+</div></body></html>"""
 
 def hub_pages(products):
     """Return {filename: html} for the four category hubs."""
@@ -93,6 +106,64 @@ def hub_pages(products):
             "</head>", f"<style>{HUB_STYLE}</style></head>")
     return out
 
+def build_drops(history, products, window_days=7, limit=12):
+    """Latest genuine price drop per product, from price-history.json.
+
+    For each product, scan snapshots newest-first and take the most recent
+    index i>0 where price[i] < price[i-1]. Emit only if that drop is within
+    ``window_days`` of the newest snapshot anywhere in the file, so stale
+    drops age out as history grows. One entry per product, newest first,
+    capped at ``limit``. Missing/empty history yields an empty drops list —
+    never a fabricated entry. Slugs come from the final products list (after
+    collision suffixing), so they always match real deal pages.
+    """
+    by_url = {p['retailer_url']: p for p in products}
+    latest = None
+    for e in history.values():
+        for s in e.get('snapshots') or []:
+            t = s.get('t')
+            if t and (latest is None or t > latest):
+                latest = t
+    generated_at = datetime.datetime.now(datetime.timezone.utc).isoformat().replace('+00:00', 'Z')
+    if latest is None:
+        return {"generated_at": generated_at, "drops": []}
+    try:
+        cutoff = datetime.datetime.fromisoformat(latest.replace('Z', '+00:00')) \
+            - datetime.timedelta(days=window_days)
+    except Exception:
+        cutoff = None
+    drops = []
+    for url, e in history.items():
+        p = by_url.get(url)
+        if p is None:
+            continue
+        snaps = e.get('snapshots') or []
+        drop = None
+        for i in range(len(snaps) - 1, 0, -1):
+            cur, prev = snaps[i], snaps[i - 1]
+            if cur.get('price') is None or prev.get('price') is None:
+                continue
+            if cur['price'] < prev['price']:
+                drop = (cur, prev)
+                break
+        if drop is None:
+            continue
+        cur, prev = drop
+        t = cur.get('t') or ''
+        if cutoff is not None and t:
+            try:
+                if datetime.datetime.fromisoformat(t.replace('Z', '+00:00')) < cutoff:
+                    continue
+            except Exception:
+                pass
+        drops.append({'slug': p['slug'], 'title': p['title'], 'retailer': p['retailer'],
+                      'retailer_url': url, 'old_price': prev['price'], 'new_price': cur['price'],
+                      'currency': p['currency'], 'dropped_on': t[:10], '_t': t})
+    drops.sort(key=lambda d: d['_t'], reverse=True)
+    for d in drops:
+        del d['_t']
+    return {"generated_at": generated_at, "drops": drops[:limit]}
+
 def main():
     h = json.load(open('price-history.json'))
     products = []
@@ -127,6 +198,12 @@ def main():
     hubs = hub_pages(products)
     for filename, page in hubs.items():
         open(f'../{filename}', 'w').write(page)
+
+    # Latest price drops feed for the homepage (drops.json at repo root).
+    # NOTE: the hourly workflow must git-add drops.json for it to deploy;
+    # until then the homepage drops section stays hidden by design.
+    drops = build_drops(h, products)
+    json.dump(drops, open('../drops.json', 'w'), indent=1)
 
     # Refresh sitemap.xml at repo root: keep existing non-deals URLs, add all
     # deal pages + hub pages, every URL stamped with the run date.
