@@ -105,7 +105,7 @@ def history_table(p, history):
     return (f"<h2>Price history</h2>"
             f"<p>Tracked since {snaps[0]['t'][:10]} · {len(snaps)} hourly checks. "
             f"Each row is a period the price held at that level.</p>"
-            f"<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">"
+            f"<table class=\"history\">"
             f"<tr><th>Date(s)</th><th>Price</th><th>Compare-at</th><th>Stock</th></tr>"
             f"{rows}</table>")
 
@@ -127,6 +127,32 @@ def related_models(p, products, limit=4):
         f'{money(q["price"], q["currency"])} at {q["retailer"]}</li>' for q in picks)
     return f"<h2>Related models</h2><ul>{items}</ul>"
 
+# ---------------------------------------------------------------------------
+# Deal-page visual system (light cream/espresso/copper). PRESENTATION ONLY:
+# this CSS is the only thing the redesign changes in the page template. All
+# placeholders, logic, affiliate handling, and data below are untouched.
+# It is injected via the __DEAL_CSS__ token AFTER .format() runs, so the
+# braces in CSS never collide with format placeholders.
+# ---------------------------------------------------------------------------
+DEAL_CSS = """
+body{background:#faf5ec;color:#2b1d12;font-family:Inter,system-ui,sans-serif;line-height:1.6;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding:2rem 1.2rem}
+a{color:#a85e17}
+h1,h2,h3{font-family:Fraunces,Georgia,serif}
+.back a{text-decoration:none;font-weight:600}
+.btn-primary{display:inline-block;background:#2b1d12;color:#faf5ec;text-decoration:none;padding:.8rem 1.6rem;border-radius:12px;font-weight:700}
+.btn-primary:hover{background:#a85e17}
+.btn-alert{display:inline-block;border:1px solid #a85e17;color:#2b1d12;padding:.55rem 1.1rem;border-radius:10px;text-decoration:none;font-weight:600}
+.btn-alert:hover{border-color:#2b1d12}
+.quiet{color:#7a6a5c;font-size:.92rem}
+.quiet a{color:#7a6a5c}
+table.history{border-collapse:collapse;width:100%;margin:1rem 0}
+table.history th,table.history td{border:1px solid #e6dacb;padding:.5rem .7rem;text-align:left}
+table.history th{background:#f5e7d3}
+.disclosure{font-size:.9em;color:#7a6a5c}
+img{max-width:100%;border-radius:12px}
+"""
+
 PAGE = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -134,17 +160,18 @@ PAGE = """<!DOCTYPE html>
 <meta name="description" content="Live price for the {title}: {price} at {retailer}. Tracked hourly against price history — lowest tracked {lowest}. Verified deals, no fake sales.">
 <link rel="canonical" href="https://uplike7.github.io/espresso-deal-alerts/deals/{slug}.html">
 <script type="application/ld+json">{schema}</script>
+<style>__DEAL_CSS__</style>
 </head><body>
-<main style="max-width:760px;margin:0 auto;padding:2rem 1.2rem;font-family:Georgia,serif;line-height:1.6">
-<p><a href="../index.html">← All espresso deals</a></p>
+<main class="wrap">
+<p class="back"><a href="../index.html">← All espresso deals</a></p>
 <h1>{title}</h1>
 {photo}
 <p><strong>Current price: {price}</strong>{was} at {retailer}</p>
 {stock}
 <p>Lowest price we've tracked: <strong>{lowest}</strong> · Price checked hourly · Last checked {last}</p>
-<p><a href="{retailer_url}" rel="sponsored nofollow">View deal at {retailer} →</a></p>
-<p><a href="../index.html?alert={alert_q}" style="display:inline-block;border:1px solid #c77b3a;padding:.5rem 1rem;border-radius:8px;text-decoration:none">🔔 Alert me when this drops</a></p>
-<p>Also check: <a href="{amazon}" rel="sponsored nofollow">Amazon</a> · <a href="{ebay}" rel="sponsored nofollow">eBay</a></p>
+<p><a class="btn-primary" href="{retailer_url}" rel="sponsored nofollow">View deal at {retailer} →</a></p>
+<p><a class="btn-alert" href="../index.html?alert={alert_q}">🔔 Alert me when this drops</a></p>
+<p class="quiet">Also check: <a href="{amazon}" rel="sponsored nofollow">Amazon</a> · <a href="{ebay}" rel="sponsored nofollow">eBay</a></p>
 <h2>Is this a good price?</h2>
 <p>{verdict}</p>
 {history}
@@ -154,7 +181,7 @@ PAGE = """<!DOCTYPE html>
 <p>Since we began tracking it, the lowest recorded price is {lowest} (current retailer listing: {price} at {retailer}).</p>
 <h3>How often does the price change?</h3>
 <p>We check this product's price every hour across specialty retailers and log every change to our price history.</p>
-<p style="font-size:.9em;color:#666">Affiliate disclosure: links on this page may earn us a commission at no extra cost to you. Prices update hourly; retailer prices prevail at checkout.</p>
+<p class="disclosure">Affiliate disclosure: links on this page may earn us a commission at no extra cost to you. Prices update hourly; retailer prices prevail at checkout.</p>
 </main></body></html>"""
 
 def main():
@@ -209,7 +236,8 @@ def main():
                            lowest=lowest, last=p["last_checked"], slug=slug, retailer_url=retailer_url,
                            amazon=amazon, ebay=ebay, verdict=verdict, schema=schema, photo=photo,
                            history=history_table(p, history), related=related_models(p, products),
-                           alert_q=urllib.parse.quote_plus(p["title"]), stock=stock)
+                           alert_q=urllib.parse.quote_plus(p["title"]), stock=stock).replace(
+            "__DEAL_CSS__", DEAL_CSS)
         open(os.path.join(args.out, slug + ".html"), "w").write(page)
         n += 1
     items = "\n".join(
@@ -219,10 +247,11 @@ def main():
     index = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
              "<title>All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts</title>"
              "<meta name=\"description\" content=\"Every espresso machine and grinder we track hourly, "
-             "with live prices and price history.\"></head><body>"
-             "<main style=\"max-width:760px;margin:0 auto;padding:2rem 1.2rem;font-family:Georgia,serif;line-height:1.7\">"
-             "<p><a href=\"../index.html\">← Espresso Deal Alerts home</a></p>"
-             f"<h1>All tracked deals ({n})</h1><ul>{items}</ul></main></body></html>")
+             "with live prices and price history.\"><style>__DEAL_CSS__</style></head><body>"
+             "<main class=\"wrap\">"
+             "<p class=\"back\"><a href=\"../index.html\">← Espresso Deal Alerts home</a></p>"
+             f"<h1>All tracked deals ({n})</h1><ul>{items}</ul></main></body></html>").replace(
+        "__DEAL_CSS__", DEAL_CSS)
     open(os.path.join(args.out, "index.html"), "w").write(index)
     print(f"built {n} product pages + index in {args.out}/")
 
