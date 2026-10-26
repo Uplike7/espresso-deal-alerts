@@ -36,6 +36,22 @@ ever run: every drop currently in drops.json is recorded as already-seen
 day one would spam subscribers with stale deals. Only drops that appear
 AFTER the baseline get alerted. Delete alert-state.json to re-seed.
 
+Target-price alerts
+-------------------
+Subscribers can register a target price per product in targets.json
+(schema documented inside that file; it ships empty of real
+subscribers). On every run — independently of the drops feed — the
+current products.json is checked: when a product's price is at or below
+a subscriber's target, ONE target-hit alert is emitted through the same
+Telegram digest / email-outbox path as drops (a separate outbox file,
+prefixed targets-), naming the subscriber and channel from the target.
+Hits are recorded in alert-state.json under "targets_sent" with the key
+target|<subscriber>|<slug>|<target_price>, so the same target is never
+announced twice; changing the target price creates a new key, which is
+the owner's way to re-arm an alert. Prices are compared in the product's
+listed currency (CAD for iDrinkCoffee, USD otherwise) — no conversion.
+Missing targets.json simply disables the feature (exit stays 0).
+
 Failure behaviour
 -----------------
 This script must never break the hourly price refresh: missing or
@@ -218,6 +234,8 @@ def load_state(path):
 
 def save_state(path, state):
     state["sent"] = sorted(set(state["sent"]))
+    if isinstance(state.get("targets_sent"), list):
+        state["targets_sent"] = sorted(set(state["targets_sent"]))
     tmp = path.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(state, indent=1) + "\n", encoding="utf-8")
     tmp.replace(path)  # atomic-ish: never leave a half-written state file
@@ -241,17 +259,223 @@ def write_outbox(outbox_dir, drops, text, page_html, when):
     return path
 
 
+
+def find_products_path():
+    env = os.environ.get("ALERT_PRODUCTS_PATH")
+    if env:
+        return Path(env)
+    for cand in (Path("products.json"), Path("tracker/products.json"),
+                 Path("../tracker/products.json")):
+        if cand.exists():
+            return cand
+    return Path("products.json")  # missing-file path: load handles it
+
+
+def load_products(path):
+    """Return {slug: product} from products.json, or None if unusable."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        log(f"products file not found at {path} — target check skipped.")
+        return None
+    except Exception as e:
+        log(f"products file at {path} is malformed ({e}) — target check skipped.")
+        return None
+    if not isinstance(data, list):
+        log("products file is not a list — target check skipped.")
+        return None
+    by_slug = {}
+    for p in data:
+        if isinstance(p, dict) and p.get("slug") and                 isinstance(p.get("price"), (int, float)):
+            by_slug[p["slug"]] = p
+    return by_slug
+
+
+def valid_target(t):
+    return isinstance(t, dict) and isinstance(t.get("subscriber"), str) \
+        and t["subscriber"] and isinstance(t.get("slug"), str) and t["slug"] \
+        and isinstance(t.get("target_price"), (int, float)) \
+        and t["target_price"] > 0
+
+
+def load_targets(path):
+    """Return the valid target list, or None when the file is absent
+    (feature off). Malformed entries are skipped with a log line."""
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        raw = data.get("targets") if isinstance(data, dict) else None
+        if not isinstance(raw, list):
+            raise ValueError("unexpected shape")
+    except Exception as e:
+        log(f"WARNING: targets file {path} unreadable ({e}); target check "
+            "skipped for this run.")
+        return None
+    good, skipped = [], 0
+    for t in raw:
+        if valid_target(t):
+            good.append(t)
+        else:
+            skipped += 1
+    if skipped:
+        log(f"skipped {skipped} malformed target entr"
+            f"{'y' if skipped == 1 else 'ies'}.")
+    return good
+
+
+def target_key(t):
+    """Stable identity of one (subscriber, product, target) alert."""
+    return "target|{sub}|{slug}|{price}".format(
+        sub=t["subscriber"], slug=t["slug"], price=t["target_price"])
+
+
+def find_target_hits(by_slug, targets, state):
+    """Targets whose product is currently at or below the target price
+    and whose key has not already been alerted."""
+    already = set(state.get("targets_sent") or [])
+    hits, unknown = [], 0
+    for t in targets:
+        p = by_slug.get(t["slug"])
+        if p is None:
+            unknown += 1
+            continue
+        if p["price"] <= t["target_price"] and target_key(t) not in already:
+            hits.append({
+                "subscriber": t["subscriber"],
+                "channel": t.get("channel") or "telegram",
+                "slug": t["slug"], "title": p.get("title", t["slug"]),
+                "retailer": p.get("retailer", ""),
+                "retailer_url": p.get("retailer_url", ""),
+                "price": p["price"], "target_price": t["target_price"],
+                "currency": p.get("currency"),
+            })
+    if unknown:
+        log(f"{unknown} target(s) name a slug not in products.json — skipped.")
+    return hits
+
+
+def format_target_digest(hits, when=None):
+    """Return (plain_text, html) for a list of target hits."""
+    when = when or datetime.now(timezone.utc)
+    date_label = when.strftime("%b %-d, %Y") if hasattr(when, "strftime") else str(when)
+    n = len(hits)
+    heading = f"Target price hit{'s' if n != 1 else ''} ({date_label})"
+    lines = [f"🎯 {heading}", ""]
+    items = []
+    for h in hits:
+        deal_url = f"{BASE}deals/{h['slug']}.html"
+        prices = f"now {money(h['price'], h['currency'])} "                  f"(target {money(h['target_price'], h['currency'])})"
+        lines.append(f"• {h['title']} — {h['retailer']}")
+        lines.append(f"  {prices}")
+        lines.append(f"  For subscriber {h['subscriber']} (via {h['channel']})")
+        lines.append(f"  Deal: {deal_url}")
+        if h["retailer_url"]:
+            lines.append(f"  At the retailer: {h['retailer_url']}")
+        lines.append("")
+        items.append(
+            "<li><strong>{title}</strong> — {retailer}<br>{prices}<br>"
+            "For subscriber {sub} (via {chan})<br>"
+            '<a href="{deal}">View the deal</a> · '
+            '<a href="{retail}">At the retailer</a></li>'.format(
+                title=html.escape(str(h["title"])),
+                retailer=html.escape(str(h["retailer"])),
+                prices=html.escape(prices),
+                sub=html.escape(str(h["subscriber"])),
+                chan=html.escape(str(h["channel"])),
+                deal=html.escape(deal_url),
+                retail=html.escape(str(h["retailer_url"]))))
+    lines.append(f"Tracked hourly by Espresso Deal Alerts — {BASE}")
+    text = "\n".join(lines)
+    page = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
+            f"<title>{html.escape(heading)}</title></head><body>"
+            f"<h1>🎯 {html.escape(heading)}</h1><ul>{''.join(items)}</ul>"
+            f"<p>Tracked hourly by <a href=\"{BASE}\">Espresso Deal Alerts</a>.</p>"
+            "</body></html>")
+    return text, page
+
+
+def write_target_outbox(outbox_dir, hits, text, page_html, when):
+    """Write the email-ready target-hit copy. Returns the file path."""
+    outbox_dir.mkdir(parents=True, exist_ok=True)
+    keys = ",".join(sorted(target_key(h) for h in hits))
+    digest = hashlib.sha256(keys.encode("utf-8")).hexdigest()[:10]
+    fname = f"targets-{when.strftime('%Y-%m-%d')}-{digest}.md"
+    path = outbox_dir / fname
+    path.write_text(
+        f"# Espresso Deal Alerts — target hits {when.strftime('%Y-%m-%d')}\n\n"
+        "Email-ready copy of the target-price alerts (plain text below, "
+        "HTML version in the fenced block). Written on every run that "
+        "finds new target hits, whether or not Telegram credentials are "
+        "configured.\n\n"
+        "## Plain text\n\n```\n" + text + "\n```\n\n"
+        "## HTML\n\n```html\n" + page_html + "\n```\n",
+        encoding="utf-8")
+    return path
+
+
+def telegram_configured():
+    return bool(os.environ.get("TELEGRAM_BOT_TOKEN")
+                and os.environ.get("TELEGRAM_CHAT_ID"))
+
+
+def process_targets(state, state_path, outbox_dir, now):
+    """Emit target-hit alerts for newly satisfied subscriber targets.
+    Marks state ONLY after a Telegram send actually succeeds — the same
+    contract as the drops path."""
+    targets_path = Path(os.environ.get("ALERT_TARGETS_PATH", "targets.json"))
+    targets = load_targets(targets_path)
+    if targets is None:
+        return
+    if not targets:
+        log("targets file present but empty — no targets to check.")
+        return
+    by_slug = load_products(find_products_path())
+    if by_slug is None:
+        return
+    hits = find_target_hits(by_slug, targets, state)
+    if not hits:
+        log(f"no target hits ({len(targets)} target(s) watched).")
+        return
+    log(f"{len(hits)} target hit(s) to alert.")
+    text, page_html = format_target_digest(hits, now)
+    outbox_path = write_target_outbox(outbox_dir, hits, text, page_html, now)
+    log(f"target digest written to outbox: {outbox_path}")
+    if not telegram_configured():
+        log("target alerts pending: no Telegram credentials configured. "
+            "State NOT updated — these hits will alert on the first run "
+            "after credentials are added.")
+        return
+    try:
+        send_telegram(os.environ["TELEGRAM_BOT_TOKEN"],
+                      os.environ["TELEGRAM_CHAT_ID"], text)
+    except Exception as e:
+        log(f"Telegram target send FAILED ({e}). State NOT updated — "
+            "will retry on the next run.")
+        return
+    state.setdefault("targets_sent", []).extend(target_key(h) for h in hits)
+    state["last_target_alert_at"] = now.isoformat().replace("+00:00", "Z")
+    save_state(state_path, state)
+    log(f"Telegram target digest sent ({len(hits)} hit(s)); state updated "
+        f"({len(state['targets_sent'])} target keys total).")
+
+
 def main():
     drops_path = find_drops_path()
     state_path = Path(os.environ.get("ALERT_STATE_PATH", "alert-state.json"))
     outbox_dir = Path(os.environ.get("ALERT_OUTBOX_DIR", "alerts-outbox"))
     now = datetime.now(timezone.utc)
 
+    state, first_run = load_state(state_path)
+    if not isinstance(state.get("targets_sent"), list):
+        state["targets_sent"] = []
+
+    # Target-price alerts run independently of the drops feed.
+    process_targets(state, state_path, outbox_dir, now)
+
     drops = load_drops(drops_path)
     if drops is None:
         return 0
-
-    state, first_run = load_state(state_path)
 
     if first_run:
         # Baseline seeding: record everything currently in drops.json as
