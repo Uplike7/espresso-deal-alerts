@@ -83,7 +83,8 @@ def hub_pages(products):
                          key=lambda p: -(((p["compare_at"] or p["price"]) - p["price"])))
         items = "".join(
             f'<li><a href="deals/{p["slug"]}.html">{html.escape(p["title"])}</a> — '
-            f'{money(p["price"], p["currency"])} at {p["retailer"]}</li>' for p in members)
+            f'{money(p["price"], p["currency"])} at {p["retailer"]}'
+            f'{" — <strong>Sold out</strong>" if not p["available"] else ""}</li>' for p in members)
         out[filename] = HUB_PAGE.format(
             heading=f"{heading} ({len(members)})", meta=meta, base=BASE, page=filename,
             intro=intro, note=note, items=items)

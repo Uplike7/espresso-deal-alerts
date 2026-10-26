@@ -140,6 +140,7 @@ PAGE = """<!DOCTYPE html>
 <h1>{title}</h1>
 {photo}
 <p><strong>Current price: {price}</strong>{was} at {retailer}</p>
+{stock}
 <p>Lowest price we've tracked: <strong>{lowest}</strong> · Price checked hourly · Last checked {last}</p>
 <p><a href="{retailer_url}" rel="sponsored nofollow">View deal at {retailer} →</a></p>
 <p><a href="../index.html?alert={alert_q}" style="display:inline-block;border:1px solid #c77b3a;padding:.5rem 1rem;border-radius:8px;text-decoration:none">🔔 Alert me when this drops</a></p>
@@ -184,6 +185,11 @@ def main():
                                    RETAILER_AFFILIATE_PARAMS.get(p["retailer"], {}))
         price = money(p["price"], p["currency"]); lowest = money(p["lowest_tracked"], p["currency"])
         was = f" (was {money(p['compare_at'], p['currency'])})" if p["compare_at"] else ""
+        # Visible sold-out marking: sold-out products stay listed and tracked,
+        # but the page must say so plainly (previously only the JSON-LD said it).
+        stock = "" if p["available"] else (
+            f'<p><strong style="color:#a33">Sold out at {p["retailer"]}</strong> '
+            f'— we keep tracking it and will flag it the moment it comes back in stock.</p>')
         saving = (p["compare_at"] - p["price"]) if p["compare_at"] else 0
         verdict = (f"At {price} this is {money(saving, p['currency'])} below its compare-at price"
                    f"{' and at the lowest price we have tracked' if abs(p['price']-p['lowest_tracked'])<0.01 else ''}. "
@@ -203,12 +209,13 @@ def main():
                            lowest=lowest, last=p["last_checked"], slug=slug, retailer_url=retailer_url,
                            amazon=amazon, ebay=ebay, verdict=verdict, schema=schema, photo=photo,
                            history=history_table(p, history), related=related_models(p, products),
-                           alert_q=urllib.parse.quote_plus(p["title"]))
+                           alert_q=urllib.parse.quote_plus(p["title"]), stock=stock)
         open(os.path.join(args.out, slug + ".html"), "w").write(page)
         n += 1
     items = "\n".join(
         f'<li><a href="{p.get("slug") or slugify(p["title"])[:80]}.html">{html.escape(p["title"])}</a> — '
-        f'{money(p["price"], p["currency"])} at {p["retailer"]}</li>' for p in products)
+        f'{money(p["price"], p["currency"])} at {p["retailer"]}'
+        f'{" — <strong>Sold out</strong>" if not p["available"] else ""}</li>' for p in products)
     index = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
              "<title>All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts</title>"
              "<meta name=\"description\" content=\"Every espresso machine and grinder we track hourly, "
