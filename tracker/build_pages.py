@@ -55,6 +55,30 @@ def category(title):
         return "machine"
     return "other"
 
+def fmt_last_checked(iso):
+    """'2026-10-26T14:50:03Z' -> 'Oct 26, 2026, 10:50 AM EDT' (America/New_York).
+
+    Returns '' when the value is missing or unparseable, so the template
+    drops the segment instead of showing a fabricated time.
+    """
+    if not iso:
+        return ""
+    try:
+        from datetime import datetime, timezone
+        from zoneinfo import ZoneInfo
+        dt = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        local = dt.astimezone(ZoneInfo("America/New_York"))
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        h12 = local.hour % 12 or 12
+        ampm = "AM" if local.hour < 12 else "PM"
+        return (f"{months[local.month - 1]} {local.day}, {local.year}, "
+                f"{h12}:{local.minute:02d} {ampm} {local.tzname()}")
+    except Exception:
+        return ""
+
 def with_params(url, params):
     """Append query params to a URL, preserving any existing query string."""
     if not params:
@@ -176,6 +200,31 @@ img{max-width:100%;border-radius:12px}
 :focus-visible{outline:2px solid #a85e17;outline-offset:2px}
 """
 
+DEAL_EVENTS = """<script>(function () {
+  // GA4 conversion events for outbound deal clicks on this page. Reporting
+  // only: links keep their default behavior, and a missing or blocked gtag
+  // is a silent no-op. The alert button is not a view-deal click and is
+  // intentionally untracked.
+  function track(params) {
+    try { if (typeof gtag === "function") { gtag("event", "view_deal", params); } } catch (err) {}
+  }
+  function trunc(s) { s = (s || "").trim(); return s.length > 100 ? s.slice(0, 100) : s; }
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var titleEl = document.querySelector("h1");
+    var title = titleEl ? titleEl.textContent : "";
+    if (a.classList.contains("btn-primary")) {
+      track({link_type: "retailer", retailer: trunc(a.getAttribute("data-ga-retailer") || ""), product: trunc(title)});
+    } else if (href.indexOf("amazon.com") !== -1) {
+      track({link_type: "amazon", product: trunc(title)});
+    } else if (href.indexOf("ebay.com") !== -1) {
+      track({link_type: "ebay", product: trunc(title)});
+    }
+  });
+})();</script>"""
+
 PAGE = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -199,8 +248,8 @@ __GA4__
 {photo}
 <p><strong>Current price: {price}</strong>{was} at {retailer}</p>
 {stock}
-<p>Lowest price we've tracked: <strong>{lowest}</strong> · Price checked hourly · Last checked {last}</p>
-<p><a class="btn-primary" href="{retailer_url}" rel="sponsored nofollow">View deal at {retailer} →</a></p>
+<p>Lowest price we've tracked: <strong>{lowest}</strong>{lastseg}</p>
+<p><a class="btn-primary" href="{retailer_url}" rel="sponsored nofollow" data-ga-retailer="{retailer_attr}">View deal at {retailer} →</a></p>
 <p><a class="btn-alert" href="../index.html?alert={alert_q}">🔔 Alert me when this drops</a></p>
 <p class="quiet">Also check: <a href="{amazon}" rel="sponsored nofollow">Amazon</a> · <a href="{ebay}" rel="sponsored nofollow">eBay</a></p>
 <h2>Is this a good price?</h2>
@@ -213,7 +262,7 @@ __GA4__
 <h3>How often does the price change?</h3>
 <p>We check this product's price every hour across specialty retailers and log every change to our price history.</p>
 <p class="disclosure">Affiliate disclosure: links on this page may earn us a commission at no extra cost to you. Prices update hourly; retailer prices prevail at checkout.</p>
-</main></body></html>"""
+</main>__DEAL_EVENTS__</body></html>"""
 
 def main():
     ap = argparse.ArgumentParser()
@@ -263,12 +312,14 @@ def main():
         if p.get("image_url"):
             photo = (f'<p><img src="{html.escape(p["image_url"])}" alt="{html.escape(p["title"])}" '
                      f'loading="lazy" style="max-width:100%"></p>')
+        last_txt = fmt_last_checked(p.get("last_checked"))
+        lastseg = f" · Last checked {last_txt}" if last_txt else ""
         page = PAGE.format(title=html.escape(p["title"]), price=price, was=was, retailer=p["retailer"],
-                           lowest=lowest, last=p["last_checked"], slug=slug, retailer_url=retailer_url,
+                           lowest=lowest, lastseg=lastseg, retailer_attr=html.escape(p["retailer"], quote=True), slug=slug, retailer_url=retailer_url,
                            amazon=amazon, ebay=ebay, verdict=verdict, schema=schema, photo=photo,
                            history=history_table(p, history), related=related_models(p, products),
                            alert_q=urllib.parse.quote_plus(p["title"]), stock=stock).replace(
-            "__DEAL_CSS__", DEAL_CSS).replace("__GA4__", GA4_SNIPPET)
+            "__DEAL_CSS__", DEAL_CSS).replace("__GA4__", GA4_SNIPPET).replace("__DEAL_EVENTS__", DEAL_EVENTS)
         open(os.path.join(args.out, slug + ".html"), "w").write(page)
         n += 1
     items = "\n".join(

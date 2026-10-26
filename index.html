@@ -206,6 +206,7 @@
   <span>✓ Independent price tracking</span>
   <span>✓ Prices checked hourly</span>
   <span>⚠ iDrinkCoffee prices are in <b>CAD</b></span>
+  <span id="last-checked" hidden>Last checked <b id="last-checked-time"></b></span>
 </div>
 
 <section class="how">
@@ -1594,6 +1595,7 @@
     }).then(function (r) {
       if (r.ok) {
         note.innerHTML = "<b>You're on the list.</b> Watch your inbox — and join the Telegram for instant alerts.";
+        try { if (typeof gtag === "function") { gtag("event", "sign_up", {method: "email"}); } } catch (err) {}
         form.reset();
       } else { showTelegramFallback(); }
     }).catch(showTelegramFallback);
@@ -1718,6 +1720,65 @@
     .then(function (r) { return r.json(); })
     .then(function (j) { addUsd((j && j.rates && j.rates.USD) || FALLBACK_CAD_USD); })
     .catch(function () { addUsd(FALLBACK_CAD_USD); });
+})();</script>
+<script>(function () {
+  // GA4 conversion events for outbound deal clicks on this page. Reporting
+  // only: links keep their default behavior, and a missing or blocked gtag
+  // is a silent no-op. Covers homepage cards (.cta + Amazon/eBay secondary
+  // links) and the drops feed (.drop-cta). Price-history links are not
+  // view-deal clicks and are intentionally untracked.
+  function track(params) {
+    try { if (typeof gtag === "function") { gtag("event", "view_deal", params); } } catch (err) {}
+  }
+  function trunc(s) { s = (s || "").trim(); return s.length > 100 ? s.slice(0, 100) : s; }
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var card = a.closest ? a.closest(".card") : null;
+    var row = a.closest ? a.closest(".drop-row") : null;
+    if (a.classList.contains("cta") && card) {
+      var brand = card.querySelector(".brand");
+      var h = card.querySelector("h3");
+      track({link_type: "retailer", retailer: trunc(brand ? brand.textContent : ""), product: trunc(h ? h.textContent : "")});
+    } else if (a.classList.contains("drop-cta") && row) {
+      var ret = row.querySelector(".drop-ret");
+      var t = row.querySelector(".drop-title");
+      track({link_type: "retailer", retailer: trunc(ret ? ret.textContent : ""), product: trunc(t ? t.textContent : "")});
+    } else if (card && href.indexOf("amazon.com") !== -1) {
+      var h2 = card.querySelector("h3");
+      track({link_type: "amazon", product: trunc(h2 ? h2.textContent : "")});
+    } else if (card && href.indexOf("ebay.com") !== -1) {
+      var h3 = card.querySelector("h3");
+      track({link_type: "ebay", product: trunc(h3 ? h3.textContent : "")});
+    }
+  });
+})();</script>
+<script>(function () {
+  // Real last-checked time for the whole tracker, from tracker/products.json
+  // (regenerated every tracker run). The line stays hidden unless a valid
+  // timestamp is found — never a hardcoded or invented time. Works only
+  // when served over HTTP(S).
+  var el = document.getElementById("last-checked");
+  var out = document.getElementById("last-checked-time");
+  if (!el || !out) return;
+  fetch("tracker/products.json").then(function (r) {
+    if (!r.ok) throw new Error("no products feed");
+    return r.json();
+  }).then(function (list) {
+    var latest = 0;
+    (list || []).forEach(function (p) {
+      var t = Date.parse(p && p.last_checked);
+      if (!isNaN(t) && t > latest) latest = t;
+    });
+    if (!latest) return;
+    out.textContent = new Intl.DateTimeFormat("en-US", {
+      month: "short", day: "numeric", year: "numeric",
+      hour: "numeric", minute: "2-digit", timeZoneName: "short",
+      timeZone: "America/New_York"
+    }).format(new Date(latest));
+    el.hidden = false;
+  }).catch(function () { /* stays hidden */ });
 })();</script>
 </body>
 </html>
