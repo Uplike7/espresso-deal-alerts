@@ -124,7 +124,7 @@ def history_table(p, history):
         rows += (f"<tr><td>{span}</td><td>{money(seg['price'], p['currency'])}</td>"
                  f"<td>{cap}</td><td>{stock}</td></tr>")
     return (f"<h2>Price history</h2>"
-            f"<p>Tracked since {snaps[0]['t'][:10]} · {len(snaps)} hourly checks. "
+            f"<p>Tracked since {snaps[0]['t'][:10]} · {len(snaps)} price checks. "
             f"Each row is a period the price held at that level.</p>"
             f"<table class=\"history\">"
             f"<tr><th scope=\"col\">Date(s)</th><th scope=\"col\">Price</th><th scope=\"col\">Compare-at</th><th scope=\"col\">Stock</th></tr>"
@@ -168,7 +168,7 @@ INDEX_HEAD = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta property="og:title" content="All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts">
-<meta property="og:description" content="Every espresso machine and grinder we track hourly, with live prices and price history.">
+<meta property="og:description" content="Every espresso machine and grinder we track around the clock, with live prices and price history.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
 <!-- Google tag (gtag.js) -->
@@ -229,13 +229,13 @@ PAGE = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} Price, Deals &amp; Price History — Espresso Deal Alerts</title>
-<meta name="description" content="Live price for the {title}: {price} at {retailer}. Tracked hourly against price history — lowest tracked {lowest}. Verified deals, no fake sales.">
+<meta name="description" content="Live price for the {title}: {price} at {retailer}. Tracked against price history — lowest tracked {lowest}. Verified deals, no fake sales.">
 <link rel="canonical" href="https://espressodealalerts.com/deals/{slug}.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta property="og:title" content="{title} — Espresso Deal Alerts">
-<meta property="og:description" content="Live price for the {title}: {price} at {retailer}. Tracked hourly against price history.">
+<meta property="og:description" content="Live price for the {title}: {price} at {retailer}. Tracked against price history.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
 __GA4__
@@ -260,8 +260,8 @@ __GA4__
 <h3>What is the lowest price the {title} has been?</h3>
 <p>Since we began tracking it, the lowest recorded price is {lowest} (current retailer listing: {price} at {retailer}).</p>
 <h3>How often does the price change?</h3>
-<p>We check this product's price every hour across specialty retailers and log every change to our price history.</p>
-<p class="disclosure">Affiliate disclosure: links on this page may earn us a commission at no extra cost to you. Prices update hourly; retailer prices prevail at checkout.</p>
+<p>We check this product's price several times a day across specialty retailers and log every change to our price history.</p>
+<p class="disclosure">Affiliate disclosure: links on this page may earn us a commission at no extra cost to you. Prices update several times a day; retailer prices prevail at checkout.</p>
 </main>__DEAL_EVENTS__</body></html>"""
 
 def main():
@@ -301,7 +301,7 @@ def main():
         verdict = (f"At {price} this is {money(saving, p['currency'])} below its compare-at price"
                    f"{' and at the lowest price we have tracked' if abs(p['price']-p['lowest_tracked'])<0.01 else ''}. "
                    "Our verdicts follow the tracked data, not retailer marketing.") if p["compare_at"] else \
-                  f"At {price} this sits at its tracked reference price; we flag it here because we watch it hourly and will surface it the moment it drops."
+                  f"At {price} this sits at its tracked reference price; we flag it here because we watch it around the clock and will surface it the moment it drops."
         schema = json.dumps({
             "@context": "https://schema.org", "@type": "Product", "name": p["title"],
             "offers": {"@type": "Offer", "price": f"{p['price']:.2f}", "priceCurrency": p["currency"],
@@ -328,7 +328,7 @@ def main():
         f'{" — <strong>Sold out</strong>" if not p["available"] else ""}</li>' for p in products)
     index = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
              "<title>All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts</title>"
-             "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" "<meta name=\"description\" content=\"Every espresso machine and grinder we track hourly, "
+             "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" "<meta name=\"description\" content=\"Every espresso machine and grinder we track around the clock, "
              "with live prices and price history.\">__INDEX_HEAD__<style>__DEAL_CSS__</style></head><body>"
              "<main class=\"wrap\">"
              "<p class=\"back\"><a href=\"../index.html\">← Espresso Deal Alerts home</a></p>"

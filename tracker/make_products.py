@@ -81,29 +81,29 @@ __GA4__
 <p>{intro}</p>
 <p class="note">{note}</p>
 <ul>{items}</ul>
-<p class="note">Prices update hourly; retailer prices prevail at checkout. Affiliate disclosure: links on this page may earn us a commission at no extra cost to you.</p>
+<p class="note">Prices update several times a day; retailer prices prevail at checkout. Affiliate disclosure: links on this page may earn us a commission at no extra cost to you.</p>
 </div></body></html>"""
 
 def hub_pages(products):
     """Return {filename: html} for the four category hubs."""
     hubs = [
         ("machines.html", "Espresso machines",
-         "Espresso machines we track hourly, with live prices and price history.",
-         "Every espresso machine in the tracker, sorted by biggest saving. Prices are checked every hour against each model's own history.",
+         "Espresso machines we track around the clock, with live prices and price history.",
+         "Every espresso machine in the tracker, sorted by biggest saving. Prices are checked several times a day against each model's own history.",
          "Type is derived from product titles (see build notes); machines are titles containing “machine” but not “grinder”.",
          [p for p in products if category(p["title"]) == "machine"]),
         ("grinders.html", "Espresso grinders",
-         "Espresso grinders we track hourly, with live prices and price history.",
-         "Every espresso grinder in the tracker, sorted by biggest saving. Prices are checked every hour against each model's own history.",
+         "Espresso grinders we track around the clock, with live prices and price history.",
+         "Every espresso grinder in the tracker, sorted by biggest saving. Prices are checked several times a day against each model's own history.",
          "Type is derived from product titles; grinders are titles containing “grinder”.",
          [p for p in products if category(p["title"]) == "grinder"]),
         ("under-1000.html", "Espresso gear under $1,000",
-         "Espresso machines and grinders under $1,000 (listed price), tracked hourly.",
+         "Espresso machines and grinders under $1,000 (listed price), tracked around the clock.",
          "Every tracked model with a listed price under $1,000, sorted by biggest saving.",
          "Bands use the LISTED price: USD items are in US dollars and iDrinkCoffee items are in Canadian dollars, shown per item. No currency conversion is applied.",
          [p for p in products if p["price"] < 1000]),
         ("under-500.html", "Espresso gear under $500",
-         "Espresso machines and grinders under $500 (listed price), tracked hourly.",
+         "Espresso machines and grinders under $500 (listed price), tracked around the clock.",
          "Every tracked model with a listed price under $500, sorted by biggest saving.",
          "Bands use the LISTED price: USD items are in US dollars and iDrinkCoffee items are in Canadian dollars, shown per item. No currency conversion is applied.",
          [p for p in products if p["price"] < 500]),

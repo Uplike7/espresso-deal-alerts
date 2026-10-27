@@ -144,13 +144,13 @@ def format_digest(drops, when=None):
                 retailer=html.escape(str(d.get("retailer", ""))),
                 prices=html.escape(prices), deal=html.escape(deal_url),
                 retail=html.escape(str(d.get("retailer_url", "")))))
-    lines.append(f"Tracked hourly by Espresso Deal Alerts — {BASE}")
+    lines.append(f"Tracked by Espresso Deal Alerts — {BASE}")
     text = "\n".join(lines)
 
     page = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
             f"<title>{html.escape(heading)}</title></head><body>"
             f"<h1>☕ {html.escape(heading)}</h1><ul>{''.join(items)}</ul>"
-            f"<p>Tracked hourly by <a href=\"{BASE}\">Espresso Deal Alerts</a>.</p>"
+            f"<p>Tracked by <a href=\"{BASE}\">Espresso Deal Alerts</a>.</p>"
             "</body></html>")
     return text, page
 
@@ -385,12 +385,12 @@ def format_target_digest(hits, when=None):
                 chan=html.escape(str(h["channel"])),
                 deal=html.escape(deal_url),
                 retail=html.escape(str(h["retailer_url"]))))
-    lines.append(f"Tracked hourly by Espresso Deal Alerts — {BASE}")
+    lines.append(f"Tracked by Espresso Deal Alerts — {BASE}")
     text = "\n".join(lines)
     page = ("<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
             f"<title>{html.escape(heading)}</title></head><body>"
             f"<h1>🎯 {html.escape(heading)}</h1><ul>{''.join(items)}</ul>"
-            f"<p>Tracked hourly by <a href=\"{BASE}\">Espresso Deal Alerts</a>.</p>"
+            f"<p>Tracked by <a href=\"{BASE}\">Espresso Deal Alerts</a>.</p>"
             "</body></html>")
     return text, page
 
