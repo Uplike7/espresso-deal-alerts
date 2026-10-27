@@ -1585,11 +1585,12 @@
   }
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    // Recipient UNCHANGED (moneymuscleup@gmail.com). On any failure the
+    // Recipient: moneymuscleup@gmail.com via the FormSubmit alias endpoint
+    // (the naked address must never sit in page source). On any failure the
     // Telegram channel is surfaced as a fallback instead of a dead-end error.
     var payload = {email: form.email.value, _subject: "New price-alert signup", _template: "table"};
     if (form.product.value) { payload.product = form.product.value; }
-    fetch("https://formsubmit.co/ajax/moneymuscleup@gmail.com", {
+    fetch("https://formsubmit.co/ajax/711ac77c3208bd050e4cacfa0b088bf5", {
       method: "POST",
       headers: {"Content-Type": "application/json", "Accept": "application/json"},
       body: JSON.stringify(payload)
