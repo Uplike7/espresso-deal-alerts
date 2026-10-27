@@ -1,7 +1,7 @@
 # Espresso Deal Alerts
 
 > Espresso Deal Alerts is an independent price tracker for home baristas. It checks
-> espresso machine and grinder prices every hour across five specialty retailers
+> espresso machine and grinder prices several times a day across five specialty retailers
 > and only flags a drop when it is real against that model's own price history.
 > No fake sales, no expired coupons. Prices shown are retailer prices at last
 > check; retailer prices prevail at checkout.
@@ -12,7 +12,7 @@
 - Retailers: Whole Latte Love, Seattle Coffee Gear, Clive Coffee, Chris' Coffee,
   iDrinkCoffee (iDrinkCoffee prices are in Canadian dollars; USD equivalents on
   the homepage are labelled approximate)
-- Prices are re-checked hourly; each per-model page shows its own last-checked
+- Prices are re-checked several times a day; each per-model page shows its own last-checked
   time, current price, compare-at price, lowest tracked price, and price history
 
 ## Main pages
