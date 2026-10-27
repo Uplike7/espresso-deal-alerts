@@ -17,21 +17,21 @@
 
 ## Main pages
 
-- [Home](https://uplike7.github.io/espresso-deal-alerts/): one card per tracked product sorted by biggest saving, a latest-price-drops feed, and the full tracker with search, filters, and sorting
-- [All tracked deals](https://uplike7.github.io/espresso-deal-alerts/deals/): index of every per-model deal page
-- [Espresso machines](https://uplike7.github.io/espresso-deal-alerts/machines.html): machines hub
-- [Espresso grinders](https://uplike7.github.io/espresso-deal-alerts/grinders.html): grinders hub
-- [Gear under $1,000](https://uplike7.github.io/espresso-deal-alerts/under-1000.html): models under $1,000 by listed price
-- [Gear under $500](https://uplike7.github.io/espresso-deal-alerts/under-500.html): models under $500 by listed price
-- [Buying guide](https://uplike7.github.io/espresso-deal-alerts/buyers-guide.html): how to choose a machine or grinder
-- [Black Friday 2026](https://uplike7.github.io/espresso-deal-alerts/black-friday.html): Black Friday watch list
-- [Gift guide](https://uplike7.github.io/espresso-deal-alerts/gifts.html): gift picks
-- [About](https://uplike7.github.io/espresso-deal-alerts/about.html): how the site makes money (affiliate disclosure)
+- [Home](https://espressodealalerts.com/): one card per tracked product sorted by biggest saving, a latest-price-drops feed, and the full tracker with search, filters, and sorting
+- [All tracked deals](https://espressodealalerts.com/deals/): index of every per-model deal page
+- [Espresso machines](https://espressodealalerts.com/machines.html): machines hub
+- [Espresso grinders](https://espressodealalerts.com/grinders.html): grinders hub
+- [Gear under $1,000](https://espressodealalerts.com/under-1000.html): models under $1,000 by listed price
+- [Gear under $500](https://espressodealalerts.com/under-500.html): models under $500 by listed price
+- [Buying guide](https://espressodealalerts.com/buyers-guide.html): how to choose a machine or grinder
+- [Black Friday 2026](https://espressodealalerts.com/black-friday.html): Black Friday watch list
+- [Gift guide](https://espressodealalerts.com/gifts.html): gift picks
+- [About](https://espressodealalerts.com/about.html): how the site makes money (affiliate disclosure)
 
 ## Per-model pages
 
 - One page per tracked product under /deals/, e.g.
-  https://uplike7.github.io/espresso-deal-alerts/deals/arkel-coast-espresso-machine.html
+  https://espressodealalerts.com/deals/arkel-coast-espresso-machine.html
 - Each page carries Product/Offer structured data, a price-history table, related
   models, and an "Alert me when this drops" link back to the homepage signup
 
