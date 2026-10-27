@@ -81,7 +81,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-BASE = "https://uplike7.github.io/espresso-deal-alerts/"
+BASE = "https://espressodealalerts.com/"
 TELEGRAM_API_BASE = os.environ.get("TELEGRAM_API_BASE", "https://api.telegram.org")
 TELEGRAM_TEXT_LIMIT = 4096  # Bot API hard limit for one message
 

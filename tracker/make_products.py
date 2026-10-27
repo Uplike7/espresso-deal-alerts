@@ -17,7 +17,7 @@ import datetime, json, re, urllib.parse, html
 RETAILERS = {'wholelattelove.com': 'Whole Latte Love', 'seattlecoffeegear.com': 'Seattle Coffee Gear',
              'clivecoffee.com': 'Clive Coffee', 'chriscoffee.com': "Chris' Coffee",
              'idrinkcoffee.com': 'iDrinkCoffee'}
-BASE = "https://uplike7.github.io/espresso-deal-alerts/"
+BASE = "https://espressodealalerts.com/"
 
 def slugify(s):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")[:80]
