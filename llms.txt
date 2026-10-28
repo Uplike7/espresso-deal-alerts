@@ -9,7 +9,7 @@
 ## What it tracks
 
 - Espresso machines, espresso grinders, coffee gear, and refills/consumables
-  (138 products at last build)
+  (126 products at last build)
 - Retailers: Whole Latte Love, Seattle Coffee Gear, Clive Coffee, Chris' Coffee,
   iDrinkCoffee (iDrinkCoffee prices are in Canadian dollars; USD equivalents on
   the homepage are labelled approximate), and Amazon
