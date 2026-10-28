@@ -1,19 +1,27 @@
 # Espresso Deal Alerts
 
 > Espresso Deal Alerts is an independent price tracker for home baristas. It checks
-> espresso machine and grinder prices several times a day across five specialty retailers
-> and only flags a drop when it is real against that model's own price history.
-> No fake sales, no expired coupons. Prices shown are retailer prices at last
-> check; retailer prices prevail at checkout.
+> espresso machine, grinder, and consumable prices several times a day across five
+> specialty retailers and Amazon, and only flags a drop when it is real against
+> that model's own price history. No fake sales, no expired coupons. Prices shown
+> are retailer prices at last check; retailer prices prevail at checkout.
 
 ## What it tracks
 
-- Espresso machines, espresso grinders, and coffee gear (138 products at last build)
+- Espresso machines, espresso grinders, coffee gear, and refills/consumables
+  (138 products at last build)
 - Retailers: Whole Latte Love, Seattle Coffee Gear, Clive Coffee, Chris' Coffee,
   iDrinkCoffee (iDrinkCoffee prices are in Canadian dollars; USD equivalents on
-  the homepage are labelled approximate)
-- Prices are re-checked several times a day; each per-model page shows its own last-checked
-  time, current price, compare-at price, lowest tracked price, and price history
+  the homepage are labelled approximate), and Amazon
+- Amazon-tracked products (added October 2026): Ninja Luxe Café Premier,
+  Ninja Luxe Café Pro, Philips 3200 LatteGo, De'Longhi Magnifica Start,
+  MiiCoffee DF54 grinder, DF64 Gen 2 grinder
+- A refills shelf of 24 consumables — beans, filters and water care, descaler
+  and cleaning, and staple accessories — each with price history and
+  target-price alerts
+- Prices are re-checked several times a day; each per-model page shows its own
+  last-checked time, current price, compare-at price, lowest tracked price,
+  and price history
 
 ## Main pages
 
@@ -23,6 +31,7 @@
 - [Espresso grinders](https://espressodealalerts.com/grinders.html): grinders hub
 - [Gear under $1,000](https://espressodealalerts.com/under-1000.html): models under $1,000 by listed price
 - [Gear under $500](https://espressodealalerts.com/under-500.html): models under $500 by listed price
+- [Refills & consumables](https://espressodealalerts.com/refills.html): beans, filters, descaler, cleaning and accessories, price-tracked with target-price alerts
 - [Buying guide](https://espressodealalerts.com/buyers-guide.html): how to choose a machine or grinder
 - [Black Friday 2026](https://espressodealalerts.com/black-friday.html): Black Friday watch list
 - [Gift guide](https://espressodealalerts.com/gifts.html): gift picks
@@ -32,8 +41,9 @@
 
 - One page per tracked product under /deals/, e.g.
   https://espressodealalerts.com/deals/arkel-coast-espresso-machine.html
-- Each page carries Product/Offer structured data, a price-history table, related
-  models, and an "Alert me when this drops" link back to the homepage signup
+- Each page carries Product/Offer and BreadcrumbList structured data, a
+  price-history table, related models, and an "Alert me when this drops"
+  link back to the homepage signup
 
 ## Alerts
 
@@ -44,5 +54,6 @@
 ## Optional
 
 - Affiliate disclosure: some outbound links are affiliate links; the site may
-  earn a commission at no extra cost to the buyer. Primary retailer links carry
-  no affiliate parameter until a verified program tag exists for that retailer.
+  earn a commission at no extra cost to the buyer. Amazon links carry the
+  site's Amazon Associates tag; primary specialty-retailer links carry no
+  affiliate parameter until a verified program tag exists for that retailer.
