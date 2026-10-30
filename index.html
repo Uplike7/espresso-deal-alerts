@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Espresso Deal Alerts — Live Espresso Machine &amp; Grinder Deals</title>
-<meta name="description" content="Live price tracking on 126 espresso machines, grinders and coffee gear from top specialty retailers and Amazon. Real price drops and discounts, checked several times a day.">
-<meta property="og:title" content="Espresso Deal Alerts">
-<meta property="og:description" content="Live espresso machine &amp; coffee gear deals — prices checked several times a day.">
+<title>Espresso Machine Deals — Live Price Tracker | Espresso Deal Alerts</title>
+<meta name="description" content="Espresso machine deals tracked live: price tracking on 126 espresso machines, grinders and coffee gear from top specialty retailers and Amazon. Real price drops, checked several times a day against our own tracked price history.">
+<meta property="og:title" content="Espresso Machine Deals — Live Price Tracker | Espresso Deal Alerts">
+<meta property="og:description" content="Espresso machine deals tracked live — prices checked several times a day against tracked price history.">
 <link rel="canonical" href="https://espressodealalerts.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://espressodealalerts.com/">
-<meta name="twitter:title" content="Espresso Deal Alerts">
-<meta name="twitter:description" content="Live espresso machine &amp; coffee gear deals — prices checked several times a day.">
+<meta name="twitter:title" content="Espresso Machine Deals — Live Price Tracker | Espresso Deal Alerts">
+<meta name="twitter:description" content="Espresso machine deals tracked live — prices checked several times a day against tracked price history.">
 <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_70991_2000px2.jpg?v=1774450536">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_70991_2000px2.jpg?v=1774450536">
@@ -56,6 +56,9 @@
   h1 { font-size:clamp(2.7rem,6.6vw,4.9rem); font-weight:800; line-height:1.04; margin:1.35rem 0 1.15rem; max-width:17ch; }
   h1 em { font-style:italic; color:var(--accent); }
   .lede { color:var(--muted); font-size:1.13rem; max-width:58ch; }
+  .tagline { font-family:Fraunces,Georgia,serif; font-size:1.35rem; font-weight:500; color:var(--ink); margin:-.4rem 0 1rem; }
+  .freshline { color:var(--muted); font-size:.92rem; margin-top:.9rem; }
+  .freshline b { color:var(--ink); }
   .hero-signup { margin-top:2rem; background:var(--ink); color:#faf5ec; border-radius:22px; padding:2rem 2.2rem; max-width:640px; }
   .hero-signup h2 { font-size:1.5rem; color:#faf5ec; }
   .hero-signup p { color:#d8cbb8; margin-top:.5rem; }
@@ -186,8 +189,9 @@
 
 <header class="hero">
   <div class="eyebrow"><span class="dot"></span> Live prices · checked several times a day, 24/7</div>
-  <h1>Never overpay for your <em>espresso setup</em> again.</h1>
-  <p class="lede">This site is a live price tracker: we watch 126 espresso machines, grinders and coffee gear across 5 specialty retailers and Amazon, checking prices several times a day — so the moment a price drops or a real discount appears, you see it here. No fake urgency, no expired coupons — just real prices, verified against our own history.</p>
+  <h1>Espresso Machine Deals, <em>Tracked Live</em></h1>
+  <p class="tagline">Never overpay for your espresso setup again.</p>
+  <p class="lede">We track espresso machine deals live: 126 espresso machines, grinders and coffee gear watched around the clock across 5 specialty retailers and Amazon, every price checked against its own tracked history — so the moment a price drops or a real discount appears, you see it here. Browse <a href="models/">deals by model</a> for each model's current best price and the lowest price we have tracked. No fake urgency, no expired coupons — just real prices, verified against our own history.</p>
   <section class="hero-signup" id="alerts">
     <h2>Be the first to know when prices drop</h2>
     <p>Get on the deal-alert list. The moment a tracked machine, grinder or accessory hits a real price, you hear about it. No spam — just deals, unsubscribe anytime.</p>
@@ -195,6 +199,7 @@
     <p class="signup-note" id="signup-note">We check prices several times a day — you only hear from us when there's something worth buying.</p>
   </section>
   <p class="telegram-secondary">Prefer instant alerts? Also on Telegram: <a href="https://t.me/espresso_deal_alerts" target="_blank">t.me/espresso_deal_alerts</a></p>
+  <p class="freshline" id="last-checked-hero" hidden>⏱ Prices last checked <b id="last-checked-time-hero"></b> — every tracked price is re-checked several times a day.</p>
 </header>
 
 <section class="stats">
@@ -230,6 +235,7 @@
   <a class="chip" href="under-1000.html">Under $1,000</a>
   <a class="chip" href="machines.html">Machines</a>
   <a class="chip" href="grinders.html">Grinders</a>
+  <a class="chip" href="models/">Deals by model</a>
 </div>
 
 <div class="toolbar" id="deal-filters">
@@ -1998,6 +2004,9 @@
       timeZone: "America/New_York"
     }).format(new Date(latest));
     el.hidden = false;
+    var el2 = document.getElementById("last-checked-hero");
+    var out2 = document.getElementById("last-checked-time-hero");
+    if (el2 && out2) { out2.textContent = out.textContent; el2.hidden = false; }
   }).catch(function () { /* stays hidden */ });
 })();</script>
 </body>
