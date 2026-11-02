@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T23:41:57.324626Z",
+ "generated_at": "2026-11-02T06:21:17.865475Z",
  "drops": [
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
@@ -48,16 +48,6 @@
    "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-zero-espresso-grinder",
    "old_price": 329.0,
    "new_price": 299.0,
-   "currency": "USD",
-   "dropped_on": "2026-10-26"
-  },
-  {
-   "slug": "eureka-mignon-specialita-espresso-grinder",
-   "title": "Eureka Mignon Specialita Espresso Grinder",
-   "retailer": "Clive Coffee",
-   "retailer_url": "https://clivecoffee.com/products/eureka-mignon-specialita-espresso-grinder",
-   "old_price": 549.0,
-   "new_price": 499.0,
    "currency": "USD",
    "dropped_on": "2026-10-26"
   }
