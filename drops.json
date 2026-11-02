@@ -1,6 +1,36 @@
 {
- "generated_at": "2026-11-02T06:21:17.865475Z",
+ "generated_at": "2026-11-02T17:11:09.807787Z",
  "drops": [
+  {
+   "slug": "ascaso-steel-duo-plus-espresso-machine",
+   "title": "Ascaso Steel Duo Plus Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-plus-v2-5-espresso-machine",
+   "old_price": 2415.0,
+   "new_price": 2173.5,
+   "currency": "USD",
+   "dropped_on": "2026-11-02"
+  },
+  {
+   "slug": "ascaso-steel-duo-espresso-machine",
+   "title": "Ascaso Steel Duo Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-v2-5-espresso-machine",
+   "old_price": 2095.0,
+   "new_price": 1885.5,
+   "currency": "USD",
+   "dropped_on": "2026-11-02"
+  },
+  {
+   "slug": "ascaso-dream-pid-espresso-machine",
+   "title": "Ascaso Dream PID Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/collections/all/products/ascaso-dream-pid-espresso-machine",
+   "old_price": 1550.0,
+   "new_price": 1471.5,
+   "currency": "USD",
+   "dropped_on": "2026-11-02"
+  },
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
    "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
@@ -20,36 +50,6 @@
    "new_price": 1899.99,
    "currency": "CAD",
    "dropped_on": "2026-10-30"
-  },
-  {
-   "slug": "eureka-mignon-crono-brew-coffee-grinder",
-   "title": "Eureka Mignon Crono Brew Coffee Grinder",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-crono-brew-coffee-grinder",
-   "old_price": 229.0,
-   "new_price": 199.0,
-   "currency": "USD",
-   "dropped_on": "2026-10-26"
-  },
-  {
-   "slug": "eureka-mignon-notte-espresso-grinder",
-   "title": "Eureka Mignon Notte Espresso Grinder",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-notte-espresso-grinder-black",
-   "old_price": 299.0,
-   "new_price": 279.0,
-   "currency": "USD",
-   "dropped_on": "2026-10-26"
-  },
-  {
-   "slug": "eureka-mignon-zero-espresso-grinder",
-   "title": "Eureka Mignon Zero Espresso Grinder",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-zero-espresso-grinder",
-   "old_price": 329.0,
-   "new_price": 299.0,
-   "currency": "USD",
-   "dropped_on": "2026-10-26"
   }
  ]
 }

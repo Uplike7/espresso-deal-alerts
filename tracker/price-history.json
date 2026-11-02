@@ -355,6 +355,12 @@
     "price": 1050.0,
     "compare_at": 1251.22,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1050.0,
+    "compare_at": 1251.22,
+    "available": true
    }
   ],
   "current": 1050.0
@@ -712,6 +718,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2650.0,
+    "compare_at": 3195.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2650.0,
     "compare_at": 3195.0,
     "available": true
@@ -1075,6 +1087,12 @@
     "price": 3495.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3495.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 3495.0
@@ -1435,6 +1453,12 @@
     "price": 2095.0,
     "compare_at": 2495.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2095.0,
+    "compare_at": 2495.0,
+    "available": true
    }
   ],
   "current": 2095.0
@@ -1738,6 +1762,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2640.0,
+    "compare_at": 2999.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2640.0,
     "compare_at": 2999.95,
     "available": true
@@ -2101,6 +2131,12 @@
     "price": 3895.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3895.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 3895.0
@@ -2458,6 +2494,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2795.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2795.0,
     "compare_at": null,
     "available": true
@@ -2821,6 +2863,12 @@
     "price": 3199.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3199.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 3199.0
@@ -3178,6 +3226,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2895.0,
+    "compare_at": 3500.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2895.0,
     "compare_at": 3500.0,
     "available": true
@@ -3541,6 +3595,12 @@
     "price": 6990.0,
     "compare_at": 5990.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 6990.0,
+    "compare_at": 5990.0,
+    "available": true
    }
   ],
   "current": 6990.0
@@ -3898,6 +3958,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 200.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 200.0,
     "compare_at": null,
     "available": true
@@ -4261,6 +4327,12 @@
     "price": 529.95,
     "compare_at": 529.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 529.95,
+    "compare_at": 529.95,
+    "available": true
    }
   ],
   "current": 529.95
@@ -4618,6 +4690,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 3495.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 3495.0,
     "compare_at": null,
     "available": true
@@ -4981,6 +5059,12 @@
     "price": 25995.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 25995.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 25995.0
@@ -5338,6 +5422,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 259.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 259.0,
     "compare_at": null,
     "available": true
@@ -5701,6 +5791,12 @@
     "price": 2995.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2995.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 2995.0
@@ -6058,6 +6154,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 4995.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 4995.0,
     "compare_at": null,
     "available": true
@@ -6421,6 +6523,12 @@
     "price": 5295.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 5295.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 5295.0
@@ -6778,6 +6886,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2799.2,
+    "compare_at": 3499.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2799.2,
     "compare_at": 3499.0,
     "available": true
@@ -7141,6 +7255,12 @@
     "price": 3895.0,
     "compare_at": 4999.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3895.0,
+    "compare_at": 4999.0,
+    "available": true
    }
   ],
   "current": 3895.0
@@ -7498,6 +7618,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 5495.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 5495.0,
     "compare_at": null,
     "available": true
@@ -7861,6 +7987,12 @@
     "price": 3945.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3945.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 3945.0
@@ -8218,6 +8350,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 9990.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 9990.0,
     "compare_at": null,
     "available": true
@@ -8581,9 +8719,15 @@
     "price": 2415.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2173.5,
+    "compare_at": 2415.0,
+    "available": true
    }
   ],
-  "current": 2415.0
+  "current": 2173.5
  },
  "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-v2-5-espresso-machine": {
   "title": "Ascaso Steel Duo Espresso Machine",
@@ -8941,9 +9085,15 @@
     "price": 2095.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1885.5,
+    "compare_at": 2095.0,
+    "available": true
    }
   ],
-  "current": 2095.0
+  "current": 1885.5
  },
  "https://www.seattlecoffeegear.com/products/lelit-anna-espresso-machine": {
   "title": "LELIT Anna Espresso Machine",
@@ -9298,6 +9448,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 599.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 599.95,
     "compare_at": null,
     "available": true
@@ -9661,6 +9817,12 @@
     "price": 2529.08,
     "compare_at": 2749.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2529.08,
+    "compare_at": 2749.0,
+    "available": true
    }
   ],
   "current": 2529.08
@@ -10018,6 +10180,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2985.4,
+    "compare_at": 3245.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2985.4,
     "compare_at": 3245.0,
     "available": true
@@ -10381,6 +10549,12 @@
     "price": 6568.8,
     "compare_at": 7140.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 6568.8,
+    "compare_at": 7140.0,
+    "available": false
    }
   ],
   "current": 6568.8
@@ -10738,6 +10912,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2860.97,
+    "compare_at": 3250.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2860.97,
     "compare_at": 3250.0,
     "available": true
@@ -11101,6 +11281,12 @@
     "price": 4232.0,
     "compare_at": 4600.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 4232.0,
+    "compare_at": 4600.0,
+    "available": false
    }
   ],
   "current": 4232.0
@@ -11458,6 +11644,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 3523.6,
+    "compare_at": 3830.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 3523.6,
     "compare_at": 3830.0,
     "available": true
@@ -11821,6 +12013,12 @@
     "price": 4232.0,
     "compare_at": 4600.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 4232.0,
+    "compare_at": 4600.0,
+    "available": false
    }
   ],
   "current": 4232.0
@@ -12178,6 +12376,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 3523.6,
+    "compare_at": 3830.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 3523.6,
     "compare_at": 3830.0,
     "available": true
@@ -12541,6 +12745,12 @@
     "price": 2420.97,
     "compare_at": 2750.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2420.97,
+    "compare_at": 2750.0,
+    "available": true
    }
   ],
   "current": 2420.97
@@ -12898,6 +13108,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 13000.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 13000.0,
     "compare_at": null,
     "available": true
@@ -13261,6 +13477,12 @@
     "price": 2699.0,
     "compare_at": 2699.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2699.0,
+    "compare_at": 2699.0,
+    "available": false
    }
   ],
   "current": 2699.0
@@ -13618,6 +13840,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 3499.0,
+    "compare_at": 3499.0,
+    "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 3499.0,
     "compare_at": 3499.0,
     "available": false
@@ -13981,6 +14209,12 @@
     "price": 4849.0,
     "compare_at": 4849.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 4849.0,
+    "compare_at": 4849.0,
+    "available": false
    }
   ],
   "current": 4849.0
@@ -14338,6 +14572,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 1299.0,
+    "compare_at": 1299.0,
+    "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 1299.0,
     "compare_at": 1299.0,
     "available": false
@@ -14701,6 +14941,12 @@
     "price": 2249.0,
     "compare_at": 2849.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2249.0,
+    "compare_at": 2849.0,
+    "available": false
    }
   ],
   "current": 2249.0
@@ -15058,6 +15304,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2399.0,
+    "compare_at": 2399.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2399.0,
     "compare_at": 2399.0,
     "available": true
@@ -15421,6 +15673,12 @@
     "price": 3799.0,
     "compare_at": 3799.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3799.0,
+    "compare_at": 3799.0,
+    "available": false
    }
   ],
   "current": 3799.0
@@ -15778,6 +16036,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2799.0,
+    "compare_at": 2999.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2799.0,
     "compare_at": 2999.0,
     "available": true
@@ -16141,6 +16405,12 @@
     "price": 2999.0,
     "compare_at": 3599.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2999.0,
+    "compare_at": 3599.0,
+    "available": true
    }
   ],
   "current": 2999.0
@@ -16498,6 +16768,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 629.95,
+    "compare_at": 799.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 629.95,
     "compare_at": 799.95,
     "available": true
@@ -16861,6 +17137,12 @@
     "price": 2600.0,
     "compare_at": 2900.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 2600.0,
+    "compare_at": 2900.0,
+    "available": false
    }
   ],
   "current": 2600.0
@@ -17221,6 +17503,12 @@
     "price": 3890.0,
     "compare_at": 3890.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 3890.0,
+    "compare_at": 3890.0,
+    "available": true
    }
   ],
   "current": 3890.0
@@ -17566,6 +17854,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 250.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 250.0,
     "compare_at": null,
     "available": true
@@ -17917,6 +18211,12 @@
     "price": 499.0,
     "compare_at": 549.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 499.0,
+    "compare_at": 549.0,
+    "available": true
    }
   ],
   "current": 499.0
@@ -18262,6 +18562,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 1199.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 1199.0,
     "compare_at": null,
     "available": true
@@ -18613,6 +18919,12 @@
     "price": 699.95,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 699.95,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 699.95
@@ -18958,6 +19270,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 499.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 499.95,
     "compare_at": null,
     "available": true
@@ -19309,6 +19627,12 @@
     "price": 249.95,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 249.95,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 249.95
@@ -19654,6 +19978,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 199.0,
+    "compare_at": 229.0,
+    "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 199.0,
     "compare_at": 229.0,
     "available": false
@@ -20005,6 +20335,12 @@
     "price": 279.0,
     "compare_at": 299.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 279.0,
+    "compare_at": 299.0,
+    "available": true
    }
   ],
   "current": 279.0
@@ -20350,6 +20686,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 399.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 399.0,
     "compare_at": null,
     "available": true
@@ -20701,6 +21043,12 @@
     "price": 299.0,
     "compare_at": 329.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 299.0,
+    "compare_at": 329.0,
+    "available": true
    }
   ],
   "current": 299.0
@@ -21046,6 +21394,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 399.95,
+    "compare_at": 399.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 399.95,
     "compare_at": 399.95,
     "available": true
@@ -21397,6 +21751,12 @@
     "price": 599.95,
     "compare_at": 599.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 599.95,
+    "compare_at": 599.95,
+    "available": true
    }
   ],
   "current": 599.95
@@ -21742,6 +22102,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 299.95,
+    "compare_at": 299.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 299.95,
     "compare_at": 299.95,
     "available": true
@@ -22093,6 +22459,12 @@
     "price": 499.95,
     "compare_at": 499.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 499.95,
+    "compare_at": 499.95,
+    "available": true
    }
   ],
   "current": 499.95
@@ -22438,6 +22810,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 699.95,
+    "compare_at": 699.95,
+    "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 699.95,
     "compare_at": 699.95,
     "available": false
@@ -22789,6 +23167,12 @@
     "price": 799.95,
     "compare_at": 799.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 799.95,
+    "compare_at": 799.95,
+    "available": true
    }
   ],
   "current": 799.95
@@ -23134,6 +23518,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 999.95,
+    "compare_at": 999.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 999.95,
     "compare_at": 999.95,
     "available": true
@@ -23485,6 +23875,12 @@
     "price": 599.95,
     "compare_at": 699.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 599.95,
+    "compare_at": 699.95,
+    "available": true
    }
   ],
   "current": 599.95
@@ -23830,6 +24226,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 749.95,
+    "compare_at": 749.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 749.95,
     "compare_at": 749.95,
     "available": true
@@ -24181,6 +24583,12 @@
     "price": 299.95,
     "compare_at": 299.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 299.95,
+    "compare_at": 299.95,
+    "available": true
    }
   ],
   "current": 299.95
@@ -24526,6 +24934,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 399.95,
+    "compare_at": 399.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 399.95,
     "compare_at": 399.95,
     "available": true
@@ -24877,6 +25291,12 @@
     "price": 399.95,
     "compare_at": 399.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 399.95,
+    "compare_at": 399.95,
+    "available": true
    }
   ],
   "current": 399.95
@@ -25222,6 +25642,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 499.0,
+    "compare_at": 699.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 499.0,
     "compare_at": 699.0,
     "available": true
@@ -25573,6 +25999,12 @@
     "price": 229.0,
     "compare_at": 349.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 229.0,
+    "compare_at": 349.0,
+    "available": true
    }
   ],
   "current": 229.0
@@ -25918,6 +26350,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 499.0,
+    "compare_at": 549.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 499.0,
     "compare_at": 549.0,
     "available": true
@@ -26269,6 +26707,12 @@
     "price": 849.0,
     "compare_at": 849.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 849.0,
+    "compare_at": 849.0,
+    "available": true
    }
   ],
   "current": 849.0
@@ -26614,6 +27058,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 249.0,
+    "compare_at": 269.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 249.0,
     "compare_at": 269.0,
     "available": true
@@ -26965,6 +27415,12 @@
     "price": 1199.0,
     "compare_at": 1199.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1199.0,
+    "compare_at": 1199.0,
+    "available": true
    }
   ],
   "current": 1199.0
@@ -27220,6 +27676,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 299.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 299.95,
     "compare_at": null,
     "available": true
@@ -27481,6 +27943,12 @@
     "price": 1899.99,
     "compare_at": 2399.99,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1899.99,
+    "compare_at": 2399.99,
+    "available": true
    }
   ],
   "current": 1899.99
@@ -27736,6 +28204,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 849.95,
+    "compare_at": 849.95,
+    "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 849.95,
     "compare_at": 849.95,
     "available": false
@@ -27997,6 +28471,12 @@
     "price": 299.95,
     "compare_at": 299.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 299.95,
+    "compare_at": 299.95,
+    "available": true
    }
   ],
   "current": 299.95
@@ -28252,6 +28732,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 2195.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 2195.0,
     "compare_at": null,
     "available": true
@@ -28513,6 +28999,12 @@
     "price": 1699.95,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1699.95,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 1699.95
@@ -28768,6 +29260,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 1799.95,
+    "compare_at": 1799.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 1799.95,
     "compare_at": 1799.95,
     "available": true
@@ -29029,6 +29527,12 @@
     "price": 1699.0,
     "compare_at": 1699.0,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1699.0,
+    "compare_at": 1699.0,
+    "available": false
    }
   ],
   "current": 1699.0
@@ -29287,9 +29791,15 @@
     "price": 1550.0,
     "compare_at": null,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1471.5,
+    "compare_at": 1635.0,
+    "available": false
    }
   ],
-  "current": 1550.0
+  "current": 1471.5
  },
  "https://www.seattlecoffeegear.com/products/fellow-opus-coffee-and-espresso-grinder": {
   "title": "Fellow Opus Coffee & Espresso Grinder",
@@ -29542,6 +30052,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 199.95,
+    "compare_at": null,
+    "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 199.95,
     "compare_at": null,
     "available": false
@@ -29803,6 +30319,12 @@
     "price": 1595.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1595.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 1595.0
@@ -30058,6 +30580,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 199.95,
+    "compare_at": 199.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 199.95,
     "compare_at": 199.95,
     "available": true
@@ -30319,6 +30847,12 @@
     "price": 699.0,
     "compare_at": 799.0,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 699.0,
+    "compare_at": 799.0,
+    "available": true
    }
   ],
   "current": 699.0
@@ -30574,6 +31108,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 149.95,
+    "compare_at": 149.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 149.95,
     "compare_at": 149.95,
     "available": true
@@ -30835,6 +31375,12 @@
     "price": 44.99,
     "compare_at": 44.99,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 44.99,
+    "compare_at": 44.99,
+    "available": true
    }
   ],
   "current": 44.99
@@ -31093,6 +31639,12 @@
     "price": 165.0,
     "compare_at": null,
     "available": false
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 165.0,
+    "compare_at": null,
+    "available": false
    }
   ],
   "current": 165.0
@@ -31312,6 +31864,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 20.0,
+    "compare_at": 20.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 20.0,
     "compare_at": 20.0,
     "available": true
@@ -31537,6 +32095,12 @@
     "price": 23.5,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 23.5,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 23.5
@@ -31756,6 +32320,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 20.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 20.0,
     "compare_at": null,
     "available": true
@@ -31981,6 +32551,12 @@
     "price": 16.8,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 16.8,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 16.8
@@ -32200,6 +32776,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 32.0,
+    "compare_at": 40.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 32.0,
     "compare_at": 40.0,
     "available": true
@@ -32425,6 +33007,12 @@
     "price": 68.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 68.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 68.0
@@ -32644,6 +33232,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 11.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 11.95,
     "compare_at": null,
     "available": true
@@ -32869,6 +33463,12 @@
     "price": 10.45,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 10.45,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 10.45
@@ -33088,6 +33688,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 22.0,
+    "compare_at": 22.0,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 22.0,
     "compare_at": 22.0,
     "available": true
@@ -33313,6 +33919,12 @@
     "price": 16.95,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 16.95,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 16.95
@@ -33532,6 +34144,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 29.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 29.95,
     "compare_at": null,
     "available": true
@@ -33757,6 +34375,12 @@
     "price": 5.99,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 5.99,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 5.99
@@ -33976,6 +34600,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 26.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 26.95,
     "compare_at": null,
     "available": true
@@ -34201,6 +34831,12 @@
     "price": 21.99,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 21.99,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 21.99
@@ -34420,6 +35056,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 29.95,
+    "compare_at": 29.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 29.95,
     "compare_at": 29.95,
     "available": true
@@ -34645,6 +35287,12 @@
     "price": 35.38,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 35.38,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 35.38
@@ -34864,6 +35512,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 28.95,
+    "compare_at": 23.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 28.95,
     "compare_at": 23.95,
     "available": true
@@ -35089,6 +35743,12 @@
     "price": 39.95,
     "compare_at": 39.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 39.95,
+    "compare_at": 39.95,
+    "available": true
    }
   ],
   "current": 39.95
@@ -35308,6 +35968,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 28.0,
+    "compare_at": 37.5,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 28.0,
     "compare_at": 37.5,
     "available": true
@@ -35533,6 +36199,12 @@
     "price": 45.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 45.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 45.0
@@ -35752,6 +36424,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 29.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 29.95,
     "compare_at": null,
     "available": true
@@ -35977,6 +36655,12 @@
     "price": 40.0,
     "compare_at": null,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 40.0,
+    "compare_at": null,
+    "available": true
    }
   ],
   "current": 40.0
@@ -36199,6 +36883,12 @@
     "price": 29.95,
     "compare_at": 29.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 29.95,
+    "compare_at": 29.95,
+    "available": true
    }
   ],
   "current": 29.95
@@ -36418,6 +37108,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 29.0,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 29.0,
     "compare_at": null,
     "available": true
@@ -36724,6 +37420,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 599.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 599.95,
     "compare_at": null,
     "available": true
@@ -37039,6 +37741,12 @@
     "price": 1999.95,
     "compare_at": 1999.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 1999.95,
+    "compare_at": 1999.95,
+    "available": true
    }
   ],
   "current": 1999.95
@@ -37174,6 +37882,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 1999.95,
+    "compare_at": 1999.95,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 1999.95,
     "compare_at": 1999.95,
     "available": true
@@ -37315,6 +38029,12 @@
     "price": 599.95,
     "compare_at": 599.95,
     "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
+    "price": 599.95,
+    "compare_at": 599.95,
+    "available": true
    }
   ],
   "current": 599.95
@@ -37450,6 +38170,12 @@
    },
    {
     "t": "2026-11-02T06:19:29Z",
+    "price": 1499.95,
+    "compare_at": null,
+    "available": true
+   },
+   {
+    "t": "2026-11-02T17:09:19Z",
     "price": 1499.95,
     "compare_at": null,
     "available": true
