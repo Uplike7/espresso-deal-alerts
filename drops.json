@@ -1,6 +1,16 @@
 {
- "generated_at": "2026-11-02T23:56:05.870390Z",
+ "generated_at": "2026-11-03T06:58:11.634634Z",
  "drops": [
+  {
+   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
+   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
+   "old_price": 599.0,
+   "new_price": 579.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-03"
+  },
   {
    "slug": "breville-barista-express-espresso-machine",
    "title": "Breville Barista Express Espresso Machine",
