@@ -1,6 +1,16 @@
 {
- "generated_at": "2026-11-06T18:05:48.974467Z",
+ "generated_at": "2026-11-06T23:16:05.947628Z",
  "drops": [
+  {
+   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
+   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
+   "old_price": 599.95,
+   "new_price": 599.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-06"
+  },
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
    "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
@@ -18,16 +28,6 @@
    "retailer_url": "https://www.wholelattelove.com/products/breville-bes870xl-barista-express",
    "old_price": 699.95,
    "new_price": 499.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-03"
-  },
-  {
-   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
-   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
-   "old_price": 599.0,
-   "new_price": 579.0,
    "currency": "USD",
    "dropped_on": "2026-11-03"
   },
