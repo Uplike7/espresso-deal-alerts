@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-06T02:33:40.823536Z",
+ "generated_at": "2026-11-06T11:03:31.183754Z",
  "drops": [
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
    "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
    "retailer": "Amazon",
    "retailer_url": "https://www.amazon.com/dp/B07VFY4MXM",
-   "old_price": 529.0,
-   "new_price": 528.99,
+   "old_price": 528.99,
+   "new_price": 527.2,
    "currency": "USD",
-   "dropped_on": "2026-11-05"
+   "dropped_on": "2026-11-06"
   },
   {
    "slug": "breville-bes870xl-barista-express",
@@ -80,16 +80,6 @@
    "new_price": 1471.5,
    "currency": "USD",
    "dropped_on": "2026-11-02"
-  },
-  {
-   "slug": "breville-the-dual-boiler-bes920-espresso-machine",
-   "title": "Breville The Dual Boiler BES920 Espresso Machine",
-   "retailer": "iDrinkCoffee",
-   "retailer_url": "https://www.idrinkcoffee.com/products/breville-the-dual-boiler-bes920-espresso-machine",
-   "old_price": 2399.99,
-   "new_price": 1899.99,
-   "currency": "CAD",
-   "dropped_on": "2026-10-30"
   }
  ]
 }
