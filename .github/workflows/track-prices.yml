@@ -28,10 +28,13 @@ jobs:
       - name: Build per-model deal pages
         working-directory: tracker
         run: python3 build_pages.py --products products.json --out ../deals --amazon-tag espressodeala-20 --ebay-campid 5339219076
+      - name: Sync editorial page prices (homepage, buyers guide, Black Friday)
+        working-directory: tracker
+        run: python3 sync_editorial_prices.py
       - name: Commit updates
         run: |
           git config user.name "espresso-tracker"
           git config user.email "tracker@users.noreply.github.com"
-          git add tracker/price-history.json tracker/products.json deals sitemap.xml machines.html grinders.html under-1000.html under-500.html drops.json tracker/alert-state.json models black-friday-price-floors.html
+          git add tracker/price-history.json tracker/products.json deals sitemap.xml machines.html grinders.html under-1000.html under-500.html drops.json tracker/alert-state.json models black-friday-price-floors.html index.html buyers-guide.html black-friday.html
           git diff --cached --quiet || git commit -m "price refresh $(date -u +%FT%H:%MZ)"
           git push
