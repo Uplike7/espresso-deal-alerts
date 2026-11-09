@@ -1,6 +1,26 @@
 {
- "generated_at": "2026-11-09T08:05:12.712963Z",
+ "generated_at": "2026-11-09T18:54:50.777146Z",
  "drops": [
+  {
+   "slug": "delonghi-la-specialista-arte-ec9155mb-espresso-machine",
+   "title": "DeLonghi La Specialista Arte EC9155MB Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/delonghi-la-specialista-arte-ec9155mb-espresso-machine",
+   "old_price": 629.96,
+   "new_price": 599.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-09"
+  },
+  {
+   "slug": "gaggia-carezza-de-luxe-espresso-machine",
+   "title": "Gaggia Carezza De LUXE Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/gaggia-carezza-deluxe",
+   "old_price": 314.1,
+   "new_price": 229.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-09"
+  },
   {
    "slug": "delonghi-eletta-explore-espresso-machine",
    "title": "Delonghi Eletta Explore Espresso Machine",
@@ -58,36 +78,6 @@
    "retailer_url": "https://www.seattlecoffeegear.com/products/breville-barista-touch-impress-espresso-machines",
    "old_price": 1499.95,
    "new_price": 1199.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-02"
-  },
-  {
-   "slug": "ascaso-steel-duo-plus-espresso-machine",
-   "title": "Ascaso Steel Duo Plus Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-plus-v2-5-espresso-machine",
-   "old_price": 2415.0,
-   "new_price": 2173.5,
-   "currency": "USD",
-   "dropped_on": "2026-11-02"
-  },
-  {
-   "slug": "ascaso-steel-duo-espresso-machine",
-   "title": "Ascaso Steel Duo Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/ascaso-steel-duo-v2-5-espresso-machine",
-   "old_price": 2095.0,
-   "new_price": 1885.5,
-   "currency": "USD",
-   "dropped_on": "2026-11-02"
-  },
-  {
-   "slug": "ascaso-dream-pid-espresso-machine",
-   "title": "Ascaso Dream PID Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/collections/all/products/ascaso-dream-pid-espresso-machine",
-   "old_price": 1550.0,
-   "new_price": 1471.5,
    "currency": "USD",
    "dropped_on": "2026-11-02"
   }
