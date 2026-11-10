@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T09:59:41.861075Z",
+ "generated_at": "2026-11-10T17:56:53.915582Z",
  "drops": [
   {
    "slug": "delonghi-la-specialista-arte-ec9155mb-espresso-machine",
@@ -50,16 +50,6 @@
    "new_price": 599.0,
    "currency": "USD",
    "dropped_on": "2026-11-06"
-  },
-  {
-   "slug": "breville-bes870xl-barista-express",
-   "title": "Breville BES870XL Barista Express",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/breville-bes870xl-barista-express",
-   "old_price": 699.95,
-   "new_price": 499.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-03"
   }
  ]
 }
