@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T18:54:50.777146Z",
+ "generated_at": "2026-11-10T02:14:35.741554Z",
  "drops": [
   {
    "slug": "delonghi-la-specialista-arte-ec9155mb-espresso-machine",
@@ -60,26 +60,6 @@
    "new_price": 499.95,
    "currency": "USD",
    "dropped_on": "2026-11-03"
-  },
-  {
-   "slug": "breville-barista-express-espresso-machine",
-   "title": "Breville Barista Express Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/breville-barista-express-espresso-machine",
-   "old_price": 699.95,
-   "new_price": 499.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-02"
-  },
-  {
-   "slug": "breville-barista-touch-impress-espresso-machine",
-   "title": "Breville Barista Touch Impress Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/breville-barista-touch-impress-espresso-machines",
-   "old_price": 1499.95,
-   "new_price": 1199.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-02"
   }
  ]
 }
