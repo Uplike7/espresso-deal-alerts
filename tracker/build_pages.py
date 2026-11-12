@@ -201,7 +201,7 @@ INDEX_HEAD = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All Tracked Espresso Deals — Price History Index | Espresso Deal Alerts">
 <meta name="twitter:description" content="Every espresso machine and grinder we track around the clock, with live prices and price history.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L0H4N4G2T"></script>
 <script>
@@ -275,7 +275,7 @@ PAGE = """<!DOCTYPE html>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{title} — Espresso Deal Alerts">
 <meta name="twitter:description" content="Live price for the {title}: {price} at {retailer}. Tracked against price history.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
 __GA4__
 <script type="application/ld+json">{schema}</script>
 <script type="application/ld+json">{crumb_schema}</script>
