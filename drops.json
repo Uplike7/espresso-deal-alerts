@@ -1,6 +1,26 @@
 {
- "generated_at": "2026-11-12T03:53:41.679228Z",
+ "generated_at": "2026-11-12T12:53:16.100677Z",
  "drops": [
+  {
+   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
+   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
+   "old_price": 599.0,
+   "new_price": 574.88,
+   "currency": "USD",
+   "dropped_on": "2026-11-12"
+  },
+  {
+   "slug": "de-longhi-magnifica-start-automatic-espresso-machine-milk-frother-black",
+   "title": "De'Longhi Magnifica Start Automatic Espresso Machine, Milk Frother, Black",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0D96XT9BF",
+   "old_price": 599.95,
+   "new_price": 449.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-12"
+  },
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
    "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
@@ -40,16 +60,6 @@
    "new_price": 1499.95,
    "currency": "USD",
    "dropped_on": "2026-11-08"
-  },
-  {
-   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
-   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
-   "old_price": 599.95,
-   "new_price": 599.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-06"
   }
  ]
 }
