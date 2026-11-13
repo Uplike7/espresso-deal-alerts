@@ -1,6 +1,26 @@
 {
- "generated_at": "2026-11-13T17:51:33.073239Z",
+ "generated_at": "2026-11-13T23:40:38.697327Z",
  "drops": [
+  {
+   "slug": "compak-i3-pro-black-open-box-sn-859192",
+   "title": "Compak I3 Pro (Black) (Open Box SN: 859192)",
+   "retailer": "Chris' Coffee",
+   "retailer_url": "https://www.chriscoffee.com/products/compak-i3-pro-black-open-box",
+   "old_price": 1050.0,
+   "new_price": 995.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-13"
+  },
+  {
+   "slug": "rocket-espresso-r58-tune-espresso-machine",
+   "title": "Rocket Espresso R58 TUNE Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/rocket-espresso-r58-tune-espresso-machine",
+   "old_price": 3890.0,
+   "new_price": 3540.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-13"
+  },
   {
    "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
    "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
