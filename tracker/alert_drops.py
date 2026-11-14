@@ -13,19 +13,24 @@ What it does
    in the 7-day drops.json window never alerts twice, while a FURTHER drop
    on the same product (new prices / new date) is a new key and alerts
    again — which is what subscribers want.
-3. For drops never alerted, formats ONE digest (plain text + HTML) and:
-   - sends it to the Telegram channel via the Bot API, IF both
-     TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID are set as environment
-     variables (GitHub secrets in the workflow). Uses urllib only —
-     no new dependencies.
+3. For drops never alerted, formats ONE digest (plain text + HTML) and
+   sends it over every configured channel:
+   - Telegram: via the Bot API, IF both TELEGRAM_BOT_TOKEN and
+     TELEGRAM_CHAT_ID are set as environment variables (GitHub secrets
+     in the workflow).
+   - Email: via the Brevo transactional API, IF BREVO_API_KEY is set
+     AND subscribers.json names at least one subscriber. One API call
+     per subscriber (each subscriber is the single "to"), from
+     support@espressodealalerts.com, using the same text + HTML digest.
    - ALWAYS also writes the digest to alerts-outbox/<date>-<hash>.md —
-     the email-ready copy. There is deliberately NO email sender here:
-     email needs a real provider account + API key (see BUILD-REPORT.md).
-4. Marks keys as sent in alert-state.json ONLY after a Telegram send
-   actually succeeds. If credentials are missing, it logs
-   "alerts pending: no Telegram credentials configured", leaves state
-   untouched, and exits 0 — so the moment credentials are added, the
-   pending drops go out on the next hourly run.
+     the email-ready copy, kept as a local record of what went out.
+   Everything uses urllib only — no new dependencies.
+4. Marks keys as sent in alert-state.json ONLY after at least one
+   configured channel actually delivers. If NO channel is configured,
+   it logs "alerts pending", leaves state untouched, and exits 0 — so
+   the moment a channel is configured, the pending drops go out on the
+   next hourly run. If channels are configured but ALL of them fail,
+   state is likewise left untouched so the next run retries.
 
 First-run behaviour (baseline seeding)
 --------------------------------------
@@ -68,7 +73,17 @@ ALERT_STATE_PATH   default: ./alert-state.json  (tracker/alert-state.json
                    in the workflow; committed by the workflow so the
                    "already sent" memory survives between runs)
 ALERT_OUTBOX_DIR   default: ./alerts-outbox
+ALERT_SUBSCRIBERS_PATH
+                   default: ./subscribers.json (tracker/subscribers.json
+                   in the workflow). The website's FormSubmit signups are
+                   collected into this file; schema:
+                   {"subscribers": [{"email": ..., "added": "YYYY-MM-DD",
+                   "product": <slug or null>}]}
+BREVO_API_KEY      enables the email channel when set (GitHub secret in
+                   the workflow); email is sent only if subscribers.json
+                   has at least one subscriber.
 TELEGRAM_API_BASE  default: https://api.telegram.org (test hook only)
+BREVO_API_BASE     default: https://api.brevo.com (test hook only)
 
 Python 3.12, standard library only.
 """
@@ -84,6 +99,9 @@ from pathlib import Path
 BASE = "https://espressodealalerts.com/"
 TELEGRAM_API_BASE = os.environ.get("TELEGRAM_API_BASE", "https://api.telegram.org")
 TELEGRAM_TEXT_LIMIT = 4096  # Bot API hard limit for one message
+BREVO_API_BASE = os.environ.get("BREVO_API_BASE", "https://api.brevo.com")
+EMAIL_SENDER = {"name": "Espresso Deal Alerts",
+                "email": "support@espressodealalerts.com"}
 
 
 def log(msg):
@@ -178,6 +196,87 @@ def send_telegram(token, chat_id, text):
     if not body.get("ok"):
         raise RuntimeError(f"Telegram API returned not-ok: {body.get('description')}")
     return True
+
+
+def find_subscribers_path():
+    env = os.environ.get("ALERT_SUBSCRIBERS_PATH")
+    if env:
+        return Path(env)
+    for cand in (Path("subscribers.json"), Path("tracker/subscribers.json")):
+        if cand.exists():
+            return cand
+    return Path("subscribers.json")  # missing-file path: load handles it
+
+
+def load_subscribers(path):
+    """Return the subscriber email list from subscribers.json ([] when
+    the file is absent, malformed, or holds no usable entries — the
+    email channel is simply off then; this never breaks the run)."""
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        raw = data.get("subscribers") if isinstance(data, dict) else None
+        if not isinstance(raw, list):
+            raise ValueError("unexpected shape")
+    except Exception as e:
+        log(f"WARNING: subscribers file {path} unreadable ({e}); "
+            "email alerts skipped for this run.")
+        return []
+    emails, skipped = [], 0
+    for s in raw:
+        if isinstance(s, dict) and isinstance(s.get("email"), str) \
+                and s["email"]:
+            emails.append(s["email"])
+        else:
+            skipped += 1
+    if skipped:
+        log(f"skipped {skipped} malformed subscriber entr"
+            f"{'y' if skipped == 1 else 'ies'}.")
+    return emails
+
+
+def email_subject(drops):
+    """Subject line for the email digest, in the tone of the Telegram
+    digest: led by the biggest drop (deepest % off)."""
+    top = max(drops, key=pct_off)
+    summary = "{} — {} → {} (−{:.1f}%)".format(
+        top.get("title", top["slug"]),
+        money(top["old_price"], top.get("currency")),
+        money(top["new_price"], top.get("currency")), pct_off(top))
+    if len(drops) > 1:
+        summary += f" · +{len(drops) - 1} more drop" \
+                   f"{'s' if len(drops) > 2 else ''}"
+    return f"Price drop alert: {summary}"
+
+
+def send_email(api_key, to_email, subject, text, page_html):
+    """POST one transactional email via the Brevo API. Returns True on
+    success (HTTP 2xx); raises on API/transport errors so the caller can
+    log and carry on. One call per subscriber, that subscriber as the
+    single "to" — subscribers never see each other's addresses."""
+    payload = json.dumps({
+        "sender": EMAIL_SENDER,
+        "to": [{"email": to_email}],
+        "subject": subject,
+        "textContent": text,
+        "htmlContent": page_html,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        f"{BREVO_API_BASE}/v3/smtp/email",
+        data=payload,
+        headers={"Content-Type": "application/json",
+                 "Accept": "application/json", "api-key": api_key},
+        method="POST")
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        resp.read()
+    return True
+
+
+def email_configured(subscribers):
+    """The email channel counts as configured only when there is both
+    an API key and someone to send to."""
+    return bool(os.environ.get("BREVO_API_KEY") and subscribers)
 
 
 def find_drops_path():
@@ -501,24 +600,51 @@ def main():
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-    if not token or not chat_id:
-        log("alerts pending: no Telegram credentials configured "
-            "(TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set). State NOT "
-            "updated — these drops will alert on the first run after "
-            "credentials are added.")
+    tg_configured = bool(token and chat_id)
+    subscribers = load_subscribers(find_subscribers_path())
+    mail_configured = email_configured(subscribers)
+
+    if not tg_configured and not mail_configured:
+        log("alerts pending: no alert channel configured "
+            "(TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set, and email "
+            "needs BREVO_API_KEY plus at least one subscriber in "
+            "subscribers.json). State NOT updated — these drops will "
+            "alert on the first run after a channel is configured.")
         return 0
 
-    try:
-        send_telegram(token, chat_id, text)
-    except Exception as e:
-        log(f"Telegram send FAILED ({e}). State NOT updated — will retry "
-            "on the next run.")
+    delivered = []
+
+    if tg_configured:
+        try:
+            send_telegram(token, chat_id, text)
+            delivered.append("Telegram")
+        except Exception as e:
+            log(f"Telegram send FAILED ({e}).")
+
+    if mail_configured:
+        api_key = os.environ["BREVO_API_KEY"]
+        subject = email_subject(new_drops)
+        sent_to = 0
+        for email in subscribers:
+            try:
+                send_email(api_key, email, subject, text, page_html)
+                sent_to += 1
+            except Exception as e:
+                log(f"email send to {email} FAILED ({e}).")
+        if sent_to:
+            delivered.append(f"email ({sent_to}/{len(subscribers)} "
+                             "subscriber(s))")
+
+    if not delivered:
+        log("all configured alert channels FAILED. State NOT updated — "
+            "will retry on the next run.")
         return 0
 
     state["sent"].extend(drop_key(d) for d in new_drops)
     state["last_alert_at"] = now.isoformat().replace("+00:00", "Z")
     save_state(state_path, state)
-    log(f"Telegram digest sent ({len(new_drops)} drop(s)); state updated "
+    log(f"digest delivered via {' + '.join(delivered)} "
+        f"({len(new_drops)} drop(s)); state updated "
         f"({len(state['sent'])} keys total).")
     return 0
 
