@@ -1,6 +1,56 @@
 {
- "generated_at": "2026-11-15T02:46:59.092904Z",
+ "generated_at": "2026-11-15T11:08:45.069411Z",
  "drops": [
+  {
+   "slug": "delonghi-dedica-duo-ec890-espresso-machine",
+   "title": "DeLonghi Dedica Duo EC890 Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/delonghi-dedica-duo-espresso-machine",
+   "old_price": 249.95,
+   "new_price": 199.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-15"
+  },
+  {
+   "slug": "delonghi-magnifica-evo-ecam29043sb",
+   "title": "DeLonghi Magnifica Evo ECAM29043SB",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/delonghi-magnifica-evo-ecam29043sb",
+   "old_price": 749.95,
+   "new_price": 499.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-15"
+  },
+  {
+   "slug": "gaggia-anima-super-automatic-espresso-machine",
+   "title": "Gaggia Anima Super-Automatic Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/gaggia-anima-super-automatic-espresso-machine",
+   "old_price": 499.0,
+   "new_price": 429.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-15"
+  },
+  {
+   "slug": "gaggia-carezza-de-luxe-espresso-machine",
+   "title": "Gaggia Carezza De LUXE Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/gaggia-carezza-deluxe",
+   "old_price": 229.0,
+   "new_price": 199.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-15"
+  },
+  {
+   "slug": "gaggia-espresso-evolution",
+   "title": "Gaggia Espresso Evolution",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/gaggia-espresso-evolution",
+   "old_price": 249.0,
+   "new_price": 179.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-15"
+  },
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
    "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
@@ -58,16 +108,6 @@
    "retailer_url": "https://www.wholelattelove.com/products/delonghi-la-specialista-arte-ec9155mb-espresso-machine",
    "old_price": 629.96,
    "new_price": 599.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-09"
-  },
-  {
-   "slug": "gaggia-carezza-de-luxe-espresso-machine",
-   "title": "Gaggia Carezza De LUXE Espresso Machine",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/gaggia-carezza-deluxe",
-   "old_price": 314.1,
-   "new_price": 229.0,
    "currency": "USD",
    "dropped_on": "2026-11-09"
   },
