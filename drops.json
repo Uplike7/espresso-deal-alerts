@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T11:36:52.622915Z",
+ "generated_at": "2026-11-16T20:37:13.636950Z",
  "drops": [
   {
    "slug": "delonghi-dedica-duo-ec890-espresso-machine",
@@ -100,16 +100,6 @@
    "new_price": 449.95,
    "currency": "USD",
    "dropped_on": "2026-11-12"
-  },
-  {
-   "slug": "delonghi-la-specialista-arte-ec9155mb-espresso-machine",
-   "title": "DeLonghi La Specialista Arte EC9155MB Espresso Machine",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/delonghi-la-specialista-arte-ec9155mb-espresso-machine",
-   "old_price": 629.96,
-   "new_price": 599.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-09"
   }
  ]
 }

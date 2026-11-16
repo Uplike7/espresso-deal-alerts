@@ -1,10 +1,22 @@
 {
  "version": 1,
  "sent": [
+  "compak-i3-pro-black-open-box-sn-859192|1050.0|995.0|2026-11-13",
+  "de-longhi-magnifica-start-automatic-espresso-machine-milk-frother-black|599.95|449.95|2026-11-12",
+  "delonghi-dedica-duo-ec890-espresso-machine|249.95|199.95|2026-11-15",
+  "delonghi-magnifica-evo-ecam29043sb|749.95|499.95|2026-11-15",
   "eureka-mignon-crono-brew-coffee-grinder|229.0|199.0|2026-10-26",
   "eureka-mignon-notte-espresso-grinder|299.0|279.0|2026-10-26",
   "eureka-mignon-specialita-espresso-grinder|549.0|499.0|2026-10-26",
-  "eureka-mignon-zero-espresso-grinder|329.0|299.0|2026-10-26"
+  "eureka-mignon-zero-espresso-grinder|329.0|299.0|2026-10-26",
+  "gaggia-anima-super-automatic-espresso-machine|499.0|429.0|2026-11-15",
+  "gaggia-carezza-de-luxe-espresso-machine|229.0|199.0|2026-11-15",
+  "gaggia-espresso-evolution|249.0|179.0|2026-11-15",
+  "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|599.0|574.88|2026-11-12",
+  "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff|529.85|529.0|2026-11-14",
+  "rocket-espresso-r58-tune-espresso-machine|3890.0|3540.0|2026-11-13"
  ],
- "seeded_at": "2026-10-26T19:20:20.732962Z"
+ "seeded_at": "2026-10-26T19:20:20.732962Z",
+ "targets_sent": [],
+ "last_alert_at": "2026-11-16T20:37:13.689801Z"
 }
