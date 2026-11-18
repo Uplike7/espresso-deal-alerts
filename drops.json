@@ -1,6 +1,16 @@
 {
- "generated_at": "2026-11-18T04:31:02.875985Z",
+ "generated_at": "2026-11-18T14:12:09.057903Z",
  "drops": [
+  {
+   "slug": "breville-the-dual-boiler-bes920-espresso-machine",
+   "title": "Breville The Dual Boiler BES920 Espresso Machine",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/breville-the-dual-boiler-bes920-espresso-machine",
+   "old_price": 2399.99,
+   "new_price": 1849.99,
+   "currency": "CAD",
+   "dropped_on": "2026-11-18"
+  },
   {
    "slug": "delonghi-dedica-duo-ec890-espresso-machine",
    "title": "DeLonghi Dedica Duo EC890 Espresso Machine",
