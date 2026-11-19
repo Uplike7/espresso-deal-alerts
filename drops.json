@@ -1,6 +1,46 @@
 {
- "generated_at": "2026-11-19T03:38:40.521856Z",
+ "generated_at": "2026-11-19T13:24:18.579236Z",
  "drops": [
+  {
+   "slug": "fellow-aiden-precision-coffee-maker",
+   "title": "Fellow Aiden Precision Coffee Maker",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/fellow-aiden-precision-coffee-maker",
+   "old_price": 399.95,
+   "new_price": 319.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-19"
+  },
+  {
+   "slug": "fellow-ode-brew-grinder-gen-2",
+   "title": "Fellow Ode Brew Grinder Gen 2",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/fellow-ode-brew-grinder-gen-2",
+   "old_price": 399.95,
+   "new_price": 319.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-19"
+  },
+  {
+   "slug": "fellow-espresso-knock-box",
+   "title": "Fellow Espresso Knock Box",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/fellow-espresso-knock-box",
+   "old_price": 39.95,
+   "new_price": 31.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-19"
+  },
+  {
+   "slug": "fellow-espresso-58-mm-magnetic-dosing-funnel",
+   "title": "Fellow Espresso 58 mm Magnetic Dosing Funnel",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/fellow-espresso-58-mm-magnetic-dosing-funnel",
+   "old_price": 29.95,
+   "new_price": 23.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-19"
+  },
   {
    "slug": "breville-the-dual-boiler-bes920-espresso-machine",
    "title": "Breville The Dual Boiler BES920 Espresso Machine",
@@ -80,36 +120,6 @@
    "new_price": 995.0,
    "currency": "USD",
    "dropped_on": "2026-11-13"
-  },
-  {
-   "slug": "rocket-espresso-r58-tune-espresso-machine",
-   "title": "Rocket Espresso R58 TUNE Espresso Machine",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/rocket-espresso-r58-tune-espresso-machine",
-   "old_price": 3890.0,
-   "new_price": 3540.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-13"
-  },
-  {
-   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
-   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
-   "old_price": 599.0,
-   "new_price": 574.88,
-   "currency": "USD",
-   "dropped_on": "2026-11-12"
-  },
-  {
-   "slug": "de-longhi-magnifica-start-automatic-espresso-machine-milk-frother-black",
-   "title": "De'Longhi Magnifica Start Automatic Espresso Machine, Milk Frother, Black",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0D96XT9BF",
-   "old_price": 599.95,
-   "new_price": 449.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-12"
   }
  ]
 }

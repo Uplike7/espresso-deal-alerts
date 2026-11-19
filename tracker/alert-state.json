@@ -10,6 +10,10 @@
   "eureka-mignon-notte-espresso-grinder|299.0|279.0|2026-10-26",
   "eureka-mignon-specialita-espresso-grinder|549.0|499.0|2026-10-26",
   "eureka-mignon-zero-espresso-grinder|329.0|299.0|2026-10-26",
+  "fellow-aiden-precision-coffee-maker|399.95|319.95|2026-11-19",
+  "fellow-espresso-58-mm-magnetic-dosing-funnel|29.95|23.95|2026-11-19",
+  "fellow-espresso-knock-box|39.95|31.95|2026-11-19",
+  "fellow-ode-brew-grinder-gen-2|399.95|319.95|2026-11-19",
   "gaggia-anima-super-automatic-espresso-machine|499.0|429.0|2026-11-15",
   "gaggia-carezza-de-luxe-espresso-machine|229.0|199.0|2026-11-15",
   "gaggia-espresso-evolution|249.0|179.0|2026-11-15",
@@ -19,5 +23,5 @@
  ],
  "seeded_at": "2026-10-26T19:20:20.732962Z",
  "targets_sent": [],
- "last_alert_at": "2026-11-18T14:12:09.125394Z"
+ "last_alert_at": "2026-11-19T13:24:18.654798Z"
 }
