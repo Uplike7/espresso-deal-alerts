@@ -1,6 +1,16 @@
 {
- "generated_at": "2026-11-20T03:31:35.107577Z",
+ "generated_at": "2026-11-20T13:04:54.661911Z",
  "drops": [
+  {
+   "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
+   "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B07VFY4MXM",
+   "old_price": 535.17,
+   "new_price": 529.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-20"
+  },
   {
    "slug": "fellow-aiden-precision-coffee-maker",
    "title": "Fellow Aiden Precision Coffee Maker",
@@ -100,16 +110,6 @@
    "new_price": 179.0,
    "currency": "USD",
    "dropped_on": "2026-11-15"
-  },
-  {
-   "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
-   "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B07VFY4MXM",
-   "old_price": 529.85,
-   "new_price": 529.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-14"
   },
   {
    "slug": "compak-i3-pro-black-open-box-sn-859192",
