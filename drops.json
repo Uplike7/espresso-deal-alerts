@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T21:15:21.534146Z",
+ "generated_at": "2026-11-21T02:30:22.139798Z",
  "drops": [
   {
    "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
@@ -110,16 +110,6 @@
    "new_price": 179.0,
    "currency": "USD",
    "dropped_on": "2026-11-15"
-  },
-  {
-   "slug": "compak-i3-pro-black-open-box-sn-859192",
-   "title": "Compak I3 Pro (Black) (Open Box SN: 859192)",
-   "retailer": "Chris' Coffee",
-   "retailer_url": "https://www.chriscoffee.com/products/compak-i3-pro-black-open-box",
-   "old_price": 1050.0,
-   "new_price": 995.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-13"
   }
  ]
 }
