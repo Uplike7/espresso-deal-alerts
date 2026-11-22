@@ -1,13 +1,33 @@
 {
- "generated_at": "2026-11-22T07:01:45.351217Z",
+ "generated_at": "2026-11-22T15:27:28.966607Z",
  "drops": [
+  {
+   "slug": "breville-barista-express-espresso-machine",
+   "title": "Breville Barista Express Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/breville-barista-express-espresso-machine",
+   "old_price": 699.95,
+   "new_price": 499.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-22"
+  },
   {
    "slug": "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew",
    "title": "Ninja Luxe Caf\u00e9 Pro 4-in-1 Espresso Machine, Drip Coffee, & Cold Brew",
    "retailer": "Amazon",
    "retailer_url": "https://www.amazon.com/dp/B0F5JFTR1Q",
-   "old_price": 749.95,
-   "new_price": 599.99,
+   "old_price": 599.99,
+   "new_price": 599.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-22"
+  },
+  {
+   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
+   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
+   "old_price": 599.0,
+   "new_price": 499.95,
    "currency": "USD",
    "dropped_on": "2026-11-22"
   },
@@ -70,56 +90,6 @@
    "new_price": 1849.99,
    "currency": "CAD",
    "dropped_on": "2026-11-18"
-  },
-  {
-   "slug": "delonghi-dedica-duo-ec890-espresso-machine",
-   "title": "DeLonghi Dedica Duo EC890 Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/delonghi-dedica-duo-espresso-machine",
-   "old_price": 249.95,
-   "new_price": 199.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-15"
-  },
-  {
-   "slug": "delonghi-magnifica-evo-ecam29043sb",
-   "title": "DeLonghi Magnifica Evo ECAM29043SB",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/delonghi-magnifica-evo-ecam29043sb",
-   "old_price": 749.95,
-   "new_price": 499.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-15"
-  },
-  {
-   "slug": "gaggia-anima-super-automatic-espresso-machine",
-   "title": "Gaggia Anima Super-Automatic Espresso Machine",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/gaggia-anima-super-automatic-espresso-machine",
-   "old_price": 499.0,
-   "new_price": 429.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-15"
-  },
-  {
-   "slug": "gaggia-carezza-de-luxe-espresso-machine",
-   "title": "Gaggia Carezza De LUXE Espresso Machine",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/gaggia-carezza-deluxe",
-   "old_price": 229.0,
-   "new_price": 199.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-15"
-  },
-  {
-   "slug": "gaggia-espresso-evolution",
-   "title": "Gaggia Espresso Evolution",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/gaggia-espresso-evolution",
-   "old_price": 249.0,
-   "new_price": 179.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-15"
   }
  ]
 }
