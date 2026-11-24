@@ -1,6 +1,11 @@
 {
  "version": 1,
  "sent": [
+  "baratza-encore-coffee-grinder|149.95|119.95|2026-11-24",
+  "baratza-encore-esp-pro-coffee-and-espresso-grinder|299.95|239.05|2026-11-24",
+  "baratza-sette-270-espresso-grinder|399.95|319.05|2026-11-24",
+  "baratza-sette-270wi-espresso-grinder|599.95|479.95|2026-11-24",
+  "baratza-sette-30-espresso-grinder|299.95|239.05|2026-11-24",
   "breville-barista-express-espresso-machine|699.95|499.95|2026-11-22",
   "breville-the-dual-boiler-bes920-espresso-machine|2399.99|1849.99|2026-11-18",
   "compak-i3-pro-black-open-box-sn-859192|1050.0|995.0|2026-11-13",
@@ -18,6 +23,7 @@
   "gaggia-anima-super-automatic-espresso-machine|499.0|429.0|2026-11-15",
   "gaggia-carezza-de-luxe-espresso-machine|229.0|199.0|2026-11-15",
   "gaggia-espresso-evolution|249.0|179.0|2026-11-15",
+  "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|499.95|499.0|2026-11-24",
   "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|599.0|499.95|2026-11-22",
   "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|599.0|574.88|2026-11-12",
   "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew|599.99|599.95|2026-11-22",
@@ -28,5 +34,5 @@
  ],
  "seeded_at": "2026-10-26T19:20:20.732962Z",
  "targets_sent": [],
- "last_alert_at": "2026-11-22T15:27:29.025946Z"
+ "last_alert_at": "2026-11-24T01:00:15.815316Z"
 }

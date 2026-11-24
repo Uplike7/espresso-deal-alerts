@@ -1,6 +1,66 @@
 {
- "generated_at": "2026-11-23T13:03:35.673254Z",
+ "generated_at": "2026-11-24T01:00:15.757980Z",
  "drops": [
+  {
+   "slug": "baratza-sette-270-espresso-grinder",
+   "title": "Baratza Sette 270 Espresso Grinder",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/baratza-sette-270-conical-burr-grinder",
+   "old_price": 399.95,
+   "new_price": 319.05,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "baratza-sette-270wi-espresso-grinder",
+   "title": "Baratza Sette 270Wi Espresso Grinder",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/baratza-sette-270wi-conical-burr-grinder",
+   "old_price": 599.95,
+   "new_price": 479.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "baratza-sette-30-espresso-grinder",
+   "title": "Baratza Sette 30 Espresso Grinder",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/baratza-sette-30-ap-conical-burr-grinder",
+   "old_price": 299.95,
+   "new_price": 239.05,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "baratza-encore-esp-pro-coffee-and-espresso-grinder",
+   "title": "Baratza Encore\u2122 ESP Pro Coffee and Espresso Grinder",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/encore-esp-pro-coffee-and-espresso-grinder",
+   "old_price": 299.95,
+   "new_price": 239.05,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "baratza-encore-coffee-grinder",
+   "title": "Baratza Encore Coffee Grinder",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/baratza-encore-conical-burr-grinder",
+   "old_price": 149.95,
+   "new_price": 119.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
+   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
+   "old_price": 499.95,
+   "new_price": 499.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
   {
    "slug": "breville-barista-express-espresso-machine",
    "title": "Breville Barista Express Espresso Machine",
@@ -18,16 +78,6 @@
    "retailer_url": "https://www.amazon.com/dp/B0F5JFTR1Q",
    "old_price": 599.99,
    "new_price": 599.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-22"
-  },
-  {
-   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
-   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
-   "old_price": 599.0,
-   "new_price": 499.95,
    "currency": "USD",
    "dropped_on": "2026-11-22"
   },
@@ -70,26 +120,6 @@
    "new_price": 31.95,
    "currency": "USD",
    "dropped_on": "2026-11-19"
-  },
-  {
-   "slug": "fellow-espresso-58-mm-magnetic-dosing-funnel",
-   "title": "Fellow Espresso 58 mm Magnetic Dosing Funnel",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/fellow-espresso-58-mm-magnetic-dosing-funnel",
-   "old_price": 29.95,
-   "new_price": 23.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-19"
-  },
-  {
-   "slug": "breville-the-dual-boiler-bes920-espresso-machine",
-   "title": "Breville The Dual Boiler BES920 Espresso Machine",
-   "retailer": "iDrinkCoffee",
-   "retailer_url": "https://www.idrinkcoffee.com/products/breville-the-dual-boiler-bes920-espresso-machine",
-   "old_price": 2399.99,
-   "new_price": 1849.99,
-   "currency": "CAD",
-   "dropped_on": "2026-11-18"
   }
  ]
 }
