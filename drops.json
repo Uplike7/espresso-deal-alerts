@@ -1,6 +1,96 @@
 {
- "generated_at": "2026-11-24T11:05:20.208381Z",
+ "generated_at": "2026-11-24T21:22:22.786813Z",
  "drops": [
+  {
+   "slug": "caye-smart-x-super-automatic-espresso-machine-white",
+   "title": "Caye Smart X Super Automatic Espresso Machine - White",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/caye-smart-x-super-automatic-espresso-machine-white",
+   "old_price": 25995.0,
+   "new_price": 22095.75,
+   "currency": "CAD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "eureka-mignon-filtro-burr-grinder-matte-black",
+   "title": "Eureka Mignon Filtro Burr Grinder - Matte Black",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/eureka-mignon-filtro-burr-grinder-matte-black",
+   "old_price": 259.0,
+   "new_price": 207.2,
+   "currency": "CAD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "mazzer-kony-g-grind-by-weight-grinder-white",
+   "title": "Mazzer Kony G (Grind By Weight) Grinder - White",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/mazzer-kony-g-grind-by-weight-grinder-white",
+   "old_price": 5495.0,
+   "new_price": 4670.75,
+   "currency": "CAD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "mazzer-super-jolly-g-grind-by-weight-grinder-matte-black",
+   "title": "Mazzer Super Jolly G (Grind By Weight) Grinder - Matte Black",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/mazzer-super-jolly-g-grind-by-weight-grinder-matte-black",
+   "old_price": 3945.0,
+   "new_price": 3353.25,
+   "currency": "CAD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "breville-bes870xl-barista-express",
+   "title": "Breville BES870XL Barista Express",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/breville-bes870xl-barista-express",
+   "old_price": 699.95,
+   "new_price": 499.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "breville-bes880bss-the-barista-touch",
+   "title": "Breville BES880BSS the Barista Touch",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/breville-bes880bss-the-barista-touch",
+   "old_price": 999.95,
+   "new_price": 799.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "bunn-36000-1189-cleaning-tablets-cafiza-100t",
+   "title": "Bunn 36000.1189 Cleaning Tablets, Cafiza 100T",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/bunn-36000-1189-cleaning-tablets-cafiza-100t",
+   "old_price": 35.38,
+   "new_price": 30.07,
+   "currency": "CAD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "coffee-brain-espresso-tamper-58mm-black",
+   "title": "Coffee Brain Espresso Tamper - 58mm - Black",
+   "retailer": "iDrinkCoffee",
+   "retailer_url": "https://www.idrinkcoffee.com/products/coffee-brain-espresso-tamper-58mm-black",
+   "old_price": 29.95,
+   "new_price": 25.46,
+   "currency": "CAD",
+   "dropped_on": "2026-11-24"
+  },
+  {
+   "slug": "breville-the-oracle-jet",
+   "title": "Breville The Oracle\u2122 Jet",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/breville-the-oracle-jet",
+   "old_price": 1999.95,
+   "new_price": 1799.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-24"
+  },
   {
    "slug": "baratza-sette-270-espresso-grinder",
    "title": "Baratza Sette 270 Espresso Grinder",
@@ -30,96 +120,6 @@
    "new_price": 239.05,
    "currency": "USD",
    "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "baratza-encore-esp-pro-coffee-and-espresso-grinder",
-   "title": "Baratza Encore\u2122 ESP Pro Coffee and Espresso Grinder",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/encore-esp-pro-coffee-and-espresso-grinder",
-   "old_price": 299.95,
-   "new_price": 239.05,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "baratza-encore-coffee-grinder",
-   "title": "Baratza Encore Coffee Grinder",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/baratza-encore-conical-burr-grinder",
-   "old_price": 149.95,
-   "new_price": 119.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601",
-   "title": "Ninja\u00ae Luxe Caf\u00e9 Premier 3-in-1 Espresso Machine, Stainless Steel, ES601",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0D45PK5V4",
-   "old_price": 499.95,
-   "new_price": 499.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "breville-barista-express-espresso-machine",
-   "title": "Breville Barista Express Espresso Machine",
-   "retailer": "Seattle Coffee Gear",
-   "retailer_url": "https://www.seattlecoffeegear.com/products/breville-barista-express-espresso-machine",
-   "old_price": 699.95,
-   "new_price": 499.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-22"
-  },
-  {
-   "slug": "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew",
-   "title": "Ninja Luxe Caf\u00e9 Pro 4-in-1 Espresso Machine, Drip Coffee, & Cold Brew",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B0F5JFTR1Q",
-   "old_price": 599.99,
-   "new_price": 599.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-22"
-  },
-  {
-   "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
-   "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
-   "retailer": "Amazon",
-   "retailer_url": "https://www.amazon.com/dp/B07VFY4MXM",
-   "old_price": 535.17,
-   "new_price": 529.0,
-   "currency": "USD",
-   "dropped_on": "2026-11-20"
-  },
-  {
-   "slug": "fellow-aiden-precision-coffee-maker",
-   "title": "Fellow Aiden Precision Coffee Maker",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/fellow-aiden-precision-coffee-maker",
-   "old_price": 399.95,
-   "new_price": 319.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-19"
-  },
-  {
-   "slug": "fellow-ode-brew-grinder-gen-2",
-   "title": "Fellow Ode Brew Grinder Gen 2",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/fellow-ode-brew-grinder-gen-2",
-   "old_price": 399.95,
-   "new_price": 319.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-19"
-  },
-  {
-   "slug": "fellow-espresso-knock-box",
-   "title": "Fellow Espresso Knock Box",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/fellow-espresso-knock-box",
-   "old_price": 39.95,
-   "new_price": 31.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-19"
   }
  ]
 }
