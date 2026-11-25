@@ -21,6 +21,8 @@
   "eureka-mignon-crono-brew-coffee-grinder|229.0|199.0|2026-10-26",
   "eureka-mignon-filtro-burr-grinder-matte-black|259.0|207.2|2026-11-24",
   "eureka-mignon-notte-espresso-grinder|299.0|279.0|2026-10-26",
+  "eureka-mignon-notte-espresso-grinder|299.0|279.0|2026-11-25",
+  "eureka-mignon-silenzio-55-espresso-grinder|399.0|349.0|2026-11-25",
   "eureka-mignon-specialita-espresso-grinder|549.0|499.0|2026-10-26",
   "eureka-mignon-zero-espresso-grinder|329.0|299.0|2026-10-26",
   "fellow-aiden-precision-coffee-maker|399.95|319.95|2026-11-19",
@@ -35,6 +37,7 @@
   "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|499.95|499.0|2026-11-24",
   "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|599.0|499.95|2026-11-22",
   "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|599.0|574.88|2026-11-12",
+  "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew|599.95|599.0|2026-11-25",
   "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew|599.99|599.95|2026-11-22",
   "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew|749.95|599.99|2026-11-22",
   "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff|529.85|529.0|2026-11-14",
@@ -43,5 +46,5 @@
  ],
  "seeded_at": "2026-10-26T19:20:20.732962Z",
  "targets_sent": [],
- "last_alert_at": "2026-11-24T21:22:22.865625Z"
+ "last_alert_at": "2026-11-25T15:44:58.274720Z"
 }

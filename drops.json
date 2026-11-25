@@ -1,6 +1,36 @@
 {
- "generated_at": "2026-11-25T04:57:33.210551Z",
+ "generated_at": "2026-11-25T15:44:58.207131Z",
  "drops": [
+  {
+   "slug": "eureka-mignon-notte-espresso-grinder",
+   "title": "Eureka Mignon Notte Espresso Grinder",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-notte-espresso-grinder-black",
+   "old_price": 299.0,
+   "new_price": 279.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-25"
+  },
+  {
+   "slug": "eureka-mignon-silenzio-55-espresso-grinder",
+   "title": "Eureka Mignon Silenzio 55 Espresso Grinder",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/eureka-mignon-silenzio-55-espresso-grinder",
+   "old_price": 399.0,
+   "new_price": 349.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-25"
+  },
+  {
+   "slug": "ninja-luxe-caf-pro-4-in-1-espresso-machine-drip-coffee-cold-brew",
+   "title": "Ninja Luxe Caf\u00e9 Pro 4-in-1 Espresso Machine, Drip Coffee, & Cold Brew",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B0F5JFTR1Q",
+   "old_price": 599.95,
+   "new_price": 599.0,
+   "currency": "USD",
+   "dropped_on": "2026-11-25"
+  },
   {
    "slug": "caye-smart-x-super-automatic-espresso-machine-white",
    "title": "Caye Smart X Super Automatic Espresso Machine - White",
@@ -88,36 +118,6 @@
    "retailer_url": "https://www.wholelattelove.com/products/breville-the-oracle-jet",
    "old_price": 1999.95,
    "new_price": 1799.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "baratza-sette-270-espresso-grinder",
-   "title": "Baratza Sette 270 Espresso Grinder",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/baratza-sette-270-conical-burr-grinder",
-   "old_price": 399.95,
-   "new_price": 319.05,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "baratza-sette-270wi-espresso-grinder",
-   "title": "Baratza Sette 270Wi Espresso Grinder",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/baratza-sette-270wi-conical-burr-grinder",
-   "old_price": 599.95,
-   "new_price": 479.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "baratza-sette-30-espresso-grinder",
-   "title": "Baratza Sette 30 Espresso Grinder",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/baratza-sette-30-ap-conical-burr-grinder",
-   "old_price": 299.95,
-   "new_price": 239.05,
    "currency": "USD",
    "dropped_on": "2026-11-24"
   }
