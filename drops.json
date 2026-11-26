@@ -1,6 +1,16 @@
 {
- "generated_at": "2026-11-25T15:44:58.207131Z",
+ "generated_at": "2026-11-26T00:30:47.139232Z",
  "drops": [
+  {
+   "slug": "delonghi-la-specialista-arte-ec9155mb-espresso-machine",
+   "title": "DeLonghi La Specialista Arte EC9155MB Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/products/delonghi-la-specialista-arte-ec9155mb-espresso-machine",
+   "old_price": 599.95,
+   "new_price": 499.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-26"
+  },
   {
    "slug": "eureka-mignon-notte-espresso-grinder",
    "title": "Eureka Mignon Notte Espresso Grinder",
@@ -109,16 +119,6 @@
    "old_price": 29.95,
    "new_price": 25.46,
    "currency": "CAD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "breville-the-oracle-jet",
-   "title": "Breville The Oracle\u2122 Jet",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/breville-the-oracle-jet",
-   "old_price": 1999.95,
-   "new_price": 1799.95,
-   "currency": "USD",
    "dropped_on": "2026-11-24"
   }
  ]
