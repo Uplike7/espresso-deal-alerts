@@ -1,6 +1,36 @@
 {
- "generated_at": "2026-11-26T00:30:47.139232Z",
+ "generated_at": "2026-11-26T09:40:44.019465Z",
  "drops": [
+  {
+   "slug": "lelit-anna-espresso-machine",
+   "title": "LELIT Anna Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/lelit-anna-espresso-machine",
+   "old_price": 599.95,
+   "new_price": 479.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-26"
+  },
+  {
+   "slug": "lelit-mara-x-espresso-machine",
+   "title": "LELIT Mara X Espresso Machine",
+   "retailer": "Seattle Coffee Gear",
+   "retailer_url": "https://www.seattlecoffeegear.com/products/lelit-mara-x-espresso-machine",
+   "old_price": 1699.95,
+   "new_price": 1359.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-26"
+  },
+  {
+   "slug": "lelit-elizabeth-dual-boiler-espresso-machine",
+   "title": "Lelit Elizabeth Dual Boiler Espresso Machine",
+   "retailer": "Whole Latte Love",
+   "retailer_url": "https://www.wholelattelove.com/collections/dual-boiler-espresso-machine/products/lelit-elizabeth-dual-boiler-espresso-machine",
+   "old_price": 1799.95,
+   "new_price": 1439.95,
+   "currency": "USD",
+   "dropped_on": "2026-11-26"
+  },
   {
    "slug": "delonghi-la-specialista-arte-ec9155mb-espresso-machine",
    "title": "DeLonghi La Specialista Arte EC9155MB Espresso Machine",
@@ -89,36 +119,6 @@
    "old_price": 699.95,
    "new_price": 499.95,
    "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "breville-bes880bss-the-barista-touch",
-   "title": "Breville BES880BSS the Barista Touch",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/breville-bes880bss-the-barista-touch",
-   "old_price": 999.95,
-   "new_price": 799.95,
-   "currency": "USD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "bunn-36000-1189-cleaning-tablets-cafiza-100t",
-   "title": "Bunn 36000.1189 Cleaning Tablets, Cafiza 100T",
-   "retailer": "iDrinkCoffee",
-   "retailer_url": "https://www.idrinkcoffee.com/products/bunn-36000-1189-cleaning-tablets-cafiza-100t",
-   "old_price": 35.38,
-   "new_price": 30.07,
-   "currency": "CAD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "coffee-brain-espresso-tamper-58mm-black",
-   "title": "Coffee Brain Espresso Tamper - 58mm - Black",
-   "retailer": "iDrinkCoffee",
-   "retailer_url": "https://www.idrinkcoffee.com/products/coffee-brain-espresso-tamper-58mm-black",
-   "old_price": 29.95,
-   "new_price": 25.46,
-   "currency": "CAD",
    "dropped_on": "2026-11-24"
   }
  ]

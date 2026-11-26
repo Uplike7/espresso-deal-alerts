@@ -33,6 +33,9 @@
   "gaggia-anima-super-automatic-espresso-machine|499.0|429.0|2026-11-15",
   "gaggia-carezza-de-luxe-espresso-machine|229.0|199.0|2026-11-15",
   "gaggia-espresso-evolution|249.0|179.0|2026-11-15",
+  "lelit-anna-espresso-machine|599.95|479.95|2026-11-26",
+  "lelit-elizabeth-dual-boiler-espresso-machine|1799.95|1439.95|2026-11-26",
+  "lelit-mara-x-espresso-machine|1699.95|1359.95|2026-11-26",
   "mazzer-kony-g-grind-by-weight-grinder-white|5495.0|4670.75|2026-11-24",
   "mazzer-super-jolly-g-grind-by-weight-grinder-matte-black|3945.0|3353.25|2026-11-24",
   "ninja-luxe-caf-premier-3-in-1-espresso-machine-stainless-steel-es601|499.95|499.0|2026-11-24",
@@ -47,5 +50,5 @@
  ],
  "seeded_at": "2026-10-26T19:20:20.732962Z",
  "targets_sent": [],
- "last_alert_at": "2026-11-26T00:30:47.197421Z"
+ "last_alert_at": "2026-11-26T09:40:44.089464Z"
 }
