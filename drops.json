@@ -1,6 +1,16 @@
 {
- "generated_at": "2026-11-27T12:40:09.821189Z",
+ "generated_at": "2026-11-27T22:05:08.655576Z",
  "drops": [
+  {
+   "slug": "philips-3200-series-fully-automatic-espresso-machine-lattego-milk-frother-5-coff",
+   "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother, 5 Coffee Varieties, Intuitive Touch Display, 100% Ceramic Grinder, AquaClean Filter, My Coffee Choice, Black (EP3241/54)",
+   "retailer": "Amazon",
+   "retailer_url": "https://www.amazon.com/dp/B07VFY4MXM",
+   "old_price": 538.27,
+   "new_price": 531.66,
+   "currency": "USD",
+   "dropped_on": "2026-11-27"
+  },
   {
    "slug": "lelit-anna-espresso-machine",
    "title": "LELIT Anna Espresso Machine",
@@ -109,16 +119,6 @@
    "old_price": 3945.0,
    "new_price": 3353.25,
    "currency": "CAD",
-   "dropped_on": "2026-11-24"
-  },
-  {
-   "slug": "breville-bes870xl-barista-express",
-   "title": "Breville BES870XL Barista Express",
-   "retailer": "Whole Latte Love",
-   "retailer_url": "https://www.wholelattelove.com/products/breville-bes870xl-barista-express",
-   "old_price": 699.95,
-   "new_price": 499.95,
-   "currency": "USD",
    "dropped_on": "2026-11-24"
   }
  ]
