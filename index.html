@@ -1810,17 +1810,21 @@
   }
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    // Recipient: moneymuscleup@gmail.com via the FormSubmit alias endpoint
-    // (the naked address must never sit in page source). On any failure the
-    // Telegram channel is surfaced as a fallback instead of a dead-end error.
-    var payload = {email: form.email.value, _subject: "New price-alert signup", _template: "table"};
+    // Capture-first: our own signup Worker stores the address in KV and
+    // only then answers captured:true. "You're on the list" is shown ONLY
+    // on captured:true — any other outcome surfaces the Telegram fallback
+    // instead of claiming success. (Replaced FormSubmit 2026-11-27: its
+    // ajax endpoint returned success while the notification never landed.)
+    var SIGNUP_ENDPOINT = "https://espresso-signup.onesmartumbrella.workers.dev/signup";
+    var payload = {email: form.email.value, source: "site-form"};
     if (form.product.value) { payload.product = form.product.value; }
-    fetch("https://formsubmit.co/ajax/711ac77c3208bd050e4cacfa0b088bf5", {
+    fetch(SIGNUP_ENDPOINT, {
       method: "POST",
       headers: {"Content-Type": "application/json", "Accept": "application/json"},
       body: JSON.stringify(payload)
-    }).then(function (r) {
-      if (r.ok) {
+    }).then(function (r) { return r.json().catch(function () { return null; }); })
+    .then(function (j) {
+      if (j && j.captured === true) {
         note.innerHTML = "<b>You're on the list.</b> Watch your inbox — and join the Telegram for instant alerts.";
         try { if (typeof gtag === "function") { gtag("event", "sign_up", {method: "email"}); } } catch (err) {}
         form.reset();
